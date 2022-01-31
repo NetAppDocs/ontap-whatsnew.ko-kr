@@ -1,0 +1,189 @@
+---
+sidebar: sidebar 
+permalink: ontap98fo_data_protocols.html 
+keywords: NAS Protocol, NFS, SMB/CIFS, FlexCache Volume, FlexGroup, Async Delete, SAN, Persistent Ports, NVMe/FC, S3 
+summary: 이 페이지에서는 클라이언트와 최종 사용자가 데이터 액세스를 위해 ONTAP 스토리지 시스템과 상호 작용할 수 있는 데이터 프로토콜을 제공합니다. 
+---
+= 데이터 프로토콜
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+데이터 프로토콜은 클라이언트 및 최종 사용자가 NetApp ONTAP 스토리지 시스템과 상호 작용하여 데이터 액세스를 지원하는 방법을 나타냅니다. NetApp ONTAP는 다음과 같이 동일한 스토리지 플랫폼에서 데이터 액세스를 위해 공식 지원되는 여러 인터페이스를 제공합니다.
+
+* NAS
+* 산
+* S3
+
+
+ONTAP 9.8은 ONTAP 데이터 프로토콜에 대한 다양한 개선 기능을 제공합니다.
+
+
+
+== NAS 프로토콜의 향상된 기능
+
+NAS(Network Attached Storage) 프로토콜은 NFS 및 SMB/CIFS와 같은 파일 기반 전송 방법을 참조합니다. NAS 프로토콜 지원을 위한 ONTAP 9.8에는 NetApp FlexGroup 및 FlexCache 볼륨과 같은 NAS에 특히 적용되는 기능이 다음과 같이 개선되었습니다.
+
+
+
+=== NFS의 향상된 기능
+
+ONTAP 9.8은 다음과 같은 NFS 개선 기능을 제공합니다.
+
+* * NFSv4.2. * 는 기본 NFSv4.2 프로토콜 지원을 제공하며 레이블링과 같은 NFSv4.2 기능은 포함하지 않습니다. NFSv4.2는 NFSv4.1이 활성화된 경우에 활성화됩니다.
+* * Qtree QoS(Quality of Service). * 스토리지 관리자가 ONTAP에서 qtree에 QoS 최대값 및 최소값을 적용할 수 있는 방법을 제공합니다. 현재 REST API 및 명령줄에서만 사용 가능하며 적응형 QoS 지원은 포함되지 않으며 NFS 전용입니다.
+
+
+
+
+=== SMB/CIFS의 향상된 기능
+
+ONTAP 9.8은 다음과 같은 SMB/CIFS 개선 기능을 제공합니다.
+
+* * SMB3 - 암호화된 DC 연결. * SMB DC 연결을 위한 유선으로 암호화.
+* * 소유자 설정(-map-sid-to-uid-on-set-owner)에서 UID에 SID를 매핑합니다. * 이 옵션은 파일 및 폴더에 대한 소유권을 설정할 때 ONTAP가 Windows SID를 UNIX UID에 매핑하는지 여부를 제어합니다. Active Directory 서버의 로드가 증가한 고객의 데이터 마이그레이션 환경을 개선하기 위해 이 옵션이 추가되었습니다. 기본값은 true입니다. (버그 수정 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1153207["1153207"^]참조)
+* * NFSv4_ACL이 상속될 때 Modebits 설정(-is-inherit-modebits-with-nfsv4acl-enabled) *. NFSv4 ACL이 기본 "owner@", "group@" 및 "everyone@" ACL을 제거한 디렉토리에서 SMB 파일이 생성될 때 멀티 프로토콜 NAS 상호 작용을 지원합니다. 그렇지 않으면 해당 ACL이 상속 플래그 집합을 가지고 있지 않습니다. 기본값은 false입니다. (수정 대상 https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/820848["버그 820848"^]참조)
+
+
+
+
+=== FlexCache 볼륨의 향상된 기능
+
+NetApp FlexCache 볼륨은 NetApp FlexGroup 볼륨으로 구성된 스파스 가상 캐시입니다. 이러한 캐시는 원래 볼륨을 가리키며, 클라이언트에서 요청할 때 데이터를 캐시에 채워 클라우드나 에지 또는 데이터 센터에서 ONTAP을 실행하는 어디서나 빠르고 지역화된 액세스를 제공하여 진정한 글로벌 네임스페이스를 제공합니다.
+
+image:ontap98fo_image19.png["오류: 그래픽 이미지가 없습니다"]
+
+FlexCache 볼륨에 대한 자세한 내용은 을 참조하십시오 https://www.netapp.com/pdf.html?item=/media/7336-tr4743pdf.pdf["TR-4743: ONTAP의 FlexCache"^].
+
+ONTAP 9.8은 다음과 같은 FlexCache 볼륨 개선 기능을 제공합니다.
+
+* * SMB/CIFS 지원 * NetApp FlexCache는 이제 NFSv3 및 SMB 클라이언트에 대한 캐시 액세스와 멀티 프로토콜 NAS 데이터 액세스를 지원합니다. FlexCache는 읽기 집약적인 워크로드를 위해 여러 사이트에 분산된 지역화된 파일 잠금에 사용할 수 있습니다.
+* FlexCache 팬아웃 비율 증가 * ONTAP 9.8은 100:1의 팬아웃 비율을 제공합니다. 이전에는 비율이 10:1이었습니다.
+* SnapMirror 보조 원본이 있는 * FlexCache 볼륨. * 이제 FlexCache 볼륨을 SnapMirror 보조 볼륨에 연결할 수 있습니다. 이 볼륨을 사용하면 운영 스토리지 시스템에서 읽기 작업을 오프로드할 수 있을 뿐만 아니라 지리적으로 분산된 원본 볼륨을 제공할 수 있습니다.
+* * 블록 수준 캐시 무효화 * 캐시에서 변경된 데이터를 제거했을 때 전체 파일의 유효성을 검사하는 대신 변경된 블록만 제거됩니다. 따라서 용량 및 WAN 트래픽 로드가 절감됩니다.
+* * 미리 채워지는 캐시 * 자주 액세스될 것으로 알고 있는 볼륨의 디렉토리가 있는 경우, 이제 캐시를 해당 디렉토리의 컨텐츠로 미리 채워 초기 클라이언트 액세스의 지연 시간을 없앨 수 있습니다.
+
+
+
+
+=== FlexGroup 볼륨의 향상된 기능
+
+FlexGroup 볼륨은 NetApp ONTAP 스케일아웃 NAS 솔루션으로, 단일 네임스페이스에서 최대 20PB 및 4,000억 개 파일을 제공하는 동시에 대량 수집 워크로드의 로드 밸런싱된 병렬 처리를 통해 용량, 성능 및 단순성을 자동으로 제공합니다.
+
+image:ontap98fo_image20.png["오류: 그래픽 이미지가 없습니다"]
+
+FlexGroup 볼륨에 대한 자세한 내용은 을 참조하십시오 https://www.netapp.com/us/media/tr-4571.pdf["TR-4571: NetApp FlexGroup 볼륨 모범 사례"^].
+
+ONTAP 9.8은 다음과 같은 FlexGroup 볼륨 개선 기능을 제공합니다.
+
+* * 1,023개의 스냅샷 지원 * 이제 NetApp FlexGroup 볼륨은 볼륨당 최대 1,023개의 스냅샷 복사본을 생성할 수 있습니다. 추가 Snapshot 복사본을 사용하면 FlexGroup 볼륨이 아카이브 대상으로서 더 많은 기능을 사용할 수 있고, 더 많은 수의 스냅샷을 자주 보유할 수 있으며, 이제 스냅샷 복사본 ID가 255개를 초과하는 FlexVol 변환을 지원할 수 있습니다.
+* NDMP 향상 * FlexGroup 9.7에는 ONTAP 볼륨에 대한 NDMP 지원이 추가되었지만 다음 기능 옵션이 누락되었습니다.
++
+** ONTAP 9.8은 NDMP를 추가로 지원합니다
+** 제외
+** 재시작 가능한 백업 확장(RBE)
+** multi_subtree_names를 선택합니다
+** 성능 향상
++
+FlexGroup 볼륨 및 NDMP에 대한 자세한 내용은 를 참조하십시오 https://www.netapp.com/us/media/tr-4678.pdf["TR-4678: 데이터 보호 및 백업 - FlexGroup 볼륨"^].
+
+
+
+* * FlexGroup에서는 7MTT 볼륨 지원을 변환합니다. * ONTAP 9.8 이전에는 7-Mode에서 FlexGroup 볼륨으로 전환된 FlexVol를 변환할 수 없었습니다. ONTAP 9.8은 이러한 제약을 완화해 줍니다.
+* * 사전 리사이징. * 사전 리사이징은 FlexGroup 구성원 볼륨에서 여유 공간 버퍼를 유지 관리하여 일관된 성능 및 용량 배포를 장려하는 용량 관리 기능입니다.
+* * 파일 클론 생성. * 이제 VAAI 복사 오프로드 지원을 통해 VMware vSphere를 사용하여 FlexGroup 볼륨의 파일을 복제할 수 있습니다. 그러나 REST API 또는 CLI를 사용한 파일 복제는 현재 지원되지 않습니다.
+* * VMware 데이터 저장소 지원 * ONTAP 9.8은 이제 FlexGroup 볼륨을 확장 가능한 VMware 데이터 저장소로 공식 지원합니다. 이는 다음을 의미합니다.
++
+** 검증된 성능 및 배치
+** interop 한정자
+** Virtual Storage Console 지원
+** NetApp SnapCenter 백업 지원
+
+
+
+
+
+
+=== 비동기 삭제
+
+비동기식 삭제를 사용하면 스토리지 관리자가 CLI에서 디렉토리를 삭제하여 네트워크 지연 시간을 건너뛸 수 있습니다.
+
+NFS 또는 SMB를 통해 많은 파일이 포함된 디렉토리를 삭제하려고 시도한 적이 있다면 이는 매우 힘든 일이 될 수 있습니다. 각 작업은 사용 중인 NAS 프로토콜을 통해 네트워크를 통해 이동해야 하며, 그런 다음 ONTAP는 이러한 요청을 처리하고 응답해야 합니다. 사용 가능한 네트워크 대역폭, 클라이언트 사양 또는 스토리지 시스템에 따라 이 프로세스에 시간이 오래 걸릴 수 있습니다. 비동기 삭제는 상당한 시간을 절약하고 클라이언트가 더 빠르게 작업할 수 있도록 합니다.
+
+비동기식 삭제에 대한 자세한 내용은 을 참조하십시오 https://www.netapp.com/us/media/tr-4571.pdf["TR-4751: NetApp FlexGroup 볼륨 모범 사례"^].
+
+
+
+== SAN의 향상된 기능
+
+SAN(Storage Area Network) 프로토콜은 FCP, iSCSI 및 파이버 채널을 통한 NVMe와 같은 블록 기반 데이터 전송 방법을 참조합니다. SAN 프로토콜 지원을 위해 ONTAP 9.8에 다음과 같은 개선 사항이 추가되었습니다.
+
+
+
+=== All-SAN 어레이(ASA)
+
+ONTAP 9.7에는 이라는 새로운 전용 SAN 플랫폼이 도입되었습니다 https://www.netapp.com/data-storage/san-storage-area-network/documentation/["ASA"^]SAN 연결에 Active-Active 접근 방식을 제공하여 SAN 환경에서 페일오버 시간을 크게 줄이는 동시에 Tier-1 SAN 구축을 간소화한다는 목표를 가지고 있습니다.
+
+ASA에 대한 자세한 내용은 에서 확인할 수 있습니다 https://www.netapp.com/data-storage/san-storage-area-network/documentation/["All-SAN 어레이 설명서 리소스입니다"^].
+
+ONTAP 9.8은 ASA에 다음과 같은 향상된 기능을 제공합니다.
+
+* * 더 큰 LUN 및 FlexVol 볼륨 크기 * 이제 ASA의 LUN을 128TB로 프로비저닝할 수 있습니다. FlexVol 볼륨은 300TB가 될 수 있습니다.
+* * IP를 통한 MetroCluster 지원. * ASA는 이제 IP 네트워크를 통한 사이트 페일오버에 사용할 수 있습니다.
+* * SnapMirror 비즈니스 연속성(SM-BC) 지원. * ASA는 SnapMirror 비즈니스 연속성에 사용할 수 있습니다. Xref
+* * 호스트 에코시스템 확장. * HP-UX, Solaris 및 AIX 지원. 를 참조하십시오 https://mysupport.netapp.com/matrix/["상호 운용성 매트릭스"^] 를 참조하십시오.
+* * A800 및 A250 플랫폼 지원 *
+* * System Manager에서 간소화된 프로비저닝. *
+
+
+
+
+=== 영구 포트
+
+ASA는 영구 포트라는 향상된 기능을 추가하여 장애 조치 시간을 개선합니다. ONTAP의 영구 포트는 ASA에 연결하는 SAN 호스트에 대해 훨씬 더 높은 복원력과 지속적인 데이터 액세스를 제공합니다. ASA의 각 노드는 섀도우 파이버 채널 LIF를 유지합니다. 이 기능은 ONTAP 9.8이 ASA의 SAN 장애 조치 시간을 훨씬 단축한 방식에 있어 매우 중요합니다. 이러한 LIF는 파트너 LIF와 동일한 ID를 유지하지만 대기 모드로 유지됩니다. 페일오버가 있고 FC LIF가 파트너 노드로 마이그레이션해야 하는 경우 ID를 변경하는 대신(호스트에서 변경 사항을 협상하는 동안 페일오버 시간을 늘릴 수 있음) 섀도 LIF가 새로운 경로가 됩니다. 호스트는 동일한 ID의 동일한 경로에서 추가 구성 없이 링크 다운 알림 없이 동일한 경로로 입출력을 계속합니다.
+
+다음 그림에서는 영구 포트의 페일오버 예를 보여 줍니다.
+
+image:ontap98fo_image21.png["오류: 그래픽 이미지가 없습니다"]
+
+
+
+=== NVMe/FC
+
+NVMe는 기존 FCP 및 iSCSI를 통한 블록 워크로드의 지연 시간 및 성능을 개선하는 데 도움이 되는 새로운 SAN 프로토콜입니다.
+
+이 블로그에서 다루는 내용은 다음과 같습니다. https://blog.netapp.com/nvme-over-fabric/["NVMe over Fabrics를 구현할 때는 패브릭이 매우 중요합니다"^].
+
+NetApp은 ONTAP 9.4에서 NVMe over Fibre Channel에 대한 지원을 도입했으며 각 릴리즈에 향상된 기능을 추가했습니다. ONTAP 9.8에는 다음이 추가됩니다.
+
+* FCP 및 iSCSI를 사용하는 동일한 SVM에서 * NVMe/FC. * 이제 동일한 SVM에서 다른 SAN 프로토콜과 동일한 NVMe/FC를 사용하여 SAN 환경 관리를 간소화할 수 있습니다.
+* * Gen 7 SAN 스위치 패브릭 지원. * 이 기능은 최신 Gen 7 SAN 스위치를 추가로 지원합니다.
+
+
+
+
+== S3의 향상된 기능
+
+S3 프로토콜을 사용하는 오브젝트 스토리지는 ONTAP 프로토콜 제품군에 최근에 추가된 기능입니다. ONTAP 9.7에서 공용 미리 보기로 추가된 S3는 이제 ONTAP 9.8에서 완벽하게 지원되는 프로토콜입니다.
+
+S3에 대한 지원에는 다음이 포함됩니다.
+
+* 기본 PUT/GET 오브젝트 액세스(동일한 버킷에서 S3 및 NAS 모두에 대한 액세스 제외)
++
+** 오브젝트 태그 지정 또는 ILM 지원 없음, 전역으로 분산된 다양한 기능을 갖춘 S3의 경우 사용 https://www.netapp.com/data-storage/storagegrid/["NetApp StorageGRID를 참조하십시오"^].
+
+
+* TLS 1.2 암호화
+* 여러 부분으로 업로드됩니다
+* 조정 가능한 포트
+* 볼륨당 여러 개의 버킷
+* 버킷 접근 정책
+* S3 as a NetApp FabricPool target자세한 내용은 다음 리소스를 참조하십시오.
+* https://soundcloud.com/techontap_podcast/episode-268-netapp-fabricpool-and-s3-in-ontap-98["Tech OnTap 팟캐스트: 에피소드 268 - NetApp FabricPool 및 S3(ONTAP 9.8"^]
+* https://www.netapp.com/us/media/tr-4814.pdf["ONTAP S3"^]
+
+
+link:ontap98fo_storage_efficiencies.html["다음은 스토리지 효율성 입니다"]

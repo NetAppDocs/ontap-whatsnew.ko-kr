@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+keywords: TR-4894, Introduction, NAS, SAN, S3, Snapshot, SnapMirror, SnapVault, HA 
+summary: NetApp ONTAP는 업계 최고의 데이터 관리 소프트웨어로, 온프레미스, 에지 또는 클라우드 어디서나 데이터를 원활하게 관리하고 보호할 수 있도록 지원합니다. 
+---
+= TR-4894: NetApp ONTAP 9.9.1 기능 개요
+
+
+Justin Parisi, NetApp에서 설명합니다
+
+NetApp ONTAP는 업계 최고의 데이터 관리 소프트웨어로, 온프레미스, 에지 또는 클라우드 어디서나 데이터를 원활하게 관리하고 보호할 수 있도록 지원합니다.
+
+NetApp ONTAP은 동일한 플랫폼에서 다음과 같은 기능을 모두 지원합니다.
+
+* NAS 프로토콜(NFS 및 SMB)
+* SAN 프로토콜(iSCSI, FCP 및 NVMe)
+* S3 데이터 액세스
+* 데이터 보호(NetApp Snapshot 복사본, NetApp SnapMirror 및 SnapVault 기술)
+* 스토리지 효율성(중복제거, 컴팩션, 압축)
+* 고가용성(HA) 페일오버(All-SAN 어레이의 계층 1 SAN에 대한 빠른 페일오버 포함)
+* All-Flash, 회전식 드라이브 및 하이브리드 디스크 구성 지원
+* 보안 기능(다단계 인증, NetApp Volume Encryption 및 Secure Purge)
+
+
+이 목록은 종합 목록이 아닙니다. ONTAP에서 제공하는 모든 기능을 포함한다면 이 문서의 길이가 수백 페이지일 것입니다!
+
+NetApp ONTAP에 대한 자세한 내용은 를 참조하십시오 https://www.netapp.com/pdf.html?item=/media/7413-ds-3231.pdf["ONTAP 9 데이터 관리 소프트웨어 데이터 시트"^] 및 제품 설명서를 참조하십시오.

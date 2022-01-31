@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: ontap991fo_other_major_additions.html 
+keywords: FlexGroup, S3, NFSv4.2, MAC, 
+summary: System Manager의 향상된 기능, SAN 개선 기능 및 데이터 보호 기능 외에도 ONTAP 9.9.1에 추가된 몇 가지 중요한 기능이 있습니다. 
+---
+= 기타 주요 추가 사항
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+System Manager의 향상된 기능, SAN 개선 기능 및 데이터 보호 기능 외에도 ONTAP 9.9.1에 추가된 몇 가지 중요한 기능이 있습니다.
+
+
+
+== 논리적 공간 계산/적용 – FlexGroup 볼륨
+
+FlexVol 9.4에서 ONTAP 볼륨에 대한 논리적 공간 어카운팅이 도입되었습니다. 스토리지 관리자가 스토리지 효율성 절약 효과를 마스킹하여 최종 사용자가 지정된 스토리지 할당량을 초과 할당하지 않도록 할 수 있습니다.
+
+예를 들어, 사용자가 10TB 볼륨에 6TB를 기록하고 스토리지 효율성이 2TB를 절약하면 논리적 공간 어카운팅으로 사용자가 6TB를 보는지 4TB를 보는지 여부를 제어할 수 있습니다.
+
+image:ontap991fo_image17.png["오류: 그래픽 이미지가 없습니다"]
+
+ONTAP 9.5는 이 기능을 개선하고 FlexVols에 대한 할당량 적용 지원을 추가하여 논리적 공간 임계값 설정에 따라 새로운 쓰기를 방지함으로써 스토리지 관리자에게 더 많은 제어 권한을 부여합니다. 그러나 FlexGroup 볼륨은 ONTAP 9.9.1까지 이 기능이 누락되었습니다.
+
+
+
+== ONTAP S3 사용자 정의 메타데이터 태그
+
+ONTAP 9.8에는 기본 오브젝트 스토리지 기능을 위한 S3 프로토콜이 도입되었습니다.
+
+ONTAP 9.8의 S3에 대한 지원에는 다음이 포함됩니다.
+
+* 기본 PUT/GET 오브젝트 액세스(동일한 버킷에서 S3 및 NAS 모두에 대한 액세스 제외)
++
+** 오브젝트 태그 지정 또는 ILM 지원 없음, 전역으로 분산된 다양한 기능을 갖춘 S3의 경우 사용 https://www.netapp.com/data-storage/storagegrid/["NetApp StorageGRID를 참조하십시오"^].
+
+
+* TLS 1.2 암호화
+* 여러 부분으로 업로드됩니다
+* 조정 가능한 포트
+* 볼륨당 여러 개의 버킷
+* 버킷 접근 정책
+* S3을 NetApp FabricPool 타겟으로 사용
+
+
+ONTAP 9.9.1 이상은 ObjectCreate 및 MultiPartUpload 호출을 사용할 때 개체의 메타데이터 태그 지정을 지원합니다. 개체에 대해 head 또는 get을 수행하면 응답에서 HTTP 헤더의 일부로 사용자 정의 메타데이터 및 태그 수가 반환됩니다. 이러한 태그를 사용하면 ONTAP 버킷 내에서 개체를 보다 효율적으로 분류하여 보다 강력한 데이터 관리를 수행할 수 있으며 메타데이터 및 태그를 만드는 기능이 필요한 애플리케이션과 호환됩니다.
+
+자세한 내용은 다음 리소스를 참조하십시오.
+
+* https://soundcloud.com/techontap_podcast/episode-268-netapp-fabricpool-and-s3-in-ontap-98["Tech OnTap 팟캐스트: 에피소드 268 - NetApp FabricPool 및 S3(ONTAP 9.8"^]
+* https://www.netapp.com/us/media/tr-4814.pdf["ONTAP S3"^]
+
+
+
+
+== NFSv4.2 보안 레이블입니다
+
+ONTAP 9.9.1에는 이름이 NFS인 NFSv4.2 기능이 도입되었습니다. 이 기능은 SELinux 레이블과 MAC(Mandatory Access Control)를 사용하여 세분화된 파일 및 폴더 액세스를 관리하는 방법입니다. 이러한 MAC 레이블은 파일 및 폴더와 함께 저장되며 UNIX 권한 및 NFSv4.x ACL과 함께 작동합니다. 레이블 지정된 NFS에 대한 지원은 ONTAP가 이제 NFS 클라이언트의 SELinux 레이블 설정을 인식하고 이해하는 것을 의미합니다. 레이블이 지정된 NFS는 에서 다룹니다 https://tools.ietf.org/html/rfc7204["RFC-7204"^].
+
+사용 사례는 다음과 같습니다.
+
+* 가상 머신 이미지의 MAC 레이블 지정
+* 공공 부문의 데이터 보안 분류(비밀, 최고 비밀 등)
+* 보안 규정 준수
+* 디스크 없는 Linux
+
+
+이 릴리즈에서 ONTAP는 다음과 같은 적용 모드를 지원합니다.
+
+* https://tools.ietf.org/html/rfc7204["제한된 서버 모드"^]. ONTAP에서는 레이블을 적용할 수 없지만 저장하고 전송할 수는 있습니다.
++
+** MAC 레이블을 변경하는 기능은 클라이언트가 적용할 수도 있습니다.
+
+
+* https://tools.ietf.org/html/rfc7204["게스트 모드"^]. 클라이언트에 NFS-Aware(v4.1 이하)라고 표시되지 않으면 MAC 레이블이 전송되지 않습니다.
+
+
+ONTAP는 현재 지원하지 않습니다 https://tools.ietf.org/html/rfc7204["전체 모드"^] (MAC 라벨 저장 및 적용).

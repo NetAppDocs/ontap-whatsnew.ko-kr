@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: ontap991fo_technical_resources.html 
+keywords:  
+summary:  
+---
+= 기술 리소스
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+이 섹션에서는 이 문서에 언급된 기능을 자세히 설명하는 데 사용할 수 있는 기술 리소스를 다룹니다.
+
+
+
+== 기술 보고서
+
+* TR-4067: NetApp ONTAP NFS 모범 사례 및 구축 가이드
++
+https://www.netapp.com/us/media/tr-4067.pdf["https://www.netapp.com/us/media/tr-4067.pdf"^]
+
+* TR-4515: ONTAP AFF 모든 SAN 어레이 시스템
++
+https://www.netapp.com/pdf.html?item=/media/10379-tr4515pdf.pdf["https://www.netapp.com/pdf.html?item=/media/10379-tr4515pdf.pdf"^]
+
+* TR-4526: NetApp SnapLock를 사용하는 규정 준수 WORM 스토리지
++
+https://www.netapp.com/pdf.html?item=/media/6158-tr4526pdf.pdf["https://www.netapp.com/pdf.html?item=/media/6158-tr4526pdf.pdf"^]
+
+* TR-4569: ONTAP 9용 보안 강화 가이드
++
+https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf"^]
+
+* TR-4571: NetApp FlexGroup 볼륨 모범 사례
++
+https://www.netapp.com/us/media/tr-4571.pdf["https://www.netapp.com/us/media/tr-4571.pdf"^]
+
+* TR-4597: ONTAP가 설치된 VMware vSphere
++
+https://www.netapp.com/us/media/tr-4597.pdf["https://www.netapp.com/us/media/tr-4597.pdf"^]
+
+* TR-4598: FabricPool 모범 사례
++
+https://www.netapp.com/us/media/tr-4598.pdf["https://www.netapp.com/us/media/tr-4598.pdf"^]
+
+* TR-4684: NVMe/FC를 사용하여 최신 SAN 구현 및 구성
++
+https://www.netapp.com/pdf.html?item=/media/10681-tr4684.pdf["https://www.netapp.com/pdf.html?item=/media/10681-tr4684.pdf"^]
+
+* TR-4678: 데이터 보호 및 백업 - FlexGroup 볼륨
++
+https://www.netapp.com/us/media/tr-4678.pdf["https://www.netapp.com/us/media/tr-4678.pdf"^]
+
+* TR-4689: MetroCluster IP 솔루션 아키텍처 및 설계
++
+https://www.netapp.com/us/media/tr-4689.pdf["https://www.netapp.com/us/media/tr-4689.pdf"^]
+
+* TR-4705: NetApp MetroCluster 솔루션 아키텍처 및 설계
++
+https://www.netapp.com/pdf.html?item=/media/13480-tr4705pdf.pdf["https://www.netapp.com/pdf.html?item=/media/13480-tr4705pdf.pdf"^]
+
+* TR-4743: ONTAP의 FlexCache
++
+https://www.netapp.com/pdf.html?item=/media/7336-tr4743pdf.pdf["https://www.netapp.com/pdf.html?item=/media/7336-tr4743pdf.pdf"^]
+
+* TR-4814:S3 in ONTAP 모범 사례
++
+https://www.netapp.com/pdf.html?item=/media/17219-tr4814pdf.pdf["https://www.netapp.com/pdf.html?item=/media/17219-tr4814pdf.pdf"^]
+
+
+
+
+
+== 팟캐스트
+
+* Tech OnTap 팟캐스트 에피소드 288: ONTAP 시스템 관리자 9.9.1
++
+https://soundcloud.com/techontap_podcast/episode-288-ontap-system-manager-991["https://soundcloud.com/techontap_podcast/episode-288-ontap-system-manager-991"^]
+
+

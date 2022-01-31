@@ -1,0 +1,134 @@
+---
+sidebar: sidebar 
+permalink: ontap98fo_data_protection.html 
+keywords: 'TR-4872, Data Protection, Security, Secure Purge, IPSec, NetApp Volume Encryption, NVE, SnapMirror Cloud, SnapMirror Business Continuity (SM-BC)' 
+summary: 이 페이지에서는 데이터의 오프 사이트 복제뿐 아니라 전송 중인 데이터와 유휴 데이터의 보안 유지를 비롯하여 ONTAP 9.8의 최신 데이터 보호 기능에 대해 설명합니다. 
+---
+= 데이터 보호
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+이 문서의 컨텍스트에서 데이터 보호는 데이터의 오프 사이트 복제뿐 아니라 전송 중인 데이터와 유휴 데이터의 보안을 유지하는 개념입니다. 이 섹션에서는 ONTAP 9.8의 향상된 최신 데이터 보호 기능에 대해 설명합니다.
+
+
+
+== 보안
+
+각 ONTAP 릴리스는 새로운 보안 기능과 향상된 기능을 기반으로 구축되며 ONTAP 9.8은 이와 전혀 다릅니다. ONTAP 보안 기능에 대한 자세한 내용은 을 참조하십시오 https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["TR-4569: ONTAP 9용 보안 강화 가이드"^].
+
+
+
+=== 보안 퍼지
+
+기밀 데이터 또는 중요한 데이터가 있는 환경에서는 해당 파일에 액세스할 수 없는 사용자가 액세스할 수 있는 볼륨에 실수로 파일을 기록하면 데이터 유출이라고 알려진 데이터가 생성됩니다. 이렇게 하면 전체 볼륨을 삭제하고 디스크를 문질러 유출이 정리되는 시나리오가 생성됩니다.
+
+NetApp Volume Encryption 및 Secure Purge는 파일과 관련된 보안 암호화 키를 삭제하여 개별 파일을 암호화 방식으로 세분화함으로써 이러한 잠재적 재해를 완화할 수 있는 방법을 제공했습니다. 이 키가 사라지면 해당 데이터는 더 이상 디스크에서 복구할 수 없습니다. 이 프로세스는 미디어 위생 관련 NIST SP 800-88 지침을 사용하여 데이터 복구 회사에서 외부적으로 검증되었습니다.
+
+하지만 안전한 제거에도 한계가 있었습니다. 예를 들어 파일을 제거해야 하는 경우 시스템에서 사용 가능한 공간이 필요한 볼륨 이동을 수행해야 합니다. SnapMirror가 있는 경우 안전한 삭제 작업 후에 베이스라인을 재설정해야 합니다.
+
+ONTAP 9.8의 보안 제거 기능은 다음과 같은 방법으로 이러한 제한 사항을 제거합니다.
+
+* 암호화 파일 파쇄에 대한 간단한 절차를 제공합니다.
+* 기준을 재조정할 필요 없이 기존 SnapMirror 미러를 그대로 유지할 수 있습니다.
+
+
+
+
+=== IPsec
+
+IPsec은 유선으로 응용 프로그램 독립적 암호화를 수행하는 표준 메커니즘입니다. IPSec을 사용하면 사용 중인 프로토콜에 관계없이 네트워크 트래픽을 암호화할 수 있습니다. Kerberos 암호화를 설정하고 사용하기 어려운 NFS와 함께 사용하여 단순화의 기회를 제공할 뿐만 아니라 유선을 통해 iSCSI 트래픽을 암호화하는 유일한 방법도 제공합니다.
+
+ONTAP 9.8은 이제 IPSec에 대한 지원을 추가합니다. IPSec의 ONTAP 구현은 연결 클라이언트와 미리 공유된 비밀 또는 키(PSK)를 사용합니다. 이러한 클라이언트에는 PSK가 포함된 IKEv2를 활용하는 최신 OS가 포함됩니다. Windows OS는 PSK가 포함된 IKEv2를 지원하지 않습니다.
+
+
+
+=== 신뢰할 수 있는 플랫폼 모듈
+
+ONTAP 9.8의 새로운 TPM(신뢰할 수 있는 플랫폼 모듈)을 통해 온보드 키 관리자(OKM)의 암호화 키는 물리적 TPM에 의해 밀폐되어 있어 보안 및 보호 수준이 향상됩니다. TPM으로 전환하는 것은 무중단 프로세스입니다.
+
+
+
+=== NetApp 볼륨 암호화
+
+NetApp Volume Encryption(NVE)은 솔루션이 활성화된 모든 드라이브 유형의 모든 데이터 볼륨을 각 볼륨의 고유 키로 암호화할 수 있는 소프트웨어 솔루션입니다. 이 기능은 ONTAP 9.1부터 사용할 수 있습니다.
+
+ONTAP 9.8은 로그 파일, 클러스터 구성 백업, 코어 파일 및 FIPS-140-2 규격 암호화를 통해 보호하려는 기타 시스템 관련 정보가 포함된 노드 루트 볼륨에 NVE 지원을 제공합니다.
+
+
+
+== SnapMirror 클라우드
+
+SnapMirror는 ONTAP에서 업계 최고의 복제 기술로, 스토리지 관리자가 WAN 연결을 통해 데이터 세트의 정확한 복사본을 만들고 변경된 블록만 복제하여 네트워크 사용률을 줄일 수 있습니다.
+
+지난 몇 번의 ONTAP 릴리즈를 통해 SnapMirror 지원이 확장되어 와 같은 비 ONTAP 시스템까지 편입되었습니다 https://blog.netapp.com/introducing-snapmirror-for-solidfire-element-os-enabling-data-replication-across-the-data-fabric/["SolidFire Element OS입니다"^]. 이제 ONTAP 9.8은 SnapMirror를 활용하여 클라우드 또는 온프레미스 S3 오브젝트 버킷으로 복제할 수 있는 방법을 제공합니다.
+
+image:ontap98fo_image23.png["오류: 그래픽 이미지가 없습니다"]
+
+새로운 기술을 활용합니다 https://blog.netapp.com/new-backup-architecture-snapdiff-v3["SnapDiff 3.0 엔진"^]SnapMirror는 ONTAP NAS 볼륨에서 오브젝트 스토리지 버킷으로 데이터를 안전하고 효율적으로 복제할 수 있습니다. ONTAP Data Fabric 전반에서 하이브리드 클라우드 이동성을 제공합니다.
+
+* 스냅샷을 클라우드 오브젝트 스토리지에 공간 효율적으로 백업하면 스토리지 효율성이 유지됩니다.
+* 전체 볼륨 및 단일 파일 복원을 지원합니다
+
+
+ONTAP 9.8에서 SnapMirror 클라우드를 사용하려면 다음 두 가지 방법 중 하나로 오케스트레이션을 수행해야 합니다. System Manager에서 또는 API 또는 CLI를 통해 직접 지원되지 않습니다.
+
+* 라이선스를 보유한 ISV 파트너 애플리케이션을 통해 백업 및 복원 워크플로우를 생성 및 관리합니다. SnapMirror Cloud 라이센스가 필요합니다.
+* Cloud Backup Service를 통해 SnapMirror Cloud 라이센스가 필요하지 않습니다.
+
+
+SnapDiff 및 SnapMirror Cloud에 대한 자세한 내용은 다음 리소스를 참조하십시오.
+
+* https://soundcloud.com/techontap_podcast/episode-264-netapp-ontap-snapdiff["Tech OnTap 팟캐스트 에피소드 264: NetApp ONTAP SnapDiff"^]
+* https://soundcloud.com/techontap_podcast/episode-265-netapp-snapmirror-cloud-featuring-prolion["Tech OnTap 팟캐스트 에피소드 265: ProLion을 소개하는 NetApp SnapMirror 클라우드"^]
+* https://blog.netapp.com/new-backup-architecture-snapdiff-v3["NetApp 블로그: SnapDiff/SnapMirror Cloud-v3의 새로운 백업 아키텍처"^]
+
+
+
+
+== SnapMirror 비즈니스 연속성(SM-BC)
+
+https://blog.netapp.com/snapmirror-synchronous-ontap-9-6/["SnapMirror Synchronous"^] (SM-S)는 ONTAP 9.5에 도입되었으며 기업에서 백업, 재해 복구 및 데이터 이동성을 위해 의존하는 볼륨 단위의 세분화된 스토리지 효율적인 동기식 데이터 복제를 제공합니다. SM-S는 10ms 미만의 RTT(Round Trip Time)를 제공하는 데이터 센터 또는 원거리 지역에 위치한 완전히 이중화된 ONTAP 스토리지 시스템 간에 NetApp FlexVol 볼륨의 데이터를 복제하여 복구 시점 목표를 0으로 달성할 수 있습니다.
+
+ONTAP 9.8은 SAN 환경에서 SnapMirror Synchronous라는 개념을 사용하며, System Manager를 사용하여 일관성 그룹의 애플리케이션에 자동화된 페일오버 기능을 제공하고, ONTAP 중재자를 사용하여 운영 중단 시 비즈니스 연속성을 관리하고 유지합니다. 이 관계는 동기적이므로 장애 조치 시 애플리케이션이 비트를 놓치지 않습니다. SnapMirror 비즈니스 연속성의 초기 릴리즈는 SAN(iSCSI 및 FCP) 워크로드만 지원합니다.
+
+SnapMirror 비즈니스 연속성에 대한 자세한 내용은 를 참조하십시오 https://soundcloud.com/techontap_podcast/episode-267-snapmirror-business-continuity-sm-bc-for-ontap-98["Tech OnTap 팟캐스트 에피소드 267: SnapMirror 비즈니스 연속성"^].
+
+
+
+== MetroCluster
+
+NetApp MC(MetroCluster) 소프트웨어는 어레이 기반 클러스터링을 동기식 복제와 결합하여 최소의 비용으로 데이터 손실 없이 지속적인 가용성을 제공하는 솔루션입니다. 어레이 기반 클러스터에는 호스트 기반 클러스터링이 가지는 일반적인 종속성과 복잡성이 없으므로 관리가 더욱 간편합니다.
+
+image:ontap98fo_image24.png["오류: 그래픽 이미지가 없습니다"]
+
+MetroCluster는 모든 미션 크리티컬 데이터를 트랜잭션별로 즉시 복제하므로 애플리케이션과 데이터에 중단 없이 액세스할 수 있도록 지원합니다. 표준 데이터 복제 솔루션과 달리 MetroCluster는 호스트 환경에서 원활하게 작동하여 지속적인 데이터 가용성을 제공하고, 복잡한 페일오버 스크립트를 생성하고 유지할 필요가 없습니다.
+
+MetroCluster를 사용하면 다음 작업을 수행할 수 있습니다.
+
+* 투명한 전환을 통해 하드웨어, 네트워크, 사이트 장애로부터 보호
+* 계획되거나 계획되지 않은 다운타임과 변경 관리 제거
+* 운영을 중단하지 않고 하드웨어와 소프트웨어 업그레이드
+* 복잡한 스크립팅, 애플리케이션 또는 운영 체제 종속성 없이 구축
+* VMware, Microsoft, Oracle, SAP 또는 기타 중요한 애플리케이션의 지속적인 가용성 실현
+
+
+ONTAP 9.8은 MetroCluster에 대해 다음과 같은 향상된 기능을 제공합니다.
+
+* * 새로운 엔트리 레벨 및 미드레인지 플랫폼 지원 * NetApp AFF A250, FAS8300, FAS 8700 하이브리드 및 A400. A220, FAS2750 및 FAS500f를 새로 설치하면 VLAN을 100-4096 미만으로 지정할 수 있습니다.
+* * MC-FC에서 MC-IP로 무중단 전환 * 4노드 클러스터만 해당, 2노드 MCC에는 다운타임이 필요함. 향후 기술 업데이트를 통해 MC IP로 간편하게 이동할 수 있습니다.
+* * 미러링되지 않은 애그리게이트는 이제 MC IP에 대해 지원됩니다. * 더 높은 애플리케이션 세분화를 위해 원하는 애그리게이트만 페일오버 사이트에 복제합니다.
+* 추가 100G 포트 라이센스가 있는 BES-53248 스위치의 Cisco 9336C-FX2 스위치 및 A400, FAS 8300, FAS 8700을 지원합니다.
+
+
+MetroCluster에 대한 자세한 내용은 다음 리소스를 참조하십시오.
+
+* https://www.netapp.com/us/media/tr-4375.pdf["TR-4375: ONTAP 9.7용 MetroCluster FC"^]
+* https://www.netapp.com/us/media/tr-4689.pdf["TR-4689: MetroCluster IP 솔루션 아키텍처 및 설계"^]
+* https://www.netapp.com/pdf.html?item=/media/13480-tr4705pdf.pdf["TR-4705: NetApp MetroCluster 솔루션 아키텍처 및 설계"^]
+
+
+link:ontap98fo_vmware_virtualization.html["다음: VMware 가상화"]

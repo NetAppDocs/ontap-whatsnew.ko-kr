@@ -1,0 +1,87 @@
+---
+sidebar: sidebar 
+permalink: ontap98fo_technical_resources.html 
+keywords:  
+summary: 이 페이지에는 ONTAP 9.8과 관련된 다양한 기술 리소스에 대한 링크가 포함되어 있습니다. 
+---
+= 기술 리소스
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+이 섹션에서는 이 문서에 언급된 기능을 자세히 설명하는 데 사용할 수 있는 기술 리소스를 다룹니다.
+
+
+
+== 기술 보고서
+
+* TR-4067: NetApp ONTAP NFS 모범 사례 및 구축 가이드
++
+https://www.netapp.com/us/media/tr-4067.pdf["https://www.netapp.com/us/media/tr-4067.pdf"^]
+
+* TR-4375: ONTAP 9.7용 MetroCluster FC
++
+https://www.netapp.com/us/media/tr-4375.pdf["https://www.netapp.com/us/media/tr-4375.pdf"^]
+
+* TR-4569: ONTAP 9용 보안 강화 가이드
++
+https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf["https://www.netapp.com/pdf.html?item=/media/10674-tr4569pdf.pdf"^]
+
+* TR-4571: NetApp FlexGroup 볼륨 모범 사례
++
+https://www.netapp.com/us/media/tr-4571.pdf["https://www.netapp.com/us/media/tr-4571.pdf"^]
+
+* TR-4597: ONTAP가 설치된 VMware vSphere
++
+https://www.netapp.com/us/media/tr-4597.pdf["https://www.netapp.com/us/media/tr-4597.pdf"^]
+
+* TR-4598: FabricPool 모범 사례
++
+https://www.netapp.com/us/media/tr-4598.pdf["https://www.netapp.com/us/media/tr-4598.pdf"^]
+
+* TR-4678: 데이터 보호 및 백업 - FlexGroup 볼륨
++
+https://www.netapp.com/us/media/tr-4678.pdf["https://www.netapp.com/us/media/tr-4678.pdf"^]
+
+* TR-4689: MetroCluster IP 솔루션 아키텍처 및 설계
++
+https://www.netapp.com/us/media/tr-4689.pdf["https://www.netapp.com/us/media/tr-4689.pdf"^]
+
+* TR-4705: NetApp MetroCluster 솔루션 아키텍처 및 설계
++
+https://www.netapp.com/pdf.html?item=/media/13480-tr4705pdf.pdf["https://www.netapp.com/pdf.html?item=/media/13480-tr4705pdf.pdf"^]
+
+* TR-4743: ONTAP의 FlexCache
++
+https://www.netapp.com/pdf.html?item=/media/7336-tr4743pdf.pdf["https://www.netapp.com/pdf.html?item=/media/7336-tr4743pdf.pdf"^]
+
+
+
+
+
+== 팟캐스트
+
+* Tech OnTap 팟캐스트 에피소드 263: ONTAP에서의 가상화 – 2020년 가을
++
+https://soundcloud.com/techontap_podcast/episode-263-virtualization-in-ontap-fall-2020-update["https://soundcloud.com/techontap_podcast/episode-263-virtualization-in-ontap-fall-2020-update"^]
+
+* Tech OnTap 팟캐스트 에피소드 264: NetApp ONTAP SnapDiff
++
+https://soundcloud.com/techontap_podcast/episode-264-netapp-ontap-snapdiff["https://soundcloud.com/techontap_podcast/episode-264-netapp-ontap-snapdiff"^]
+
+* Tech OnTap 팟캐스트 에피소드 265: ProLion을 소개하는 NetApp SnapMirror 클라우드
++
+https://soundcloud.com/techontap_podcast/episode-265-netapp-snapmirror-cloud-featuring-prolion["https://soundcloud.com/techontap_podcast/episode-265-netapp-snapmirror-cloud-featuring-prolion"^]
+
+* Tech OnTap 팟캐스트 에피소드 266: NetApp ONTAP 시스템 관리자 9.8
++
+https://soundcloud.com/techontap_podcast/episode-266-netapp-system-manager-98["https://soundcloud.com/techontap_podcast/episode-266-netapp-system-manager-98"^]
+
+* Tech OnTap 팟캐스트 에피소드 267: SnapMirror 비즈니스 연속성
++
+https://soundcloud.com/techontap_podcast/episode-267-snapmirror-business-continuity-sm-bc-for-ontap-98["https://soundcloud.com/techontap_podcast/episode-267-snapmirror-business-continuity-sm-bc-for-ontap-98"^]
+
+

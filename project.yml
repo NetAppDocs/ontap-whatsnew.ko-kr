@@ -1,0 +1,41 @@
+---
+settings:
+  name: ONTAP What's New
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ko-kr,us-en,ja-jp,zh-cn
+sidebar:
+  entries:
+  - title: NetApp ONTAP 9.9.1 기능 개요
+    url: "/index.html"
+    type: solution
+    entries:
+    - title: System Manager의 향상된 기능
+      url: "/ontap991fo_system_manager_enhancements.html"
+    - title: SAN의 향상된 기능
+      url: "/ontap991fo_san_enhancements.html"
+    - title: 데이터 보호 기능이 향상되었습니다
+      url: "/ontap991fo_data_protection_enhancements.html"
+    - title: 기타 주요 추가 사항
+      url: "/ontap991fo_other_major_additions.html"
+    - title: 기술 리소스
+      url: "/ontap991fo_technical_resources.html"
+  - title: NetApp ONTAP 9.8 기능 개요
+    url: "/ontap98fo_netapp_ontap.html"
+    type: solution
+    entries:
+    - title: 간편성 향상
+      url: "/ontap98fo_simplicity_enhancements.html"
+    - title: 데이터 프로토콜
+      url: "/ontap98fo_data_protocols.html"
+    - title: 스토리지 효율성
+      url: "/ontap98fo_storage_efficiencies.html"
+    - title: 데이터 보호
+      url: "/ontap98fo_data_protection.html"
+    - title: VMware 가상화
+      url: "/ontap98fo_vmware_virtualization.html"
+    - title: 기술 리소스
+      url: "/ontap98fo_technical_resources.html"

@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: ontap98fo_netapp_ontap.html 
+keywords: TR-4872, 4872, introduction, NAS, SAN, NFS, SMB, S3, HA 
+summary: 이 페이지에서는 ONTAP 9.8의 최신 기능에 대한 개요와 자세한 정보 링크를 제공합니다. 
+---
+= TR-4872: NetApp ONTAP 9.8 기능 개요
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Justin Parisi, NetApp에서 설명합니다
+
+NetApp ONTAP는 NetApp의 업계 최고 데이터 관리 소프트웨어로, 온프레미스, 에지 또는 클라우드 어디서나 데이터를 원활하게 관리하고 보호할 수 있도록 지원합니다.
+
+NetApp ONTAP은 동일한 플랫폼에서 다음과 같은 기능을 모두 지원합니다.
+
+* NAS 프로토콜(NFS 및 SMB)
+* SAN 프로토콜(iSCSI, FCP 및 NVMe)
+* S3 데이터 액세스
+* 데이터 보호(NetApp Snapshot 복사본, NetApp SnapMirror 및 SnapVault 기술)
+* 스토리지 효율성(중복제거, 컴팩션, 압축)
+* 고가용성(HA) 페일오버(All-SAN 어레이의 계층 1 SAN에 대한 빠른 페일오버 포함)
+* All-Flash, 회전식 드라이브 및 하이브리드 디스크 구성 지원
+* 보안 기능(다단계 인증, NetApp Volume Encryption 및 Secure Purge)
+
+
+이것은 포괄적인 목록이 아닙니다. ONTAP에서 제공하는 모든 기능을 포함한다면 이 문서의 길이가 수백 페이지일 것입니다.
+
+NetApp ONTAP에 대한 자세한 내용은 를 참조하십시오 https://www.netapp.com/pdf.html?item=/media/7413-ds-3231.pdf["ONTAP 9 데이터 관리 소프트웨어 데이터 시트"^] 및.
+
+이 내용을 확인해 보십시오 link:https://tv.netapp.com/detail/video/6211778986001["비디오"] NetApp Insight 2020에서 NetApp ONTAP의 주목할 만한 발전을 더 폭넓게 볼 수 있습니다.
+
+link:ontap98fo_simplicity_enhancements.html["다음으로 단순성 향상"]

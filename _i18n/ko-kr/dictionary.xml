@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="de2f0bf3ebee995674ce3c76cbd7e038" category="summary">이 페이지에는 ONTAP 9.8과 관련된 다양한 기술 리소스에 대한 링크가 포함되어 있습니다.</block>
+  <block id="67119cf255651ee1066dcd9c394366ae" category="doc">기술 리소스</block>
+  <block id="e245c544ebad370433034b2761b307e4" category="paragraph">이 섹션에서는 이 문서에 언급된 기능을 자세히 설명하는 데 사용할 수 있는 기술 리소스를 다룹니다.</block>
+  <block id="f3fdb00a56777878fa917a490c204f99" category="section-title">기술 보고서</block>
+  <block id="8677ea535e878cbb30dc70f86215203c" category="list-text">TR-4067: NetApp ONTAP NFS 모범 사례 및 구축 가이드</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="f9a0e5a019ed35f6590e96cccd997f71" category="inline-link"><block ref="f9a0e5a019ed35f6590e96cccd997f71" category="inline-link-rx"></block></block>
+  <block id="fd1bb4b57d07892ae38470f642f69074" category="paragraph"><block ref="fd1bb4b57d07892ae38470f642f69074" category="inline-link-rx"></block></block>
+  <block id="041d27b17d36340260b6229deae957d6" category="list-text">TR-4375: ONTAP 9.7용 MetroCluster FC</block>
+  <block id="7893283737e4b828f7f7328c574a23e9" category="inline-link"><block ref="7893283737e4b828f7f7328c574a23e9" category="inline-link-rx"></block></block>
+  <block id="9ce4965137976f7e15ce05a9432de0e8" category="paragraph"><block ref="9ce4965137976f7e15ce05a9432de0e8" category="inline-link-rx"></block></block>
+  <block id="96b109c3cfe8255526bad1d2505ad698" category="list-text">TR-4569: ONTAP 9용 보안 강화 가이드</block>
+  <block id="63a419e94ce5e89636cfdf48da2b7298" category="inline-link"><block ref="63a419e94ce5e89636cfdf48da2b7298" category="inline-link-rx"></block></block>
+  <block id="8701d852e7832857dd816459acac648c" category="paragraph"><block ref="8701d852e7832857dd816459acac648c" category="inline-link-rx"></block></block>
+  <block id="d3cde8349496770e1691c2c18a0dcdde" category="list-text">TR-4571: NetApp FlexGroup 볼륨 모범 사례</block>
+  <block id="baf8e9fa2301f45f9abf0b6e9dba3e17" category="inline-link"><block ref="baf8e9fa2301f45f9abf0b6e9dba3e17" category="inline-link-rx"></block></block>
+  <block id="f473bc55fb079f0338493530316efc6f" category="paragraph"><block ref="f473bc55fb079f0338493530316efc6f" category="inline-link-rx"></block></block>
+  <block id="75f86438e5e6bca3e9341dd22299f5bb" category="list-text">TR-4597: ONTAP가 설치된 VMware vSphere</block>
+  <block id="394d2dc1906abb1eb0179c8c6517e7f9" category="inline-link"><block ref="394d2dc1906abb1eb0179c8c6517e7f9" category="inline-link-rx"></block></block>
+  <block id="b9afe56f6ed16c1d91815e60e7196e30" category="paragraph"><block ref="b9afe56f6ed16c1d91815e60e7196e30" category="inline-link-rx"></block></block>
+  <block id="a2de429ddb8e87ebd2daa3408bced42e" category="list-text">TR-4598: FabricPool 모범 사례</block>
+  <block id="0d4778fa4ac07861f93d0d0435b354d1" category="inline-link"><block ref="0d4778fa4ac07861f93d0d0435b354d1" category="inline-link-rx"></block></block>
+  <block id="0dc6c6284d2c41d2e2c2648e08629ebd" category="paragraph"><block ref="0dc6c6284d2c41d2e2c2648e08629ebd" category="inline-link-rx"></block></block>
+  <block id="fa88a29d955ad6bd4b5162276eb45725" category="list-text">TR-4678: 데이터 보호 및 백업 - FlexGroup 볼륨</block>
+  <block id="fb61115c1ac52f462ada88ac13e3ae12" category="inline-link"><block ref="fb61115c1ac52f462ada88ac13e3ae12" category="inline-link-rx"></block></block>
+  <block id="564daef4e624d72370dc00695f413f7f" category="paragraph"><block ref="564daef4e624d72370dc00695f413f7f" category="inline-link-rx"></block></block>
+  <block id="dac8000b8c5d9ab9a106f367845396b2" category="list-text">TR-4689: MetroCluster IP 솔루션 아키텍처 및 설계</block>
+  <block id="258e44fe8a245b2fe8cb9c4621300a10" category="inline-link"><block ref="258e44fe8a245b2fe8cb9c4621300a10" category="inline-link-rx"></block></block>
+  <block id="88b56262c5b1413e9995f4b8219eab22" category="paragraph"><block ref="88b56262c5b1413e9995f4b8219eab22" category="inline-link-rx"></block></block>
+  <block id="d6fc4dfec8b122b67eabad2dfef121be" category="list-text">TR-4705: NetApp MetroCluster 솔루션 아키텍처 및 설계</block>
+  <block id="429c0e0f41d9bd95e1c2babc1f5dff37" category="inline-link"><block ref="429c0e0f41d9bd95e1c2babc1f5dff37" category="inline-link-rx"></block></block>
+  <block id="20487f748dd320fa3660c89ce8247be5" category="paragraph"><block ref="20487f748dd320fa3660c89ce8247be5" category="inline-link-rx"></block></block>
+  <block id="7d8308267015e1192f8f54543c1cff58" category="list-text">TR-4743: ONTAP의 FlexCache</block>
+  <block id="e8066ccf2c8eee8447fe86574ab596f4" category="inline-link"><block ref="e8066ccf2c8eee8447fe86574ab596f4" category="inline-link-rx"></block></block>
+  <block id="f2eeec57b79a1635d780e65d8de96cfe" category="paragraph"><block ref="f2eeec57b79a1635d780e65d8de96cfe" category="inline-link-rx"></block></block>
+  <block id="9bf72350632fdc8eedb8dc474f164954" category="section-title">팟캐스트</block>
+  <block id="da5bc71c64b621b3b18568cfd93032f4" category="list-text">Tech OnTap 팟캐스트 에피소드 263: ONTAP에서의 가상화 – 2020년 가을</block>
+  <block id="4fe750b3298967a76ad3cae9b2a9b1f9" category="inline-link"><block ref="4fe750b3298967a76ad3cae9b2a9b1f9" category="inline-link-rx"></block></block>
+  <block id="b2af81c932fcdc2b9d072c117c630dd1" category="paragraph"><block ref="b2af81c932fcdc2b9d072c117c630dd1" category="inline-link-rx"></block></block>
+  <block id="549c3e5b334e67991a7e1b3ea870754d" category="list-text">Tech OnTap 팟캐스트 에피소드 264: NetApp ONTAP SnapDiff</block>
+  <block id="62ad678b89640a8f51267bc2a1bfc861" category="inline-link"><block ref="62ad678b89640a8f51267bc2a1bfc861" category="inline-link-rx"></block></block>
+  <block id="eadfa31f97ee554bf720d05fdb7eb146" category="paragraph"><block ref="eadfa31f97ee554bf720d05fdb7eb146" category="inline-link-rx"></block></block>
+  <block id="1f5b3f6ebe1090404b2ba3ee99e7808a" category="list-text">Tech OnTap 팟캐스트 에피소드 265: ProLion을 소개하는 NetApp SnapMirror 클라우드</block>
+  <block id="295f11f14b6f3718e07d44a9a30fd37d" category="inline-link"><block ref="295f11f14b6f3718e07d44a9a30fd37d" category="inline-link-rx"></block></block>
+  <block id="3e017b5b2f028e6c43f8926c592867fd" category="paragraph"><block ref="3e017b5b2f028e6c43f8926c592867fd" category="inline-link-rx"></block></block>
+  <block id="d79bd7d3f213997532c80d912bfebdab" category="list-text">Tech OnTap 팟캐스트 에피소드 266: NetApp ONTAP 시스템 관리자 9.8</block>
+  <block id="7939367cde7461ebf23eebeb9e061adf" category="inline-link"><block ref="7939367cde7461ebf23eebeb9e061adf" category="inline-link-rx"></block></block>
+  <block id="deb52e558d6375117f733545c4203489" category="paragraph"><block ref="deb52e558d6375117f733545c4203489" category="inline-link-rx"></block></block>
+  <block id="80242ddef2f2c83392b7749391a84ff1" category="list-text">Tech OnTap 팟캐스트 에피소드 267: SnapMirror 비즈니스 연속성</block>
+  <block id="76a7b203121b98d0eee4bfeb001709ee" category="inline-link"><block ref="76a7b203121b98d0eee4bfeb001709ee" category="inline-link-rx"></block></block>
+  <block id="cf772e897f0446394758039ef3d6255f" category="paragraph"><block ref="cf772e897f0446394758039ef3d6255f" category="inline-link-rx"></block></block>
+  <block id="d451779b36b1939b974b8f0b9a3fc5ef" category="summary">이 페이지에서는 VMware NFS 데이터 저장소로 FlexGroup 볼륨을 프로비저닝하는 작업을 비롯하여 VMware 가상화를 위한 ONTAP 9.8의 새로운 통합 및 지원에 대해 설명합니다. 또한 전체 ONTAP 클러스터의 성능을 제공하는 확장 가능한 단일 데이터 저장소를 통해 데이터 저장소 관리를 간소화합니다.</block>
+  <block id="2e130352b486464834bcc7dda1ff2603" category="doc">VMware 가상화</block>
+  <block id="b1d46fa388a75bf4a6fdf6431fd0f88f" category="paragraph">ONTAP 9.8의 VMware 통합 및 지원은 FlexGroup 데이터 저장소 지원을 비롯한 여러 가지 새로운 기능으로 인해 향상됩니다. ONTAP 9.8을 사용하면 FlexGroup 볼륨을 VMware NFS 데이터 저장소로 프로비저닝할 수 있으므로 전체 ONTAP 클러스터의 성능을 제공하는 확장 가능한 단일 데이터 저장소를 통해 데이터 저장소 관리를 간소화할 수 있습니다. 이러한 새로운 기능 중 다수는 VMware vSphere 9.8 릴리즈용 ONTAP 툴과 함께 제공됩니다.</block>
+  <block id="8d22b59ce6a3f5f55852f641fe32f634" category="paragraph">이는 다음과 같은 사항이 적용됨을 의미합니다.</block>
+  <block id="edf6089078ece0618b0cbf28aadbd430" category="list-text">검증된 성능 및 배치</block>
+  <block id="14ac1770aa6a961d17a35b60c5b87280" category="list-text">interop 한정자</block>
+  <block id="3bad7ef0dfae0592627755796b25462b" category="list-text">VAAI 복사 오프로드가 향상되어 작업을 신속하게 수행하고 백그라운드에서 완료합니다</block>
+  <block id="19793deb9a49d2f5172b773dfc0118c5" category="list-text">FlexGroup 프로비저닝, 크기 조정 및 삭제, 개별 VM에 대한 QoS 설정, VM에 대한 성능 메트릭(지연 시간, IOPS, 처리량)을 표시하는 등 가상 스토리지 콘솔이 지원됩니다</block>
+  <block id="662d7a9e954fd7ecea04797658a67fdf" category="list-text">NetApp SnapCenter 기본 스토리지 백업 및 복구 지원</block>
+  <block id="cd6f7ff91fc5499199c6664de0434694" category="list-text">최대 64TB VMFS LUN 지원 NetApp All-SAN 어레이에서 128TB LUN/300TB FlexVol 볼륨을 지원하므로 VMware vSphere 9.8 릴리즈용 ONTAP 툴에서 가상 스토리지 콘솔을 사용하여 최대 64TB VMFS 데이터 저장소를 프로비저닝할 수 있습니다.</block>
+  <block id="92ff10610f02d69d0210f44405b7168f" category="inline-link">SRM(사이트 복구 관리자)</block>
+  <block id="0ce4ec45a946257ae8143d2cc90fcaca" category="list-text">증가<block ref="c9af02025b1bf45281286240e0215380" category="inline-link-rx"></block> 확장: VMware vSphere 9.8 릴리즈용 ONTAP 툴의 스토리지 복제 어댑터는 최대 512개까지 지원되는 데이터 저장소 및 보호 그룹의 크기를 늘립니다.</block>
+  <block id="8e7ea82c671030c62dec6e5646ce0674" category="list-text">REST API를 사용한 VMware vSphere VVOL 파일 메트릭 VVOL 파일 메트릭에 대한 REST API 지원이 ONTAP 9.8에 추가되어 가상 스토리지 콘솔에서 대시보드 및 보고서에 VVOL에 대한 ONTAP 스토리지 성능 메트릭을 표시할 수 있습니다.</block>
+  <block id="410414402089bdca884f44be14088a59" category="inline-link">SRA(Storage Replication Adapter)</block>
+  <block id="63b956da14094cef99ccee71599fdd6d" category="list-text"><block ref="7e358b6730372bc2e637b94492dbbbf6" category="inline-link-rx"></block> SnapMirror Synchronous 지원</block>
+  <block id="6015fcf0a9cd608ed0e3aa71296f41d4" category="inline-link">VMware Tanzu입니다</block>
+  <block id="8196dcbf9586cd0081ca8c94d6eec4ad" category="list-text">에 대한 지원<block ref="d0daefdc677909f35162a0118f978227" category="inline-link-rx"></block> 스토리지</block>
+  <block id="ac66e55267029225d12d67c48e998acc" category="list-text">향상된 SAN VVOL 재조정 명령 및 스토리지 기능 프로필의 개선 기능을 비롯하여 VVOL에 대한 지원 개선 최신 VMware 가상화 지원에 대한 자세한 내용은 다음 리소스를 참조하십시오.</block>
+  <block id="e4c4075a8c06d40ae4b59e37bb084cef" category="list-text"><block ref="e4c4075a8c06d40ae4b59e37bb084cef" category="inline-link-rx"></block></block>
+  <block id="ef5bb91ba96e022044cd2c0d3c47544b" category="list-text"><block ref="ef5bb91ba96e022044cd2c0d3c47544b" category="inline-link-rx"></block></block>
+  <block id="87fd7f31d9bf69ec56403c0396257a5f" category="summary">이 문서의 컨텍스트에서 데이터 보호는 데이터의 오프 사이트 복제 및 자동화된 사이트 인프라 페일오버에 대한 개념을 모두 나타냅니다. 이 섹션에서는 ONTAP 9.9.1의 최신 데이터 보호 개선 사항에 대해 다룹니다.</block>
+  <block id="d2d40d9589bc0006ef3df0199edcc583" category="doc">데이터 보호 기능이 향상되었습니다</block>
+  <block id="398bd26e5b9faf8ca653d4ea7d28bddf" category="section-title">SnapMirror 비즈니스 연속성을 통해 SAN을 위한 투명한 애플리케이션 페일오버</block>
+  <block id="8b9c6dceb72395fc955e7e725734d4ec" category="paragraph">NetApp SnapMirror는 다음과 같은 다양한 사용 사례에 활용할 수 있는 업계 최고의 복제 기술입니다.</block>
+  <block id="8d86f1cb050f828b2222eb9546eb40d4" category="list-text">운영 중단 중 신속한 사이트 페일오버를 위한 재해 복구, 그리고 운영 상태로 빠르게 재동기화</block>
+  <block id="9b20c54d702c422c591d8b475fc39dc6" category="list-text">원격 사이트에 있는 데이터의 최대 보조 복제본을 위한 동기식 복제</block>
+  <block id="5c8691739bafac4202ee25dc21b0231e" category="list-text">백업 및 아카이브 사용 사례(소스보다 더 많은 스냅샷 복사본 대상)</block>
+  <block id="5d9cf4585c5e022d403aa48899c380ea" category="inline-link">ONTAP에서의 SnapMirror 비즈니스 연속성</block>
+  <block id="870c79e18f1d4c5f02e7101f3d597bf6" category="paragraph"><block ref="1392ef01e00edd1cfbe727dec5db0112" category="inline-link-rx"></block> SnapMirror가 제공하는 기능을 확장하고 동기식 SnapMirror 관계의 빠르고 쉬운 자동 페일오버를 제공하여 애플리케이션 레벨의 세분화된 데이터 보호를 지원합니다.</block>
+  <block id="7a153aebca857b141710a212e88bf69a" category="paragraph">SnapMirror 비즈니스 연속성은 중재자를 사용하여 사이트 간에 쿼럼을 유지하고 사이트 장애 발생 시 브레인 분할 시나리오를 방지합니다. 새로운 ONTAP 중재자 소프트웨어 버전(1.2)을 사용할 수 있으며 최대 10개의 ONTAP 시스템을 지원하고 장애 후 120초 이내에 사이트 간 애플리케이션 전환을 자동화합니다.</block>
+  <block id="341d84aa26cb4521474864e04ea2a63b" category="inline-image-macro">오류: 그래픽 이미지가 없습니다</block>
+  <block id="eedcb655269dc6555cce457d1db30a98" category="paragraph"><block ref="eedcb655269dc6555cce457d1db30a98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9606052688ba7ea8a292d061cb529730" category="section-title">IP를 통한 MetroCluster</block>
+  <block id="321c9000417090cddae7990050d52cc8" category="paragraph">NetApp MC(MetroCluster) 소프트웨어는 어레이 기반 클러스터링을 동기식 복제와 결합하여 최소의 비용으로 데이터 손실 없이 지속적인 가용성을 제공하는 솔루션입니다. 어레이 기반 클러스터에는 호스트 기반 클러스터링이 가지는 일반적인 종속성과 복잡성이 없으므로 관리가 더욱 간편합니다.</block>
+  <block id="1d0b7c7dd9a4071dec7b99acaa47cf96" category="paragraph"><block ref="1d0b7c7dd9a4071dec7b99acaa47cf96" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6945cb53b52207c83b268d0d578ce4af" category="paragraph">MetroCluster는 모든 미션 크리티컬 데이터를 트랜잭션별로 즉시 복제하므로 애플리케이션과 데이터에 중단 없이 액세스할 수 있도록 지원합니다. 표준 데이터 복제 솔루션과 달리 MetroCluster는 호스트 환경에서 원활하게 작동하여 지속적인 데이터 가용성을 제공하고, 복잡한 페일오버 스크립트를 생성하고 유지할 필요가 없습니다.</block>
+  <block id="55370266ab6e1d86846f8cedda70d3cd" category="paragraph">MetroCluster를 사용하면 다음 작업을 수행할 수 있습니다.</block>
+  <block id="4bbba3f351a64005580e3c7c271e55ee" category="list-text">투명한 전환을 통해 하드웨어, 네트워크, 사이트 장애로부터 보호</block>
+  <block id="da89a3df908715c9568dbba92893ccee" category="list-text">계획되거나 계획되지 않은 다운타임과 변경 관리 제거</block>
+  <block id="85dcd24e924bcffea339d14fdfed5319" category="list-text">운영을 중단하지 않고 하드웨어와 소프트웨어 업그레이드</block>
+  <block id="af5cbf0e542a306cac58a4fcce9f8ded" category="list-text">복잡한 스크립팅, 애플리케이션 또는 운영 체제 종속성 없이 구축</block>
+  <block id="779e0f4a60a1492972391ba3fb0b6184" category="list-text">VMware, Microsoft, Oracle, SAP 또는 기타 중요한 애플리케이션의 지속적인 가용성 실현</block>
+  <block id="569ae2beefd0828925fe7961bb913f10" category="paragraph">전통적으로 NetApp MetroCluster는 파이버 채널 백엔드로 구현되었지만, 최신 버전의 ONTAP는 백엔드에 IP 네트워크 사용을 지원합니다. 이를 통해 사이트 페일오버 인프라의 비용과 복잡성이 감소될 뿐만 아니라 MetroCluster 범위가 약 700km(또는 300mi)까지 확장됩니다.</block>
+  <block id="e708a8863be8677aea1f6d03a10fdd48" category="paragraph">ONTAP 9.9.1은 MetroCluster에 다음과 같은 향상된 기능을 제공합니다.</block>
+  <block id="40b9747f17f89b030d2ad5047df22aaa" category="list-text">HA 쌍당 1,600개의 볼륨 카운트가 증가되었습니다</block>
+  <block id="c68f7ee3f9ce0f139f18c0e327142ee1" category="list-text">공유 계층 - 3 네트워크</block>
+  <block id="6ebe53927737c839d4ca3151239f019b" category="list-text">더 이상 전용 계층 2 네트워크에 의존하지 않습니다</block>
+  <block id="abc2cb9458ef994f05b76e489e0ed515" category="list-text">ONTAP가 라우터에 직접 연결되어 있어야 합니다</block>
+  <block id="97ea0bd3c01e506b4c0f3e9e760a1265" category="list-text">동적 라우팅 지원 없음</block>
+  <block id="0cdfa5428e9be02aacb91dad7ca190e0" category="list-text">사이트당 노드 수 증가(사이트당 4개, 클러스터당 8개)</block>
+  <block id="f639a653c7f54a8f4a2552590f286055" category="section-title">MetroCluster와 SnapMirror 비즈니스 연속성을 선택해야 하는 경우</block>
+  <block id="7590c941592695ca1611ade1528c1ebc" category="paragraph">MetroCluster 및 SnapMirror 무중단 업무 운영은 동일한 기능 세트(기존 IP 네트워크 활용, 자동 페일오버, 동기식 복제 기능)를 공유하므로 "각 기능을 언제 사용해야 하는지"라는 질문이 더욱 적합합니다.</block>
+  <block id="6b5b774e6525d9d11265c1075af2d432" category="paragraph">정답은 다음 질문에 따라 달라집니다.</block>
+  <block id="10f73605122734865ac8dadf4cd9001e" category="list-text">귀사의 서비스 수준 목표는 무엇입니까?</block>
+  <block id="b0ca0d16ba614a10d060348b262496f0" category="list-text">페일오버의 세부 사항을 어떻게 지정하시겠습니까?</block>
+  <block id="5838f260f449b480e855b807974d7433" category="paragraph">MetroCluster는 HA 쌍 및 물리적 애그리게이트를 위한 자동화된 인프라 페일오버를 제공하고 SAN 및 NAS 워크로드를 지원하며, SnapMirror 비즈니스 연속성은 SAN 워크로드에만 애플리케이션 레벨의 세분성을 제공합니다.</block>
+  <block id="457b0075e8f0333975a8e2aaeaceb149" category="inline-link">MetroCluster IP 솔루션 아키텍처 및 설계</block>
+  <block id="040a2386c947e018daac6e3134103074" category="paragraph">MetroCluster over IP에 대한 자세한 내용은 를 참조하십시오<block ref="1544ee65cdfd3ec8a01277b0dadd4165" category="inline-link-rx"></block>.</block>
+  <block id="ec345c2058d5ca34cb53c767e86fbbf5" category="paragraph">SnapMirror 비즈니스 연속성에 대한 자세한 내용은 를 참조하십시오<block ref="f9d06186b307654014fd14f8bc38c93d" category="inline-link-rx"></block>.</block>
+  <block id="2f43feecfef54eb24f1d9bb618192b5a" category="section-title">FlexGroup 볼륨 데이터 보호</block>
+  <block id="a492cf04f8ac80b9e6d03c7aa7f971ac" category="paragraph">FlexGroup 볼륨은 NetApp ONTAP 스케일아웃 NAS 솔루션으로, 단일 네임스페이스에서 최대 20PB 및 4,000억 개 파일을 제공하는 동시에 대량 수집 워크로드의 로드 밸런싱된 병렬 처리를 통해 용량, 성능 및 단순성을 자동으로 제공합니다.</block>
+  <block id="26ff0c18c262bf8f77310319231ab89d" category="paragraph"><block ref="26ff0c18c262bf8f77310319231ab89d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97889ea4ec470aef3b80c9472cbe0e62" category="paragraph">FlexGroup 볼륨에 대한 자세한 내용은 을 참조하십시오<block ref="8970f11bc28ce0dc037cd78c82083d7c" category="inline-link-rx"></block>.</block>
+  <block id="cef53123418c7a570e70ac3f93a8279e" category="paragraph">ONTAP 9.9.1에서 FlexGroup 볼륨은 다양한 데이터 보호 구성을 지원합니다.</block>
+  <block id="507bc8303555f584722906dfbabae3c1" category="section-title">계단식 및 팬아웃 SnapMirror</block>
+  <block id="bc7180461bac47ab31c6d6ed2a8e9121" category="paragraph">스토리지 관리자는 SnapMirror 캐스케이딩 방식을 사용하여 여러 사이트에 직렬로 복제할 수 있습니다. 예를 들어 사이트 A를 사이트 B(사내 또는 클라우드)로 복제하고 사이트 B를 사용하여 동일한 볼륨을 사이트 C(사내 또는 클라우드)로 복제할 수 있습니다.</block>
+  <block id="69bcf5b57b1e14fceaad6c592cb0a698" category="paragraph"><block ref="69bcf5b57b1e14fceaad6c592cb0a698" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c0235d29b7874dc403b9c684d36d7281" category="paragraph">SnapMirror 팬아웃은 소스 볼륨에서 여러 타겟 볼륨으로 복제할 수 있습니다. 따라서 사이트 A에서 소스 FlexGroup을 사이트 B와 C(사내 또는 클라우드)로 복제할 수 있습니다. 따라서 데이터 보호 구성의 유연성과 복원력이 향상됩니다.</block>
+  <block id="e0713364f9fce3d1ffdd97a61b99eaf8" category="paragraph"><block ref="e0713364f9fce3d1ffdd97a61b99eaf8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9946a1859c12773f5f42fd4b3deaca26" category="section-title">스토리지 가상 시스템 재해 복구(SVM-DR)</block>
+  <block id="2298f63ad2b4e73af819e4172b1177c2" category="paragraph">SVM-DR은 ONTAP 기능으로 데이터 볼륨뿐만 아니라 원격 사이트에 CIFS 공유, NFS 엑스포트, 데이터 LIF, NFS 파일 핸들 등의 SVM 구성 세부 정보를 복제하여 DR 사이트로 페일오버 시 재마운트하지 않도록 지원합니다.</block>
+  <block id="90ab45c884eaa603251e685ace514967" category="paragraph"><block ref="90ab45c884eaa603251e685ace514967" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15f7e8efdb7ad6550617dfc895aa80cb" category="paragraph">ONTAP 9.9.1에서는 FlexGroup 볼륨에 SVM-DR을 지원하며 다음과 같은 제한이 있습니다.</block>
+  <block id="b32727d1bc77badc4de7e6d773e158e0" category="list-text">FabricPool 지원 없음</block>
+  <block id="adbb1c097a5309bfe028c1d95df2cd41" category="list-text">FlexClone이 없습니다</block>
+  <block id="ca68c304dfa2b6686960cc66f2071a9b" category="list-text">SnapMirror 팬아웃 없음</block>
+  <block id="dcb3ff08d98df86641bee34314c995d7" category="list-text">기준선을 다시 설정하지 않고 FlexVol 변환 없음</block>
+  <block id="2cb4e608a09a8156cb7af6c37c6910f2" category="section-title">SnapLock의 향상된 기능</block>
+  <block id="85a3c378211613ea1a1951c8fcfb1a7e" category="inline-link">NetApp SnapLock를 참조하십시오</block>
+  <block id="572b1f4fc5509ece87dbd33c56abb88d" category="paragraph"><block ref="8bcb0a64db7f547fd95821dafa9a314b" category="inline-link-rx"></block> NetApp의 WORM 규정 준수 복제 솔루션입니다. HIPAA, SEC 17a-4(f) 규칙, FINRA, CFTC 등의 규정 지침을 준수해야 하는 워크로드와 독일 국어 국가(DACH)에 대한 국가별 요구 사항을 충족하기 위해 통합 데이터 보호 기능을 제공합니다.</block>
+  <block id="9595274e70fbbc5377f657321c6b5bb0" category="paragraph">SnapLock는 데이터 무결성과 보존 기능을 제공하여 전자 기록의 변경을 막고 빠르게 액세스할 수 있도록 지원합니다. SnapLock 보존 기능은 엄격한 기록 보존 요구 사항을 충족하고 법적 보류, 이벤트 기반 보존 및 볼륨 추가 모드를 비롯한 확장된 보존 요구 사항을 충족하는 것으로 인증되었습니다.</block>
+  <block id="911c508ce382920a63b4323906f6492c" category="paragraph">ONTAP 9.9.1에서는 NetApp SnapLock에 다음과 같은 개선 사항이 있습니다.</block>
+  <block id="fd18465573ec21a6218982055981f6b1" category="inline-link">스토리지 효율성</block>
+  <block id="e26b09dd310fa7c9a3ede5f09fca5830" category="list-text"><block ref="42417581c7aea6c6377cc8d85dd8ffc6" category="inline-link-rx"></block> WORM 볼륨 지원 데이터 컴팩션, 볼륨 간/애그리게이트 레벨의 중복제거(AFF만 해당), 지속적인 세그먼트 정리, 온도에 민감한 스토리지 효율성 지원</block>
+  <block id="54d579c3f0589be31000bdf2c3524ead" category="inline-link">NetApp SnapLock를 사용하여 WORM 스토리지 규정 준수</block>
+  <block id="0a1cccfcd4a41666314e4d98bc663bcb" category="list-text">LUN의 스냅샷 복사본이 포함된 SnapLock 볼륨의 랜섬웨어 보호.SnapLock에 대한 자세한 내용은 을 참조하십시오<block ref="11159f4c8dea02494c7a604be4d6264b" category="inline-link-rx"></block>.</block>
+  <block id="26b1956ec2bdaa19850533717a914fa4" category="paragraph">SnapLock에 대한 자세한 내용은 를 참조하십시오<block ref="11159f4c8dea02494c7a604be4d6264b" category="inline-link-rx"></block>.</block>
+  <block id="1f771b533947d5d021bc8913e5491108" category="summary">NetApp ONTAP는 업계 최고의 데이터 관리 소프트웨어로, 온프레미스, 에지 또는 클라우드 어디서나 데이터를 원활하게 관리하고 보호할 수 있도록 지원합니다.</block>
+  <block id="4bdaf2332726632f9a7f539047efbef2" category="doc">TR-4894: NetApp ONTAP 9.9.1 기능 개요</block>
+  <block id="b84294f0737ecf3f4524a06191d36d0e" category="paragraph">Justin Parisi, NetApp에서 설명합니다</block>
+  <block id="2b30a7e82febcc7a217d3308eda2fa89" category="paragraph">NetApp ONTAP은 동일한 플랫폼에서 다음과 같은 기능을 모두 지원합니다.</block>
+  <block id="452054cf9799b179cb23f3f83f631c22" category="list-text">NAS 프로토콜(NFS 및 SMB)</block>
+  <block id="fe0b62fd8ac2a04e5add07964fbbdc7d" category="list-text">SAN 프로토콜(iSCSI, FCP 및 NVMe)</block>
+  <block id="8d7e886c2cfed463633ccfe5bb74b410" category="list-text">S3 데이터 액세스</block>
+  <block id="d970b6e0a04dcd2f503b802f2c249bc9" category="list-text">데이터 보호(NetApp Snapshot 복사본, NetApp SnapMirror 및 SnapVault 기술)</block>
+  <block id="ebb9f32915e7e984e76f37e227f4fa7f" category="list-text">스토리지 효율성(중복제거, 컴팩션, 압축)</block>
+  <block id="b8b6244c89771a6e7e06e8e5215975d9" category="list-text">고가용성(HA) 페일오버(All-SAN 어레이의 계층 1 SAN에 대한 빠른 페일오버 포함)</block>
+  <block id="f8a8c17e7d55d3ce839e179fcb381501" category="list-text">All-Flash, 회전식 드라이브 및 하이브리드 디스크 구성 지원</block>
+  <block id="368923abde49c3e18fd203dca0269313" category="list-text">보안 기능(다단계 인증, NetApp Volume Encryption 및 Secure Purge)</block>
+  <block id="71b2d9d2ec5a1f454485224e22a32876" category="paragraph">이 목록은 종합 목록이 아닙니다. ONTAP에서 제공하는 모든 기능을 포함한다면 이 문서의 길이가 수백 페이지일 것입니다!</block>
+  <block id="7632cad0be6f791fa14e8255022c2ec4" category="inline-link">ONTAP 9 데이터 관리 소프트웨어 데이터 시트</block>
+  <block id="ba280e6b078e45696fe8eb092c2b0136" category="paragraph">NetApp ONTAP에 대한 자세한 내용은 를 참조하십시오<block ref="9f226f00b05919fb270a59d22a5cd7f4" category="inline-link-rx"></block> 및 제품 설명서를 참조하십시오.</block>
+  <block id="cbf7022dfa4cdd99c195139de5b27a80" category="summary">ONTAP 9.9.1에서는 고객 피드백을 수집하고 GUI에 대한 일부 문제를 해결했으며 일부 누락된 기능을 다시 추가하고 새 기능 및 향상된 기능을 추가했습니다.</block>
+  <block id="18176bd419035939e3cb75a02ba71cd1" category="doc">System Manager의 향상된 기능</block>
+  <block id="e1ce63bdacc7d3e2c7e4d519a166aff5" category="inline-link">System Manager 문서</block>
+  <block id="b9827a7987237070daf022b7a56098b9" category="paragraph">ONTAP 9.8에 도입된 ONTAP용 향상된 GUI 경험을 통해 일부 기능이 이동되었거나 더 이상 사용할 수 없는 것을 알 수 있습니다. ONTAP 9.9.1에서는 고객 피드백을 수집하고 GUI에 대한 일부 문제를 해결했으며 일부 누락된 기능을 다시 추가하고 새 기능 및 향상된 기능을 추가했습니다. 다음 섹션에서는 이러한 변경 사항과 새로 추가된 사항에 대해 설명합니다. System Manager에 대한 자세한 내용은 에서 확인할 수도 있습니다<block ref="fe9591320b453d2315edb0f781b9fdbb" category="inline-link-rx"></block>.</block>
+  <block id="11c45aa57715db3758d969638cf2dbe4" category="section-title">기능 복원/사용성 향상</block>
+  <block id="00e56cc977d4a4841d3b2973404269a6" category="paragraph">당신이 그것을 요청했고, 우리는 경청했습니다. ONTAP 9.9.1에서는 ONTAP 9.8 System Manager에서 더 이상 사용할 수 없는 일부 기능이 제품에 다시 추가되었습니다. 또한 새로운 사용 편의성 향상도 포함되었습니다.</block>
+  <block id="261dfd4a80410dfaedcad88627539df0" category="section-title">볼륨 프로비저닝 중에 로컬 계층/애그리게이트를 수동으로 선택</block>
+  <block id="4ea96178861a8766ca3f38c503876b2c" category="paragraph">System Manager 9.9.1을 사용하면 FlexGroup 볼륨 생성 중에 애그리게이트를 지정하는 기능 등, 새 볼륨을 프로비저닝할 때 사용할 물리적 스토리지 계층을 수동으로 선택할 수 있습니다. 선택적으로, ONTAP 및 System Manager에서 균형 잡힌 배치 논리를 기반으로 계속 선택할 수 있습니다.</block>
+  <block id="ab447c8b900b649e7ef48ded87386c79" category="section-title">용량 표시 기능 향상</block>
+  <block id="d6e2b5169fbb50ca6b6d578c5773f46e" category="paragraph">이제 ONTAP의 스냅샷 복사본에서 논리적 사용 공간을 확인하고 스냅샷 복사본 유무와 상관없이 스토리지 효율성 비율을 확인할 수 있습니다.</block>
+  <block id="dd92fbc44b4d0c86d962e78c44b8cd80" category="paragraph">다음 그림은 ONTAP System Manager 9.9.1 용량 보기를 보여 줍니다.</block>
+  <block id="d21f2c76aee857bfb0d9648722e1429d" category="paragraph"><block ref="d21f2c76aee857bfb0d9648722e1429d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0aff7c3f0d340285a006127b95c34c4" category="section-title">NVMe over Fibre Channel – LIF 생성</block>
+  <block id="3cc3158e8541f70d993feae31cd6b690" category="paragraph">System Manager를 사용하면 포트 상태, 비대칭 포트 선택, 포트당 생성된 LIF 수를 볼 수 있는 기능 등 NVMe over Fibre Channel 네임스페이스에서 사용되는 LIF를 생성하고 볼 수 있으므로 물리적 네트워크 인터페이스에 대한 과부하를 방지할 수 있습니다.</block>
+  <block id="2e3e4c9c49f595d3dd80686f34cccb6e" category="section-title">EMS 이벤트 뷰어 – 대시보드</block>
+  <block id="275c18c61ba352042ee3136da204733c" category="paragraph">ONTAP 클러스터에 있을 수 있는 문제를 보다 빠르게 파악할 수 있도록 System Manager 9.9.1은 처음 로그인할 때 대시보드에 EMS 이벤트를 추가합니다. 여기에는 디스크 파손, 네트워크 링크 다운, 라이센스 문제, 쉘프 또는 노드 오류와 같은 지난 24시간 동안의 오류가 포함됩니다.</block>
+  <block id="74a11174b882a39359cec44b4dd961ba" category="paragraph">또한 볼륨 이동 실패 및 상태 모니터링 경고를 포함하여 지난 24시간 동안 경고가 표시됩니다.</block>
+  <block id="a814dd6e7e57412cccd3cb0be7503eb2" category="section-title">스냅샷 크기 및 SnapMirror 레이블</block>
+  <block id="c30570deb4d832da5bb0e772e007e415" category="paragraph">System Manager의 스냅샷 보기에서는 SnapMirror 스냅샷 복사본에 대한 스냅샷 크기 및 레이블(예: 매일, 매주 등)을 확인할 수 있습니다.</block>
+  <block id="851e3e04590ca774a61672a7fd276fc8" category="paragraph"><block ref="851e3e04590ca774a61672a7fd276fc8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="00d4eb1d131bacfe1a081aa38cebae6b" category="section-title">데이터 LIF의 홈 재설정</block>
+  <block id="f27b731a216d8015b4a3070564ea0eb7" category="paragraph">페일오버 중 또는 네트워크 중단이 해결된 후에는 데이터 LIF가 페일오버 포트에 유지되는 경우가 많으므로 성능 및 복원력 측면에서 우려할 필요가 없습니다. 이러한 데이터 LIF를 간단하게 홈 포트로 보내려면 System Manager 9.9.1에서 이제 한 번의 클릭으로 모든 데이터 LIF를 원래 홈 포트로 다시 전송할 수 있습니다.</block>
+  <block id="d3da3849486a78549d01a395e2db22e2" category="section-title">표시하거나 숨길 새 볼륨 필드</block>
+  <block id="e52a468dfd2d40f3203b4c2dab378b97" category="paragraph">System Manager 9.9.1에서 로컬 계층 및 사용 가능/사용 가능한 정보를 포함하여 표시/숨기기 단추를 통해 볼륨 정보를 보는 방법도 있습니다.</block>
+  <block id="76094b40ea6076c073c78ea09acabeef" category="paragraph">다음 그림은 ONTAP 시스템 관리자 9.9의 새 볼륨 보기를 보여줍니다. 1.</block>
+  <block id="b2dc0bc95fdbe743df86fda38387b134" category="paragraph"><block ref="b2dc0bc95fdbe743df86fda38387b134" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed5e362bcdc4e0c0e70a24adfdeb54de" category="section-title">대량 작업</block>
+  <block id="1bf4ea491f436f559e865773dacaad70" category="paragraph">여러 볼륨 이동 또는 삭제를 수행하거나, 여러 LUN을 이니시에이터 그룹에 매핑하거나, 여러 볼륨을 클라우드 계층에 추가해야 하는 경우, 이제 여러 개체를 선택하고 작업을 수행할 수 있습니다. 또한 볼륨 삭제는 단일 창에서 마운트 해제, 오프라인 및 삭제 확인을 수행할 수 있는 방법도 함께 제공됩니다.</block>
+  <block id="47bc7d282551a819c5212270fbfe2b79" category="paragraph">다음 그림은 ONTAP System Manager 9.9.1에서 단순화된 볼륨 삭제를 보여줍니다.</block>
+  <block id="e6667c0ce19b51b73d509508accc2355" category="paragraph"><block ref="e6667c0ce19b51b73d509508accc2355" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a3bdbdf5267319efd6818d74796a44a2" category="section-title">Active IQ 통합</block>
+  <block id="8ff1dbea046a55a0f79a4f62e415ddbe" category="paragraph">ONTAP 사용자에게 여러 정보 소스에 대한 단일 액세스 지점을 제공하기 위해 System Manager 9.9.1은 NetApp Active IQ 솔루션과의 통합을 제공합니다. 이 기능은 펌웨어 권장 사항과 NetApp Support 사이트에서 직접 이미지를 다운로드하는 방법, 클러스터의 상황을 확인할 때 쉽게 액세스할 수 있는 지원 케이스 보기를 제공합니다. 왼쪽 메뉴의 클러스터 아래에 있는 지원 링크로 이동한 후 Active IQ에 클러스터를 등록하기만 하면 됩니다.</block>
+  <block id="48359068e5c5eebfb0e74d51afe4e919" category="paragraph">다음 그림은 ONTAP System Manager 9.9.1의 Active IQ 뷰를 보여 줍니다.</block>
+  <block id="f95c7f3de42a4799e3222cc8d0347a59" category="paragraph"><block ref="f95c7f3de42a4799e3222cc8d0347a59" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9dcded66fa249538ee1e9bb82e1f5d31" category="section-title">하드웨어 시각화 플랫폼 확장</block>
+  <block id="b67136a368b3719d2cc19aff45f9f8c4" category="paragraph">하드웨어 시각화에는 플랫폼 모델, 일련 번호, Takeover/Giveback 상태, 디스크 상태, 포트 정보 등과 같은 정보가 포함됩니다. ONTAP 9.9.1은 모든 최신 AFF 플랫폼을 포함하는 하드웨어 시각화를 위한 추가 플랫폼 지원을 제공합니다.</block>
+  <block id="dd938a0de4c61f1a171342d63213c17b" category="paragraph"><block ref="dd938a0de4c61f1a171342d63213c17b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="25062a5a927b3bf4c0079b5967ae87c0" category="paragraph">ONTAP 9.9.1에서 지원되는 구성 요소는 다음과 같습니다.</block>
+  <block id="37cb0e130b63d48fd5218a8d61907614" category="list-text">* 플랫폼. * C190/A220/A250/A300/A400/A700/A700s/A800/A320/FAS500f</block>
+  <block id="1d3fe748561caad070dfaf86fba79ff3" category="list-text">* 디스크 쉘프. * DS4243/DS4486/DS212C/DS2246/DS224C/NS224</block>
+  <block id="d206b4c6252b568fbcad635a64365392" category="list-text">* 네트워크 스위치. * Cisco Nexus 3232C/Cisco Nexus 9336C-FX2</block>
+  <block id="d8cfa0be2e03d9822c063cb3771a8665" category="section-title">Ansible 플레이북 워크플로우</block>
+  <block id="f48bd7347285b518907a34b3dcad85fd" category="inline-link">NetApp 제품용 Ansible 페이지</block>
+  <block id="1c52e629e85668a1fdadf47ef9b7b9b6" category="paragraph">반복 가능하고 오류 없는 워크플로우를 제공하기 위해 Ansible과 같은 애플리케이션을 사용하여 일상적인 작업을 자동화하려는 기업이 갈수록 늘어나고 있습니다. NetApp에는 전체 Ansible 플레이북 라이브러리가 있으며, 파트너는 에서 Playbook을 비롯한 자세한 정보를 확인할 수 있습니다<block ref="57a69e7fe3020c8338be9ff254e4842b" category="inline-link-rx"></block>.</block>
+  <block id="733ba000742537e7a4435573aca51393" category="inline-link">Ansible 갤럭시</block>
+  <block id="94beb42ad6bbb4643ef2a006e97b6d10" category="paragraph">System Manager 9.9.1은 단 한 번의 클릭으로 플레이북을 생성할 수 있는 새로운 방법으로 Ansible을 사용할 수 있는 추가적인 방법을 제공합니다. 이 플레이북을 사용하려면 Ansible 및 NetApp Collection을 설치합니다<block ref="2d35e48b7bcfa590b3bbccdf04948cd9" category="inline-link-rx"></block>단, System Manager에서 스토리지 프로비저닝 작업을 선택하면 Save to Ansible Playbook 링크를 클릭하여 Playbook을 생성할 수 있습니다.</block>
+  <block id="824a660a71c4c73239ff6b109e9f6bf9" category="paragraph"><block ref="824a660a71c4c73239ff6b109e9f6bf9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ce152a4f68b68498ff816fe5aa83005f" category="paragraph">이 버튼을 클릭하면 Ansible에 필요한 .YAML 파일이 포함된 .zip 파일이 생성됩니다.</block>
+  <block id="1f106ca5386ce247d568b59d1b4dad4d" category="paragraph"><block ref="1f106ca5386ce247d568b59d1b4dad4d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0cdbad3f9bc351477d03113ca9b483ab" category="section-title">파일 시스템 분석 기능의 향상</block>
+  <block id="23d784033bae6804ea0e1b4e8c66b2ef" category="paragraph">파일 수가 많은 환경에서 폴더 용량, 데이터 사용 기간 및 파일 수에 대한 정보를 찾으려면 시간이 많이 걸리는 명령 또는 ls, du, find, stat 등의 NAS 프로토콜을 통해 직렬 작업을 실행하는 스크립트가 필요합니다.</block>
+  <block id="3b8c862b0baaa91213862bec117e1a08" category="paragraph">ONTAP System Manager 9.8은 각 볼륨에 대해 영향이 적은 스캐너를 사용하여 관리자가 모든 NAS 스토리지 볼륨에서 파일 시스템 정보를 빠르고 쉽게 찾을 수 있는 방법을 도입했습니다. 이 스캐너는 우선 순위가 낮은 작업으로 백그라운드에서 ONTAP 파일 시스템을 크롤링하며, 활성화된 볼륨으로 탐색하면 바로 사용할 수 있는 풍부한 정보를 제공합니다.</block>
+  <block id="298e3bcfd511e40446b6cfc2d9a8b225" category="inline-link">파일 시스템 분석</block>
+  <block id="3711d091e2832cea5b85b8a94e56a1b3" category="paragraph">활성화 중<block ref="98d038f8a6caf7d598ed4eed1daa6373" category="inline-link-rx"></block> 는 스캔할 볼륨을 탐색하기 만큼이나 쉽습니다. 스토리지 &gt; 볼륨 으로 이동한 다음 검색을 사용하여 원하는 볼륨을 찾습니다. 볼륨을 클릭한 다음 탐색기 탭을 클릭합니다.</block>
+  <block id="bd369ad3077954ada57eb55c6721afdd" category="paragraph">여기에서 페이지 오른쪽에 분석 활성화 링크가 표시됩니다.</block>
+  <block id="3fe68c8cd058c3f0e14b7f01fa5164cd" category="paragraph"><block ref="3fe68c8cd058c3f0e14b7f01fa5164cd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1353d5bcd1908edbd7ac0040f5491f0" category="paragraph">활성화를 클릭하면 스캐너가 시작됩니다. 완료 시간은 볼륨의 오브젝트 수와 시스템 로드에 따라 달라집니다. 작업이 완료되면 System Manager 뷰에 채워진 전체 디렉토리 구조가 표시됩니다. 이 뷰는 디렉토리 트리를 따라 탐색할 수 있으며 기록 정보, 디렉토리 크기 정보 및 파일 크기에 대한 액세스를 제공합니다.</block>
+  <block id="9e769ed7c0f5ec7b69b8418f35d33525" category="inline-link">빠른 디렉토리 삭제</block>
+  <block id="7e3ab2d2aaf9ef606ffa25ad704024fe" category="paragraph">ONTAP 9.9.1에서는 파일 또는 디렉터리 이름으로 필터링하고 수행하는 등의 기능이 향상되었습니다<block ref="48e813d64b9ba5bce689365e131fe8af" category="inline-link-rx"></block>.</block>
+  <block id="56e97b36b89521391d92935b46388198" category="section-title">기타 System Manager 9.9.1 개선사항</block>
+  <block id="8961cda18e6f02e6fa68f49668c75835" category="paragraph">ONTAP 9. 9.1에서는 System Manager에서 다음과 같은 향상된 기능도 제공합니다.</block>
+  <block id="67770d5a7f103d26c9dcc98cc53929ec" category="list-text">중첩된 igroup</block>
+  <block id="04affd2b8f6f1528fd38fd6b37743562" category="list-text">SnapMirror 클라우드 - 백업 및 복원(ONTAP S3 및 StorageGRID만 해당)</block>
+  <block id="fc556c1f786eaffcbd07969bac737751" category="list-text">모든 SAN 어레이 확장</block>
+  <block id="b7ed4657b10d57155a9ac24df31020f6" category="list-text">FlexCache가 미리 채워지고, DR, 뷰 대역폭의 절약 효과를 나타냅니다</block>
+  <block id="ec7d9fa2402ca8f72ee73d166bcccd2b" category="list-text">FlexGroup 볼륨용 SVM-DR</block>
+  <block id="71a8351e9c0d8871999f74eea3aca79b" category="list-text">FlexGroup 볼륨에 대한 SnapMirror 계단식 배열 및 팬아웃 지원</block>
+  <block id="759614dc3448f547cc652e1214cdd432" category="list-text">FabricPool: 최소 냉각 일을 조정하거나 변경합니다</block>
+  <block id="e2730b4b16b542d570a14e165c32040a" category="summary">System Manager의 향상된 기능, SAN 개선 기능 및 데이터 보호 기능 외에도 ONTAP 9.9.1에 추가된 몇 가지 중요한 기능이 있습니다.</block>
+  <block id="e09228da4cf9af4662ba2bd6dc9b718e" category="doc">기타 주요 추가 사항</block>
+  <block id="ce1f253b3e8406a229e17f04a0d1384e" category="section-title">논리적 공간 계산/적용 – FlexGroup 볼륨</block>
+  <block id="aa11529fd8937f92c812532790bddd05" category="paragraph">FlexVol 9.4에서 ONTAP 볼륨에 대한 논리적 공간 어카운팅이 도입되었습니다. 스토리지 관리자가 스토리지 효율성 절약 효과를 마스킹하여 최종 사용자가 지정된 스토리지 할당량을 초과 할당하지 않도록 할 수 있습니다.</block>
+  <block id="7c525ed05aaa2f43b69b292e6005b9f5" category="paragraph">예를 들어, 사용자가 10TB 볼륨에 6TB를 기록하고 스토리지 효율성이 2TB를 절약하면 논리적 공간 어카운팅으로 사용자가 6TB를 보는지 4TB를 보는지 여부를 제어할 수 있습니다.</block>
+  <block id="36dc06af5a50ce891352f1279a37560f" category="paragraph"><block ref="36dc06af5a50ce891352f1279a37560f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="161ae7784e7c33f797a5d12b85041d5b" category="paragraph">ONTAP 9.5는 이 기능을 개선하고 FlexVols에 대한 할당량 적용 지원을 추가하여 논리적 공간 임계값 설정에 따라 새로운 쓰기를 방지함으로써 스토리지 관리자에게 더 많은 제어 권한을 부여합니다. 그러나 FlexGroup 볼륨은 ONTAP 9.9.1까지 이 기능이 누락되었습니다.</block>
+  <block id="f0dc3db8fc85f77044d03aeb89cad2ab" category="section-title">ONTAP S3 사용자 정의 메타데이터 태그</block>
+  <block id="a21c21726567dbfce7d25fa6c664b623" category="paragraph">ONTAP 9.8에는 기본 오브젝트 스토리지 기능을 위한 S3 프로토콜이 도입되었습니다.</block>
+  <block id="36f830363ac6152539998a4b21082d64" category="paragraph">ONTAP 9.8의 S3에 대한 지원에는 다음이 포함됩니다.</block>
+  <block id="fc692306795250564dc0c1297db74cb8" category="list-text">기본 PUT/GET 오브젝트 액세스(동일한 버킷에서 S3 및 NAS 모두에 대한 액세스 제외)</block>
+  <block id="55cf1a0f0fce69fd543500e5761dd26d" category="inline-link">NetApp StorageGRID를 참조하십시오</block>
+  <block id="ae1ddfca72e5fb02e38e59b114666324" category="list-text">오브젝트 태그 지정 또는 ILM 지원 없음, 전역으로 분산된 다양한 기능을 갖춘 S3의 경우 사용<block ref="4b3b56c63d2b9235e663818a1cac17f9" category="inline-link-rx"></block>.</block>
+  <block id="dba43d7c8afa3982c019c756dce5c3e3" category="list-text">TLS 1.2 암호화</block>
+  <block id="3942fcbd11aa7dc6fba8b55cc23b08c7" category="list-text">여러 부분으로 업로드됩니다</block>
+  <block id="7344f6e186a2777a085989b741ac601d" category="list-text">조정 가능한 포트</block>
+  <block id="c83e216af116b63a713ab404d97b464c" category="list-text">볼륨당 여러 개의 버킷</block>
+  <block id="e05e762dcb97ecc30903279b2951e46a" category="list-text">버킷 접근 정책</block>
+  <block id="5f8ff2246856ef5509fa3a19b7b37092" category="list-text">S3을 NetApp FabricPool 타겟으로 사용</block>
+  <block id="d75dd9480c1e02c0cd0891b1bfda97d4" category="paragraph">ONTAP 9.9.1 이상은 ObjectCreate 및 MultiPartUpload 호출을 사용할 때 개체의 메타데이터 태그 지정을 지원합니다. 개체에 대해 head 또는 get을 수행하면 응답에서 HTTP 헤더의 일부로 사용자 정의 메타데이터 및 태그 수가 반환됩니다. 이러한 태그를 사용하면 ONTAP 버킷 내에서 개체를 보다 효율적으로 분류하여 보다 강력한 데이터 관리를 수행할 수 있으며 메타데이터 및 태그를 만드는 기능이 필요한 애플리케이션과 호환됩니다.</block>
+  <block id="589ba26c9a47881118a70682e545eb97" category="paragraph">자세한 내용은 다음 리소스를 참조하십시오.</block>
+  <block id="77961f6571e69e01de2586a921082c7f" category="inline-link">Tech OnTap 팟캐스트: 에피소드 268 - NetApp FabricPool 및 S3(ONTAP 9.8</block>
+  <block id="e20a70920148379694793caa93187452" category="list-text"><block ref="e20a70920148379694793caa93187452" category="inline-link-rx"></block></block>
+  <block id="1716834171e243de0f898a67621b6624" category="inline-link">ONTAP S3</block>
+  <block id="47b64b54719e3145975341a2d06de20b" category="list-text"><block ref="47b64b54719e3145975341a2d06de20b" category="inline-link-rx"></block></block>
+  <block id="eb002b95c1c1f2383ac69c0a3a972b3c" category="section-title">NFSv4.2 보안 레이블입니다</block>
+  <block id="f3237a8e139934aa19b02307cd7ce312" category="inline-link">RFC-7204</block>
+  <block id="5ad5f311453b9fd7e84292baf8c169a4" category="paragraph">ONTAP 9.9.1에는 이름이 NFS인 NFSv4.2 기능이 도입되었습니다. 이 기능은 SELinux 레이블과 MAC(Mandatory Access Control)를 사용하여 세분화된 파일 및 폴더 액세스를 관리하는 방법입니다. 이러한 MAC 레이블은 파일 및 폴더와 함께 저장되며 UNIX 권한 및 NFSv4.x ACL과 함께 작동합니다. 레이블 지정된 NFS에 대한 지원은 ONTAP가 이제 NFS 클라이언트의 SELinux 레이블 설정을 인식하고 이해하는 것을 의미합니다. 레이블이 지정된 NFS는 에서 다룹니다<block ref="14d3fe6356a7fc9520aaaeecd94ae1fa" category="inline-link-rx"></block>.</block>
+  <block id="a82cf5510a20197f2c1fcff035d6478e" category="paragraph">사용 사례는 다음과 같습니다.</block>
+  <block id="cf47b754d6e9fe31a3e05c52c081725d" category="list-text">가상 머신 이미지의 MAC 레이블 지정</block>
+  <block id="d88819a259b5e3fc2256962fc6008bd5" category="list-text">공공 부문의 데이터 보안 분류(비밀, 최고 비밀 등)</block>
+  <block id="e02212e6c842f974f567020cbabb8e1b" category="list-text">보안 규정 준수</block>
+  <block id="c0640a2bd1e8f0e53e94e1e457934ebd" category="list-text">디스크 없는 Linux</block>
+  <block id="6ff76fd3b528e182bac65e45beb2d7fc" category="paragraph">이 릴리즈에서 ONTAP는 다음과 같은 적용 모드를 지원합니다.</block>
+  <block id="94ff7e778b515d8d586c4af063c95dd1" category="inline-link">제한된 서버 모드</block>
+  <block id="8cbdf26fe815adf2d85f2a53f3c8bd95" category="list-text"><block ref="183ce96ea05fb63768596a250fd81a18" category="inline-link-rx"></block>. ONTAP에서는 레이블을 적용할 수 없지만 저장하고 전송할 수는 있습니다.</block>
+  <block id="2d66fa3e6dd1b10a5fa536255eb04246" category="list-text">MAC 레이블을 변경하는 기능은 클라이언트가 적용할 수도 있습니다.</block>
+  <block id="d61d386a898fc5b9a058781ee7a52481" category="inline-link">게스트 모드</block>
+  <block id="9b7f9b5189c2fed0e4bd14f44f43616f" category="list-text"><block ref="f132d61a4ca479bc19bcd1bbfa4cb0c3" category="inline-link-rx"></block>. 클라이언트에 NFS-Aware(v4.1 이하)라고 표시되지 않으면 MAC 레이블이 전송되지 않습니다.</block>
+  <block id="9393fabdafbf46e10c0fb15962155408" category="inline-link">전체 모드</block>
+  <block id="44e3f518913757f513f5d30d56b36053" category="paragraph">ONTAP는 현재 지원하지 않습니다<block ref="5e9abc8e6304446e1ef9117174db5bc2" category="inline-link-rx"></block> (MAC 라벨 저장 및 적용).</block>
+  <block id="f74d27ee3d0e9999cd6639962c93dfd1" category="summary">ONTAP 9.9.1은 SAN과 관련된 몇 가지 중요한 개선 기능을 제공합니다. 이 섹션에서는 이러한 기능에 대해 자세히 설명하는 문서에 대한 링크를 제공합니다.</block>
+  <block id="174d3f83f99e412b6e036c23d2fef40c" category="doc">SAN의 향상된 기능</block>
+  <block id="b55156d9bfdda8c2d88b737f7dccfcef" category="section-title">모든 SAN 어레이에 대한 향상된 기능</block>
+  <block id="e88f638da0e54494bdab42eb394b23b5" category="inline-link">모든 SAN 어레이</block>
+  <block id="6172db10590a159eb5346cf0f2242162" category="paragraph">ONTAP 9.8에 이 도입되었습니다<block ref="7b8e99970c64c585b4bee3630dd79d9f" category="inline-link-rx"></block> (ASA) - NetApp 제품 포트폴리오 ONTAP 9.9.1에서 ASA는 상당히 탐나는 추가 기능을 제공합니다.</block>
+  <block id="0cad912fc95b1403210c4603c148e08d" category="section-title">2노드에서 12노드로 스케일아웃</block>
+  <block id="8063a1398050f30bcb26fc5b8bb475d5" category="paragraph">ONTAP 9.9.1 이전에는 ASA가 2노드 클러스터일 수 있었습니다. 하지만 ONTAP의 SAN 클러스터는 최대 12개 노드로 스케일업할 수 있어 엔터프라이즈 SAN 환경의 성능과 용량을 위한 추가 스케일아웃이 가능합니다. 이제 클러스터의 모든 노드에 ASA Personality가 있는 경우 ASA는 단일 클러스터에서 최대 12개의 노드까지 확장할 수 있습니다. ASA 모델을 동일한 클러스터(예: 2노드 A800 HA 2노드에 해당하는 2노드 A400 HA 쌍)에서 혼합할 수 있습니다.</block>
+  <block id="96f46a40e9e7fa202eecef870ee9b672" category="section-title">NVMe/FC 지원</block>
+  <block id="1c8498d02565a1bf16a697ba303f0481" category="paragraph">이제 ASA는 ONTAP 9.9.1에서 매우 짧은 지연 시간 NVMe over Fibre Channel을 활용할 수 있습니다. NVMe/FC 및 32Gb FC 타겟 어댑터의 라이센스도 필요합니다.</block>
+  <block id="24f52ba6e96cef079ea37901458489d8" category="section-title">AFF SAN에서 ASA으로 데이터 이동 없이 전환</block>
+  <block id="1e64c920ec1ac502331000edd36b05b5" category="paragraph">스크립트와 NetApp TME 또는 프로페셔널 서비스 리소스의 도움으로 데이터를 마이그레이션할 필요 없이 기존 AFF SAN 클러스터를 ASA 퍼스낼리티로 변환할 수 있습니다. 유일한 전제 조건은 클러스터가 NAS 또는 S3 데이터를 지원하는 경우 변환 전에 이러한 프로토콜 및 데이터 세트를 제거해야 한다는 것입니다.</block>
+  <block id="89593adca0354a439f3e58673f058a02" category="section-title">단일 LUN 성능</block>
+  <block id="233b3624a6f79f2ed9cfd9b96824a8d4" category="paragraph">ASA 플랫폼과 AFF SAN 클러스터 모두 ONTAP 9.9.1에서 SCSI 스택의 병렬 처리를 통해 최대 워크로드에서의 단일 LUN 성능을 크게 개선하는 기능을 제공합니다.</block>
+  <block id="a7a62ef4404bcbb0d8bdad035432badf" category="paragraph">다음 표에서 A800 플랫폼과 A300 플랫폼에 대한 테스트를 수행하여 단일 LUN 워크로드의 성능을 비교했으며, AFF 9.9.1에서 ONTAP A800의 쓰기 성능은 약 4배, ONTAP 9.8의 동일한 워크로드에 대해 쓰기 성능은 75% 향상되었습니다.</block>
+  <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">플랫폼</block>
+  <block id="f5115e07bbcce8c8d2622746d6ca17cf" category="cell">랜덤 읽기 최대 IOPS</block>
+  <block id="c9d082b692122f927d250baaac0f45be" category="cell">랜덤 쓰기 최대 IOPS</block>
+  <block id="e4044b704224bc11ad4a58e92f2131d7" category="cell">A800</block>
+  <block id="161e40ef88287a3f0607762be47d1965" category="cell">393% 이상</block>
+  <block id="adf442ad84461c2ccd1fb0cc2f8b6d64" category="cell">75% 이상</block>
+  <block id="fe392b3a6f83320865ecf16cc38ebef5" category="cell">A300</block>
+  <block id="b10f8af155addb7c89d6b655d2bcb5bd" category="cell">+245%</block>
+  <block id="f49d81a7b20173f967830208325e54f0" category="cell">3.5% 이상</block>
+  <block id="7e5aeec5c0a182e1fcbd3b3eb8def557" category="admonition">이러한 개선 사항은 다중 LUN 애플리케이션(예: Logical Volume Manager)에 영향을 주지 않습니다.</block>
+  <block id="244a5b9b9a395e326e1a8281be74d1f8" category="section-title">NVMe over Fibre Channel 개선 사항</block>
+  <block id="29da78da0c0bdb16e4342df88d658f8e" category="paragraph">ONTAP 9.9.1에서는 이제 NVMe over Fibre Channel 네임스페이스가 비활성 원격 경로를 통해 페일오버되므로 NVMe/FC 애플리케이션에 대한 전반적인 복원력이 향상됩니다.</block>
+  <block id="851e816fc084e28011b4a952beaebd85" category="paragraph"><block ref="851e816fc084e28011b4a952beaebd85" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ce28a913064a74e430ab7d184b8ca3c3" category="paragraph">또한 ONTAP 9.9.1에서는 vCenter를 통해 VVOL 지원 및 네임스페이스 프로비저닝을 제공하여 VMware 가상화 워크로드를 지원하는 NVMe/FC를 지원합니다.</block>
+  <block id="dcd2e558b7fab7dda450e780c87a2203" category="summary">이 페이지에서는 ONTAP 9.8 스토리지 효율성, 특히 압축, NetApp FabricPool 기술과 관련된 효율성에 대해 설명합니다.</block>
+  <block id="fba6442665875d123719f22baafc619d" category="doc">스토리지 효율성</block>
+  <block id="9821aab3dfa64afd461ac2cb6cf9c3f9" category="paragraph">스토리지 효율성에는 스토리지 시스템의 데이터가 사용하는 물리적 용량의 양을 줄이는 기능이 포함됩니다. ONTAP의 경우 다음과 같은 항목이 포함됩니다.</block>
+  <block id="7f014083882e428332264558f1c232f3" category="list-text">데이터 압축</block>
+  <block id="14c3c56ff2a98d1a9c47b63a917f67a3" category="list-text">데이터 컴팩션</block>
+  <block id="f8d61013f1a3bbf1342f4ced3279c7cf" category="list-text">데이터 중복제거</block>
+  <block id="2e985af49c448d15c7b99987586e6b15" category="list-text">NetApp FabricPool를 참조하십시오</block>
+  <block id="1e28264f90cc398ca0e5e7c96562e075" category="paragraph">이러한 정의는 다음과 같이 확장되기도 합니다.</block>
+  <block id="8d9a9b19531e4a85c6a70c90ddccfe61" category="list-text">NetApp FlexClone 기술</block>
+  <block id="d8f4911c89dadc4828bc8fa023d49b7d" category="list-text">NetApp Snapshot 복사본</block>
+  <block id="b16ad19397a7509e2d37f1d75e2205fc" category="paragraph">스토리지 효율성은 구입해야 하는 물리적 하드웨어의 양을 줄여 스토리지 비용을 낮게 유지하는 데 매우 중요합니다. ONTAP는 시스템 성능에 미치는 영향을 최소화하면서 시스템 인라인(AFF 시스템) 또는 후처리(모든 시스템)에서 데이터 축소를 수행할 수 있습니다.</block>
+  <block id="5276eebcb1f9236e2f72913562cb084b" category="paragraph">ONTAP 9.8에는 스토리지 효율성을 위해 여러 가지 향상된 기능이 있습니다.</block>
+  <block id="55449fd175613962d882ab450cfc5f3c" category="section-title">FabricPool</block>
+  <block id="41d860724112532d0546c0de937ea904" category="paragraph">FabricPool는 파일 시스템에서 냉각된 블록을 가져와 4MB 오브젝트로 번들로 묶어 클라우드 또는 S3 버킷으로 제공하는 NetApp 데이터 계층화 기술입니다. 콜드 데이터는 스토리지 시스템에서 전체 용량의 최대 80%를 사용할 수 있으므로 성능 계층을 유지하는 대신 저렴한 스토리지 솔루션으로 이동하는 것이 좋습니다.</block>
+  <block id="cce281413c371623e7ec6b4825784e54" category="paragraph">이 모든 작업은 설정할 수 있는 계층화 정책을 통해 ONTAP에서 자동으로 수행되며, 비활성 데이터 보고 기능을 통해 현재 스토리지 시스템에서 사용 중인 콜드 데이터의 양을 확인할 수 있습니다. 이를 통해 FabricPool이 실제로 비용을 절감하는지 평가할 수 있습니다.</block>
+  <block id="02b7b6d156d2f158ffd5b0a32edc332a" category="paragraph"><block ref="02b7b6d156d2f158ffd5b0a32edc332a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f132da8b7099fd9d93d8b7b7428f570" category="paragraph">클라이언트가 클라우드로 계층화된 파일에 액세스할 때 전체 파일이 아닌 요청된 블록만 성능 계층으로 다시 가져와 액세스합니다.</block>
+  <block id="734b1424b5982ecfb53f9b0b1d294c57" category="inline-link">TR-4598: FabricPool 모범 사례 및 Tech OnTap 팟캐스트 에피소드 268: NetApp FabricPool 및 S3 in ONTAP 9.8</block>
+  <block id="44aa199d23924b5788f3199c05742587" category="paragraph">FabricPool에 대한 자세한 내용은 를 참조하십시오<block ref="3f85327e1f47436ed7b4e0705b45040e" category="inline-link-rx"></block> 및<block ref="fadc3b4f2a941bc15e0d458829b7ba9f" category="inline-link-rx"></block>.</block>
+  <block id="2f510f604447f3e4285956b848908486" category="paragraph">ONTAP 9.8은 다음과 같은 FabricPool 기능을 지원합니다.</block>
+  <block id="6dddd96ad170dadda1707698b93068a0" category="list-text">* HDD 애그리게이트에서 계층화 * ONTAP 9.8 이전에는 ONTAP에서 클라우드로 FabricPool 계층화는 SSD 애그리게이트에서만 가능했습니다. ONTAP 9.8을 사용하면 이제 HDD 애그리게이트에서 FabricPool를 사용하여 계층화할 수 있습니다.</block>
+  <block id="4a18f317f4202c483450029270eaa6e5" category="list-text">ONTAP S3로 계층화 * 이제 ONTAP S3를 사용할 수 있게 되었으므로 이제 FabricPool를 사용하여 ONTAP 시스템에서 ONTAP S3 버킷으로 계층화할 수 있습니다. 따라서 오래된 용량 스토리지를 FabricPool 계층으로 사용하여 용도를 변경할 수 있습니다. 그리고 동일한 클러스터에 계층화하면 클라우드 네트워크 연결을 탐색하는 것보다 검색 시간이 더 빨라집니다.</block>
+  <block id="c552324c68f1abb23752ba3f9a52a681" category="list-text">* 냉각 기간 증가. * ONTAP 9.8 이전에는 최대 63일의 냉각 기간 후 데이터가 냉각으로 표시됩니다. ONTAP 9.8을 사용하면 최대 183일까지 구성할 수 있습니다. 재무 보고서와 같이 분기별로 액세스하는 데이터와 같이 산발적으로 액세스할 수 있는 데이터에 유용합니다.</block>
+  <block id="ee15d877878deadb86cc094dd2d55d0c" category="list-text">* 오브젝트 태그 지정. * 오브젝트 태그를 기반으로 데이터를 관리하는 정보 수명 주기 정책을 제공하는 S3 공급자로 계층화할 경우, ONTAP 9.8은 FabricPool를 사용하여 계층별로 오브젝트를 태그하여 정책에 통합할 수 있습니다.</block>
+  <block id="09e3eb368cfa63d42e3b440f79e7c842" category="list-text">* 클라우드 검색. * 일부 경우 모든 계층화된 데이터를 클라우드에서 다시 가져와야 할 수 있습니다. 이제 모든 데이터에 액세스할 필요 없이 ONTAP 9.8에서 클라우드에서 데이터를 검색하는 작업을 실행할 수 있습니다.</block>
+  <block id="82af841589057aa8922b1ac3bb4a28a4" category="section-title">압축</block>
+  <block id="a3d9e258f045e506f1aad334b2d6f257" category="paragraph">ONTAP 9.8에는 성능을 개선하고 압축 가능한 데이터 세트의 데이터 축소율을 개선하는 데 도움이 되는 몇 가지 데이터 압축 변경 사항이 도입되었습니다.</block>
+  <block id="136cc83441d07e2be773a6cf5053576f" category="paragraph">압축의 주요 변경 사항은 데이터를 콜드 및 핫 분류로 구분하는 것이었습니다. 콜드 데이터는 오랫동안 액세스되지 않은 데이터이며 핫 데이터는 자주 액세스되는 데이터입니다. 즉, 핫 데이터를 더 적게 압축하고 콜드 데이터를 더 적극적으로 압축하려고 합니다.</block>
+  <block id="b3da562450ccb05f921943c03f4bb2ce" category="paragraph">ONTAP 9.8에서는 8K 압축 그룹을 사용하여 핫 데이터가 인라인으로 압축됩니다. 또한 데이터 중복제거는 압축 전에 수행되어 데이터 세트의 효율성이 더욱 향상됩니다.</block>
+  <block id="793b4e0506791c71b7e2ad3599561b24" category="paragraph">그런 다음 백그라운드 에서 보다 공격적인 32K 압축 그룹을 사용하여 콜드 데이터가 다시 압축됩니다. 이러한 변화를 통해 핫 데이터의 성능이 향상되고 모든 데이터의 데이터 축소율이 향상됩니다.</block>
+  <block id="5d7d43bb24e6adef90f770cd8e03ecd8" category="inline-link-macro">다음: 데이터 보호</block>
+  <block id="7f1a99e213fa2c4e5fb6a2799e07db23" category="paragraph"><block ref="7f1a99e213fa2c4e5fb6a2799e07db23" category="inline-link-macro-rx"></block></block>
+  <block id="bfac8391ecb69c9683802f91efbaa01d" category="summary">이 페이지에서는 ONTAP 9.8의 최신 기능에 대한 개요와 자세한 정보 링크를 제공합니다.</block>
+  <block id="dc045029ce50230f0888e98f16639593" category="doc">TR-4872: NetApp ONTAP 9.8 기능 개요</block>
+  <block id="946d5cdc30684f8f89c0d75cf98a1c7a" category="paragraph">NetApp ONTAP는 NetApp의 업계 최고 데이터 관리 소프트웨어로, 온프레미스, 에지 또는 클라우드 어디서나 데이터를 원활하게 관리하고 보호할 수 있도록 지원합니다.</block>
+  <block id="0499d71f2d1433cbecaa4df6da9a9d07" category="paragraph">이것은 포괄적인 목록이 아닙니다. ONTAP에서 제공하는 모든 기능을 포함한다면 이 문서의 길이가 수백 페이지일 것입니다.</block>
+  <block id="b8891129cb3bcf5e407a67d926f3bd1e" category="inline-link">제품 설명서</block>
+  <block id="dc97535f4baad31c5aa6a4ad34af7fa4" category="paragraph">NetApp ONTAP에 대한 자세한 내용은 를 참조하십시오<block ref="9f226f00b05919fb270a59d22a5cd7f4" category="inline-link-rx"></block> 및<block ref="4999d0b02640878dbb16ab53ac61b6cb" category="inline-link-rx"></block>.</block>
+  <block id="421b47ffd946ca083b65cd668c6b17e6" category="inline-link-macro">비디오</block>
+  <block id="977f9af52e0c6545d37eb87a937be4ce" category="paragraph">이 내용을 확인해 보십시오 <block ref="1c11b77240028ba09b23c9cbd776f7d6" category="inline-link-macro-rx"></block> NetApp Insight 2020에서 NetApp ONTAP의 주목할 만한 발전을 더 폭넓게 볼 수 있습니다.</block>
+  <block id="66dca8fa10bd71c9ca96e8b721a9e8fd" category="inline-link-macro">다음으로 단순성 향상</block>
+  <block id="932b1d742729c7c02163916b420acf6b" category="paragraph"><block ref="932b1d742729c7c02163916b420acf6b" category="inline-link-macro-rx"></block></block>
+  <block id="87c6b022fe4ab45d26dc6b4dd59c75c9" category="summary">이 페이지에서는 ONTAP System Manager 업데이트, ONTAP 업그레이드, 기술 업데이트 개선, REST API 개선 등을 포함하여 단순성을 개선하는 ONTAP 9.8의 향상된 기능에 대해 설명합니다.</block>
+  <block id="e803c2387444747384ee4979191b1552" category="doc">간편성 향상</block>
+  <block id="dfdc9fae785d94c8070c633b2c98298d" category="paragraph">이 섹션에서는 단순성 개선을 위한 ONTAP 9.8의 개선 사항에 대해 다룹니다. 여기에는 다음이 포함됩니다.</block>
+  <block id="73ec3d08dc40976a738e5544f15a223e" category="list-text">ONTAP 시스템 관리자 업데이트</block>
+  <block id="89a10ab163b94cd00c724ca5eb65b756" category="list-text">ONTAP 업그레이드 및 기술 업데이트 개선사항</block>
+  <block id="d54a9e269194845c2e611c0901c1466b" category="list-text">REST API의 향상된 기능</block>
+  <block id="d50f4f7edd9ae752acd6e78deb340c4b" category="section-title">System Manager의 향상된 기능</block>
+  <block id="b6e4644ed9c42b0433fb10a018ae63d9" category="paragraph">ONTAP 9.7에서는 관리자가 스토리지 프로비저닝, 일상적 운영 등 ONTAP 기본 작업을 관리하는 방식을 단순화하기 위해 시스템 관리자 GUI의 새로운 기능을 소개했습니다. 새로운 GUI는 ONTAP 9.6에 추가된 REST API도 활용합니다. ONTAP 9.8에서는 System Manager 클래식 보기가 제거되었습니다.</block>
+  <block id="0c872019dfa8b50459d533972dcc5cc8" category="paragraph">인터페이스 간의 주요 차이점 중 하나는 대시보드이며, 이는 NetApp ONTAP 시스템 관리자에 처음 로그인할 때 나타나는 첫 번째 페이지입니다.</block>
+  <block id="f5c8db303f07f7722eff5fbec5686b14" category="paragraph">다음 그래픽은 System Manager 대시보드의 기존 버전과 새 버전을 나란히 비교하여 보여 줍니다.</block>
+  <block id="ae6aced91281c981fda8370a90afb299" category="paragraph"><block ref="ae6aced91281c981fda8370a90afb299" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e9f7af3c85cbbf5b0c80b893bfcc92b2" category="paragraph">자세히 살펴보면 몇 가지 중요한 차이점이 있습니다.</block>
+  <block id="f9636e57a53df2c589ccc7e210c7644a" category="section-title">상태/경고</block>
+  <block id="e9ab9f8899e4cf049c2f608e7a874ca5" category="paragraph">처음 Classic System Manager에 로그인하면 왼쪽 상단 구석에 클러스터 및 노드 장애 목록이 표시됩니다. 이러한 링크는 클릭 가능한 링크로 요약됩니다. 링크 중 하나를 클릭하면 System Manager의 다른 페이지로 리디렉션됩니다.</block>
+  <block id="619e242820a1d16bfd5b0375090fd4e2" category="paragraph">또한 노드의 장애 발생 여부를 확인할 수 있도록 클러스터 HA 상태를 보여주는 별도의 영역도 있습니다. 다음 이미지에는 대시보드 보기와 링크 중 하나를 클릭할 때 표시되는 내용이 나와 있습니다. 이 경우 오류가 발생한 디스크입니다.</block>
+  <block id="3d0a43a051541f6972c2f83836f9edf9" category="paragraph"><block ref="3d0a43a051541f6972c2f83836f9edf9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="76bb5e9fbf6bf2d4c8de268555fd865f" category="paragraph">다른 알림을 보려면 대시보드로 다시 이동해야 합니다. 대시보드에는 시간이 걸리고 추가 클릭이 필요합니다. 새로운 System Manager 보기의 목표 중 하나는 이 프로세스를 단순화하는 것입니다.</block>
+  <block id="2ec8f9b4d43d6d24cc2a8f4cfdcbe4ca" category="paragraph">다음 그림에서는 새로운 System Manager 대시보드를 보여 줍니다. 상태 및 알림 보기의 두 가지 주요 차이점은 이제 동일한 창에 노드 HA 상태와 알림이 있다는 점입니다. 즉, 기본 대시보드에서 멀어지도록 클릭하는 대신 드롭다운 상자로 알림을 보낼 수 있습니다.</block>
+  <block id="62c2746467ddaa6b8d23fdc2b4e6df71" category="paragraph"><block ref="62c2746467ddaa6b8d23fdc2b4e6df71" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cbff5dd287b21af8ff268f1bb47fbfe7" category="section-title">용량 보기</block>
+  <block id="727ada8deb0ba4f1d90a4ca0f841e578" category="paragraph">용량 보기를 위해 추가 클릭도 줄어듭니다. 전형적인 ONTAP System Manager에서 용량 및 스토리지 효율성 비율은 클러스터 개요 에 있었으며 정보를 찾기 위해 클릭할 수 있는 탭이 있었습니다. 새로운 System Manager 뷰는 스토리지 효율성 비율 및 용량 뷰를 단일 그래픽으로 통합합니다.</block>
+  <block id="2cdddcaa4f9ceca370dcaf379bd32d23" category="admonition">새로운 UI는 논리적 사용 공간과 물리적 사용 가능한 공간을 활용합니다.</block>
+  <block id="a87ec30f13f683a3c61955cd1a25f4fe" category="paragraph"><block ref="a87ec30f13f683a3c61955cd1a25f4fe" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1501ad5dab27a46df5eabe7d781df2d" category="paragraph">데이터 보호 아래의 자체 대시보드로 데이터 보호 뷰를 이동했습니다. 이 페이지에서는 클러스터의 데이터 보호에 대해 더 깊고 자세히 살펴보고 새로운 SM-BC(SnapMirror Business Continuity)를 활용할 수 있는 위치를 제공합니다.</block>
+  <block id="66eb2d7e9e0397659cc87eb403e10644" category="paragraph"><block ref="66eb2d7e9e0397659cc87eb403e10644" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1134dc9299f828a3558bfd3e04c28db0" category="section-title">네트워크 시각화</block>
+  <block id="02422eb2f6e6805139cf5192f8b15a2e" category="paragraph">또한 ONTAP System Manager 9.8은 클러스터의 네트워크 토폴로지를 보여주는 새로운 네트워크 시각화 보기와 포트가 다운된 경우의 빨간색 X를 사용하여 애플리케이션 및 개체 보기를 제거합니다.</block>
+  <block id="4b755fcd2a55ec52831261477f3abe13" category="paragraph"><block ref="4b755fcd2a55ec52831261477f3abe13" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59fcac2e65ae7b4911482bddcbef2278" category="section-title">성능 뷰</block>
+  <block id="858d240ccac1939a458b6ac8dee74b19" category="paragraph">이제 System Manager의 성능 데이터 그래프에는 로그인한 상태에서만 기존 System Manager 성능 데이터를 사용할 수 있는 것이 아니라 클러스터에 대한 데이터가 최대 1년 동안 유지됩니다. ONTAP System Manager 9.8에서는 이제 시, 일, 주, 월 또는 연도를 클릭할 수 있습니다. 성능 데이터를 CSV로 다운로드하는 방법도 있습니다.</block>
+  <block id="6543cf2f1f5d15dd061e85837eccdaeb" category="paragraph"><block ref="6543cf2f1f5d15dd061e85837eccdaeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="14dcbc4286683eb35f33d39334b0af20" category="paragraph">파일 수가 많은 환경에서 폴더 용량, 데이터 사용 기간 및 파일 수에 대한 정보를 찾으려면 시간이 많이 걸리는 명령 또는 ls, du, find, stat 등의 NAS 프로토콜을 통해 직렬 작업을 실행하는 스크립트가 필요합니다.</block>
+  <block id="8403b2e8dcf087f13f4ca578ff8ea176" category="paragraph">ONTAP System Manager 9.8은 각 볼륨에 대해 영향이 적은 스캐너를 사용하여 관리자가 NAS 스토리지 볼륨에서 파일 시스템 정보를 빠르고 쉽게 찾을 수 있는 방법을 제공합니다. 이 스캐너는 우선 순위가 낮은 작업으로 백그라운드에서 ONTAP 파일 시스템을 크롤링하며, System Manager 9.8 이상의 볼륨을 탐색하는 즉시 사용할 수 있는 다양한 정보를 제공합니다.</block>
+  <block id="2ef63fc9c41364dcd205b29c164c0a52" category="paragraph">파일 시스템 분석 기능은 스캔할 볼륨을 탐색하면서 손쉽게 사용할 수 있습니다. 스토리지 &gt; 볼륨 으로 이동한 다음 검색을 사용하여 원하는 볼륨을 찾습니다. 볼륨을 클릭한 다음 탐색기 탭을 클릭합니다.</block>
+  <block id="4fae4047d71a15b084f683c429a8e274" category="paragraph"><block ref="4fae4047d71a15b084f683c429a8e274" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="54b062553911c909b16f3479703325e0" category="inline-link">NetApp Tech OnTap 팟캐스트 에피소드</block>
+  <block id="e6052ed39f429e6b4bb36ed20d4cdaf9" category="paragraph">다음 그림은 현재 클러스터에 있는 TECH_ONTAP 볼륨의 뷰를 보여 주며, 이 볼륨은 의 아카이브로 사용됩니다<block ref="5336758668b3d470f4029d012c0124c0" category="inline-link-rx"></block>.</block>
+  <block id="05cd38d5c1aead4d4660f23a23558c90" category="paragraph"><block ref="05cd38d5c1aead4d4660f23a23558c90" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf7f3982e41ee880beb67aaf409b7ef8" category="paragraph">폴더를 클릭하면 페이지 오른쪽에 파일 목록이 나타납니다.</block>
+  <block id="ed158ba941b65ab3163f47581eb6d5ee" category="paragraph"><block ref="ed158ba941b65ab3163f47581eb6d5ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="37b92f30c01a3e1245eb39e56b991c90" category="paragraph">선택한 경우 액세스 시간 표시를 활성화하여 파일에 마지막으로 액세스한 시간을 확인할 수 있습니다.</block>
+  <block id="aadde7575c3cebe838569819ff644958" category="paragraph"><block ref="aadde7575c3cebe838569819ff644958" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d54f454fc35974a49ea6f4e6279cdfca" category="paragraph">페이지 하단에서 1년 동안 액세스하지 않은 데이터의 양과 해당 폴더의 디렉토리 및 파일 수를 확인할 수 있습니다.</block>
+  <block id="c501dec853f6d11feb94a9b5cdf93a43" category="paragraph"><block ref="c501dec853f6d11feb94a9b5cdf93a43" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6132d71a37f3f4775170917970343ea3" category="paragraph">이 기능은 파일 크기 및 디렉토리 정보를 빠르게 찾을 수 있을 뿐만 아니라, NetApp FabricPool 기술이 애그리게이트에서 사용하는 콜드 데이터의 양을 줄일 수 있는지 여부를 결정하는 데 도움이 되는 정보도 제공합니다.</block>
+  <block id="d9d0a50e1c7c8c6de854c8be599177c1" category="section-title">활성 NFS 클라이언트</block>
+  <block id="b1687bb019af6a7a9d40db86aca932f2" category="paragraph">ONTAP 9.7에서는 클러스터의 특정 볼륨에 액세스하는 NFS 클라이언트와 "nfs connected-clients" 명령에서 사용 중인 데이터 LIF IP 주소를 확인하는 방법이 도입되었습니다. 이 명령에 대해서는 에서 자세히 설명합니다<block ref="1e7e6de21c5e527b7d054ec46d7ab774" category="inline-link-rx"></block>. 이 명령은 업그레이드, 기술 업데이트 또는 간단한 보고와 같이 스토리지 시스템에 어떤 클라이언트가 연결되어 있는지 확인해야 하는 시나리오에서 유용합니다.</block>
+  <block id="a004e404932c99c858b1de49ae9a3bf2" category="paragraph">ONTAP System Manager 9.8은 GUI를 통해 이러한 클라이언트를 볼 수 있는 방법과 목록을 .csv 파일로 내보낼 수 있는 방법을 제공합니다. Hosts &gt; NFS Clients로 이동하면 지난 48시간 동안 활성화된 NFS 클라이언트 목록이 표시됩니다.</block>
+  <block id="86cbc9b3281ca79561f6b37bbdccbe8b" category="paragraph"><block ref="86cbc9b3281ca79561f6b37bbdccbe8b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ec80d38d5d07f267bbf6df8595b79e4a" category="section-title">기타 System Manager 9.8의 향상된 기능</block>
+  <block id="cb414bc7aa19f084481127119ba2897e" category="paragraph">ONTAP 9.8은 System Manager에도 다음과 같은 향상된 기능을 제공합니다.</block>
+  <block id="1a68c93e4fa8ca38fca428d9dca5c0cd" category="list-text">NAS 파일 보안 추적(권한 문제 해결을 위한 추적 파일 액세스)</block>
+  <block id="f3a16e57024c45f8f7ccddbc62e9b5b9" category="list-text">로그인 배너 구성(로그인 시 표시되는 배너)</block>
+  <block id="61f0d696b0d70d071bf097f830e4548d" category="list-text">MetroCluster 구성</block>
+  <block id="5d09ec2ed3f96fe75941d45448e72879" category="list-text">로깅 수준(클러스터에서 수행된 로깅 수준 조정)</block>
+  <block id="a10c0c474eb381b83199c0ad6449089c" category="list-text">SAML 구성</block>
+  <block id="a32dd2ca79d8d8a0056821cb37fed7f4" category="list-text">Onboard Key Manager(온보드 키 관리자</block>
+  <block id="407cf083aa35ee85161bbb71af813fa4" category="list-text">NVMe 하위 시스템</block>
+  <block id="9a23cc403d79dbb80c6f335ba54fc588" category="list-text">자동 애그리게이트 프로비저닝 및 용량 확장</block>
+  <block id="1efe0f9a3d85dc404d7cfb3ef6a7860b" category="list-text">ONTAP 이미지 업로드를 위한 REST API 지원</block>
+  <block id="00476bd34885a41b8ec5701b3e1fb88c" category="list-text">자동 포트 배치</block>
+  <block id="9e3ede34ac38e3ac61d504df09c631f1" category="list-text">SnapMirror 복원 및 역방향 재동기화</block>
+  <block id="b686956c3499653e01b67fcdc616eedc" category="list-text">디스크 할당</block>
+  <block id="067bf717b9af75b042646462c6cd33f6" category="list-text">FabricPool 개선사항(계층화 정책 및 오브젝트 태그 지정)</block>
+  <block id="b5d8be72c4ad718f17c980352a646ac8" category="list-text">클러스터에 노드 추가</block>
+  <block id="5fb23d5a86e519566748f97db5a93f41" category="list-text">n+2 ONTAP 릴리즈로 무중단 직접 업그레이드(2년 기간)</block>
+  <block id="5e674cf541d89509ec12f98fb6ef2759" category="list-text">프로토콜별 성능 뷰</block>
+  <block id="9b7c6ef7ef8453014fa9c7c3c7a508e8" category="list-text">S3 프로토콜 관리</block>
+  <block id="229b455caf027daad19b5002506344a3" category="list-text">동일한 볼륨에 여러 개의 LUN이 있습니다</block>
+  <block id="cdca546f0fe68b8604cd15e3db4a7139" category="list-text">여러 개의 LUN 이동</block>
+  <block id="990a05db6a768ae138a96973a50d1835" category="list-text">펌웨어 업데이트를 한 번 클릭합니다</block>
+  <block id="825a08d3b6d8787f8abfb50a7c538bed" category="list-text">SnapMirror 비즈니스 연속성 지원</block>
+  <block id="f21a54dcaf525f97063a7b5e8669dd6c" category="list-text">스토리지 효율성 정책</block>
+  <block id="591e8a05b021dbe44b8b479994002d56" category="list-text">볼륨 관리 기능이 향상되었습니다</block>
+  <block id="838b98215131d1450be3a9fde9c6d757" category="paragraph">다음 그림에서는 MetroCluster 및 한 번의 클릭으로 펌웨어 업데이트를 보여 줍니다.</block>
+  <block id="4e0361a8c0c8f196aae796c5f30d9481" category="paragraph"><block ref="4e0361a8c0c8f196aae796c5f30d9481" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="354e87fca6002bf0c226aabee34b513f" category="section-title">REST API의 향상된 기능</block>
+  <block id="8bd3bf79375797df63622a59ca9a0b0c" category="paragraph">ONTAP 9.6에 추가된 REST API 지원을 통해 스토리지 관리자는 CLI 또는 GUI와 상호 작용할 필요 없이 자동화 스크립트에서 ONTAP 스토리지에 대한 업계 표준 API 호출을 활용할 수 있습니다.</block>
+  <block id="f96df3b75fa98160f82b0490239093ba" category="paragraph">REST API 문서와 샘플은 System Manager에서 사용할 수 있습니다. 웹 브라우저에서 클러스터 관리 인터페이스로 이동하여 주소에 dOCS/API를 추가하기만 하면 됩니다(HTTPS 사용).</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">예를 들면 다음과 같습니다.</block>
+  <block id="d1bded0ca5070f62c333b941388aa19c" category="paragraph">"https://cluster/docs/api`</block>
+  <block id="861d6a701c8c284e91f01f38f154b59d" category="paragraph">이 페이지에서는 사용 가능한 REST API에 대한 대화형 용어집과 REST API 쿼리를 직접 생성하는 방법을 제공합니다.</block>
+  <block id="045843c4ba9c8e3d50c458bde397cb88" category="paragraph"><block ref="045843c4ba9c8e3d50c458bde397cb88" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4e19555756633038e51ab5733276ab3c" category="paragraph">ONTAP 9.8에서는 REST API에 추가된 버전에 주석이 추가되어 스크립트를 여러 ONTAP 버전에서 계속 사용할 때 생활을 단순화할 수 있습니다.</block>
+  <block id="836ddb4b6c3c993b390bbca0f4097829" category="paragraph"><block ref="836ddb4b6c3c993b390bbca0f4097829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97aca351a16f8f063283dcd109cdaadd" category="paragraph">다음 표에는 ONTAP 9.8의 새로운 REST API 목록이 나와 있습니다.</block>
+  <block id="61bab435e1130e4c9dee41e56d3f4a9a" category="paragraph">* 클러스터 * * * 펌웨어 내역 * 클러스터 라이센스 – 용량 풀 * 클러스터 라이센스 – 라이센스 관리자 * 노드 메트릭 * 소프트웨어 이미지 업로드 * MetroCluster * 중재자 * 진단 * 관리/생성 * DR 그룹 * 상호 연결 * 노드 * 운영 * 네트워킹 * 이더넷 포트 메트릭 * 스위치 포트 정보 * 스위치 정보 * FC 인터페이스 메트릭 * BGP 피어 그룹 * IP 인터페이스 메트릭 * LIF 서비스 정책 * SAN * * NVMe 메트릭</block>
+  <block id="8247996160ef22c569e8e25a5b7d9e01" category="cell">* 보안 * * FIPS 모드 활성화/비활성화 * 데이터 암호화 활성화/비활성화 * Azure Key Vaults * Google GCP-KMS * IP sec * 스토리지 * * 파일 복사/이동 * NetApp FlexCache ® 패치/수정 * 모니터링되는 파일 * 스냅샷 정책 * 스토리지 효율성 정책 * 파일 및 디렉토리 관리(비동기식 삭제, QoS 및 파일 시스템 분석) * NAS * * * 감사 로그 리디렉션 * CIFS 세션 * 파일 액세스 추적/보안 추적 * 관리 * * 이벤트 개선 * 오브젝트 저장소/S3 * S3 버킷 관리 * S3 그룹 * S3 정책</block>
+  <block id="43652db97e64919eb98b834788974bee" category="paragraph">ONTAP 9.8의 System Manager 업데이트에 대한 자세한 내용은 를 참조하십시오<block ref="656f3e7eeb3494493d866ec027f9e787" category="inline-link-rx"></block>.</block>
+  <block id="93ea7fcace52704d697a55d44a5121e5" category="section-title">업그레이드 및 기술 업데이트 개선 – ONTAP 9.8</block>
+  <block id="971c9a410687b4479a92e54dd73b159b" category="paragraph">일반적으로 ONTAP 업그레이드는 1~2개의 주요 릴리즈 내에서 무중단으로 수행할 수 있어야 했습니다. 자주 업그레이드하지 않는 스토리지 관리자는 ONTAP를 업그레이드할 때가 되면 심각한 골칫거리 및 물류 문제가 될 수 있습니다. 유지 관리 창에서 누가 여러 번 업그레이드하고 재부팅하기를 원합니까?</block>
+  <block id="95296d0391b47e0106f4764dc8ede6cb" category="paragraph">ONTAP 9.8은 이제 2년 기간 내에 ONTAP 릴리스로의 업그레이드를 지원합니다. 즉, 9.6에서 9.8로 업그레이드하려는 경우 ONTAP 9.7로 이동할 필요 없이 직접 업그레이드할 수 있습니다.</block>
+  <block id="13518798be0350523ae2290c568ffb54" category="paragraph">다음 표에는 NetApp ONTAP 버전 업그레이드의 매트릭스가 나와 있습니다.</block>
+  <block id="c9fc5918d5031ae2a84dc85c1392d236" category="cell">시작점</block>
+  <block id="eef7e14f6e22593f4a86cdcbcbd79d53" category="cell">직접 업그레이드 대상:</block>
+  <block id="7dd2a92fd3f41a5334edf46f95d77e71" category="cell">ONTAP 9.6</block>
+  <block id="540cc6ee208f4c4501c81dd60eb715d4" category="cell">ONTAP 9.7, ONTAP 9.8</block>
+  <block id="3447b91e516e4fc6b5dba827fcb68bee" category="cell">ONTAP 9.7</block>
+  <block id="0f294fd356c8bdf9262282a259eeeaaf" category="cell">ONTAP 9.8, ONTAP 9.n+2</block>
+  <block id="2abfff2974f589f7a217325f304e0ec5" category="cell">ONTAP 9.8</block>
+  <block id="547cbd3109db3ef525c301563f0d65f1" category="cell">ONTAP 9.n+1, ONTAP 9.n+2</block>
+  <block id="bf901878215dddabdc936ea948793ecb" category="paragraph">이러한 간소화된 업그레이드 프로세스를 통해 간편하게 헤드 업그레이드를 수행할 수 있습니다. 새 하드웨어 노드가 배송되면 최신 ONTAP 릴리즈가 설치된 것입니다. 이전 버전에서는 기존 클러스터에서 이전 ONTAP 릴리즈를 실행 중인 경우 기존 노드를 새 노드와 동일한 ONTAP 버전으로 업그레이드하거나 새 노드를 이전 ONTAP 릴리즈로 다운그레이드해야 했습니다. 또한 더 복잡한 작업으로, 더 새로운 하드웨어를 다운그레이드할 수 없는 경우 기존 클러스터를 업그레이드하기 위한 유지 관리 창을 가져야만 했습니다.</block>
+  <block id="dcaf81f56b0daa7582eca70fdde4e77f" category="paragraph">ONTAP 9.8의 2년 수정 기간을 사용하면 해당 범위 내에 ONTAP 버전이 있는 클러스터에 새 노드를 추가할 수 있으며, 이전 노드는 중단 없는 애그리게이트 재배치 업그레이드 프로세스를 사용하여 백그라운드에서 새 ONTAP 릴리즈로 자동 업그레이드할 수 있습니다.</block>
+  <block id="d62296e71d81556e35f498bde3d79287" category="paragraph"><block ref="d62296e71d81556e35f498bde3d79287" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e3eefd878fd09006803de4818d676916" category="paragraph">이 프로세스는 클러스터 업그레이드에도 적용되며, 클러스터 내에서 전체 HA 쌍을 스와핑할 수 있습니다. ONTAP 9.8 2년 수정 기간 및 무중단 볼륨 이동을 통해 이 작업이 가능합니다.</block>
+  <block id="98d0faccb32c3ee69ee9e16707900653" category="paragraph">기본 단계는 다음과 같습니다.</block>
+  <block id="3322839b506fc71adb8aefbadab7176d" category="list-text">2년 이내에 ONTAP 버전을 사용하여 새 시스템을 기존 클러스터에 연결합니다.</block>
+  <block id="a0e8e71bdd1b8c2f43a1f39b6e0c97c2" category="list-text">무중단 볼륨 이동을 사용하여 노드를 비우십시오.</block>
+  <block id="e9e59e8ca3d1116cc6fd0b5e4050ecc3" category="list-text">클러스터에서 이전 노드의 연결을 해제합니다.</block>
+  <block id="5af22f594edf92181e2c6f3d1752e93c" category="paragraph"><block ref="5af22f594edf92181e2c6f3d1752e93c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4197d448990c4693fb6975da58c58444" category="inline-link-macro">다음: 데이터 프로토콜</block>
+  <block id="5d87bb0339311a783fc2f7c4536af142" category="paragraph"><block ref="5d87bb0339311a783fc2f7c4536af142" category="inline-link-macro-rx"></block></block>
+  <block id="6ed3add45740f0f671b6b3fc0e3397df" category="summary">이 페이지에서는 데이터의 오프 사이트 복제뿐 아니라 전송 중인 데이터와 유휴 데이터의 보안 유지를 비롯하여 ONTAP 9.8의 최신 데이터 보호 기능에 대해 설명합니다.</block>
+  <block id="21a1e68164f738b8be1dae11d5a694b3" category="doc">데이터 보호</block>
+  <block id="7efaeeb290018cf3aea10327b7bbfcc5" category="paragraph">이 문서의 컨텍스트에서 데이터 보호는 데이터의 오프 사이트 복제뿐 아니라 전송 중인 데이터와 유휴 데이터의 보안을 유지하는 개념입니다. 이 섹션에서는 ONTAP 9.8의 향상된 최신 데이터 보호 기능에 대해 설명합니다.</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="section-title">보안</block>
+  <block id="d0c17ef6c36f07ba900e5fbeec341ca4" category="paragraph">각 ONTAP 릴리스는 새로운 보안 기능과 향상된 기능을 기반으로 구축되며 ONTAP 9.8은 이와 전혀 다릅니다. ONTAP 보안 기능에 대한 자세한 내용은 을 참조하십시오<block ref="c8ff3428f4abddef45de49ab7a71320a" category="inline-link-rx"></block>.</block>
+  <block id="7b0d03c6198fcbf743d1f772d127a3ce" category="section-title">보안 퍼지</block>
+  <block id="96fe04cadb482b0d3122f7955d53e9a7" category="paragraph">기밀 데이터 또는 중요한 데이터가 있는 환경에서는 해당 파일에 액세스할 수 없는 사용자가 액세스할 수 있는 볼륨에 실수로 파일을 기록하면 데이터 유출이라고 알려진 데이터가 생성됩니다. 이렇게 하면 전체 볼륨을 삭제하고 디스크를 문질러 유출이 정리되는 시나리오가 생성됩니다.</block>
+  <block id="8728c3a0813bebd635448d3171b745e8" category="paragraph">NetApp Volume Encryption 및 Secure Purge는 파일과 관련된 보안 암호화 키를 삭제하여 개별 파일을 암호화 방식으로 세분화함으로써 이러한 잠재적 재해를 완화할 수 있는 방법을 제공했습니다. 이 키가 사라지면 해당 데이터는 더 이상 디스크에서 복구할 수 없습니다. 이 프로세스는 미디어 위생 관련 NIST SP 800-88 지침을 사용하여 데이터 복구 회사에서 외부적으로 검증되었습니다.</block>
+  <block id="27c9b2124cd335a22882c825547e210e" category="paragraph">하지만 안전한 제거에도 한계가 있었습니다. 예를 들어 파일을 제거해야 하는 경우 시스템에서 사용 가능한 공간이 필요한 볼륨 이동을 수행해야 합니다. SnapMirror가 있는 경우 안전한 삭제 작업 후에 베이스라인을 재설정해야 합니다.</block>
+  <block id="2558f7c0fc8f6d078545a76c00326816" category="paragraph">ONTAP 9.8의 보안 제거 기능은 다음과 같은 방법으로 이러한 제한 사항을 제거합니다.</block>
+  <block id="4ac9e72ca49c0514ce8c0aed6fa036d0" category="list-text">암호화 파일 파쇄에 대한 간단한 절차를 제공합니다.</block>
+  <block id="46f00c5508e4747b2df7e9786127837d" category="list-text">기준을 재조정할 필요 없이 기존 SnapMirror 미러를 그대로 유지할 수 있습니다.</block>
+  <block id="99a98e067af6b09e64f3740767096c96" category="section-title">IPsec</block>
+  <block id="f1ae24804ec4b6b17a54394f58112978" category="paragraph">IPsec은 유선으로 응용 프로그램 독립적 암호화를 수행하는 표준 메커니즘입니다. IPSec을 사용하면 사용 중인 프로토콜에 관계없이 네트워크 트래픽을 암호화할 수 있습니다. Kerberos 암호화를 설정하고 사용하기 어려운 NFS와 함께 사용하여 단순화의 기회를 제공할 뿐만 아니라 유선을 통해 iSCSI 트래픽을 암호화하는 유일한 방법도 제공합니다.</block>
+  <block id="41c2ee2e9077f794590a4aad78346465" category="paragraph">ONTAP 9.8은 이제 IPSec에 대한 지원을 추가합니다. IPSec의 ONTAP 구현은 연결 클라이언트와 미리 공유된 비밀 또는 키(PSK)를 사용합니다. 이러한 클라이언트에는 PSK가 포함된 IKEv2를 활용하는 최신 OS가 포함됩니다. Windows OS는 PSK가 포함된 IKEv2를 지원하지 않습니다.</block>
+  <block id="b3573b14a0c32dbb523ce510bf7f69e4" category="section-title">신뢰할 수 있는 플랫폼 모듈</block>
+  <block id="2ca95da666ae6ef767cab8e7cc5bdb7b" category="paragraph">ONTAP 9.8의 새로운 TPM(신뢰할 수 있는 플랫폼 모듈)을 통해 온보드 키 관리자(OKM)의 암호화 키는 물리적 TPM에 의해 밀폐되어 있어 보안 및 보호 수준이 향상됩니다. TPM으로 전환하는 것은 무중단 프로세스입니다.</block>
+  <block id="c4b8c29f448328e82ce27062b5fd9c28" category="section-title">NetApp 볼륨 암호화</block>
+  <block id="7d89fb26b027943d7a25ccdf8e8d2344" category="paragraph">NetApp Volume Encryption(NVE)은 솔루션이 활성화된 모든 드라이브 유형의 모든 데이터 볼륨을 각 볼륨의 고유 키로 암호화할 수 있는 소프트웨어 솔루션입니다. 이 기능은 ONTAP 9.1부터 사용할 수 있습니다.</block>
+  <block id="66c2012d589bdbfcf7800051ae23f432" category="paragraph">ONTAP 9.8은 로그 파일, 클러스터 구성 백업, 코어 파일 및 FIPS-140-2 규격 암호화를 통해 보호하려는 기타 시스템 관련 정보가 포함된 노드 루트 볼륨에 NVE 지원을 제공합니다.</block>
+  <block id="59d2373c92b27cf4e4b34c159a431286" category="section-title">SnapMirror 클라우드</block>
+  <block id="52df576e06aa0ca94a54f29ff7e12a23" category="paragraph">SnapMirror는 ONTAP에서 업계 최고의 복제 기술로, 스토리지 관리자가 WAN 연결을 통해 데이터 세트의 정확한 복사본을 만들고 변경된 블록만 복제하여 네트워크 사용률을 줄일 수 있습니다.</block>
+  <block id="d0d1a9cb3affe6d9507f250f258c5feb" category="inline-link">SolidFire Element OS입니다</block>
+  <block id="18cc7e36d7119e7d99d9319c73b52a21" category="paragraph">지난 몇 번의 ONTAP 릴리즈를 통해 SnapMirror 지원이 확장되어 와 같은 비 ONTAP 시스템까지 편입되었습니다<block ref="271d4d6bce47112d2620ada68710c395" category="inline-link-rx"></block>. 이제 ONTAP 9.8은 SnapMirror를 활용하여 클라우드 또는 온프레미스 S3 오브젝트 버킷으로 복제할 수 있는 방법을 제공합니다.</block>
+  <block id="47a854cc17afad3741d9ab31060a88cc" category="paragraph"><block ref="47a854cc17afad3741d9ab31060a88cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="91ae23305db13e462c92a7c674dbdcb7" category="inline-link">SnapDiff 3.0 엔진</block>
+  <block id="ad5650d9b4444510a56e2a3f19826c5b" category="paragraph">새로운 기술을 활용합니다<block ref="c8c9d1cf39249716153bbef47927ca2c" category="inline-link-rx"></block>SnapMirror는 ONTAP NAS 볼륨에서 오브젝트 스토리지 버킷으로 데이터를 안전하고 효율적으로 복제할 수 있습니다. ONTAP Data Fabric 전반에서 하이브리드 클라우드 이동성을 제공합니다.</block>
+  <block id="16007b406ace97200e7f693a2b5280bb" category="list-text">스냅샷을 클라우드 오브젝트 스토리지에 공간 효율적으로 백업하면 스토리지 효율성이 유지됩니다.</block>
+  <block id="0bae9fd60dfd82482117110d05ba3ff7" category="list-text">전체 볼륨 및 단일 파일 복원을 지원합니다</block>
+  <block id="7416a9392e4d1a5e35e7b0fb8030579f" category="paragraph">ONTAP 9.8에서 SnapMirror 클라우드를 사용하려면 다음 두 가지 방법 중 하나로 오케스트레이션을 수행해야 합니다. System Manager에서 또는 API 또는 CLI를 통해 직접 지원되지 않습니다.</block>
+  <block id="0a8d6ac0156d1090d18f061e21de9897" category="list-text">라이선스를 보유한 ISV 파트너 애플리케이션을 통해 백업 및 복원 워크플로우를 생성 및 관리합니다. SnapMirror Cloud 라이센스가 필요합니다.</block>
+  <block id="d9a839be98373ea2f48fa7e83e8c90d8" category="list-text">Cloud Backup Service를 통해 SnapMirror Cloud 라이센스가 필요하지 않습니다.</block>
+  <block id="b6b2a1d0b8ba8fe76cf8feb2a3779ca3" category="paragraph">SnapDiff 및 SnapMirror Cloud에 대한 자세한 내용은 다음 리소스를 참조하십시오.</block>
+  <block id="32f29d9d5ff68c026e733ad57c7f6a57" category="list-text"><block ref="32f29d9d5ff68c026e733ad57c7f6a57" category="inline-link-rx"></block></block>
+  <block id="e12bd88c41c364e0b9d2962bf25b88a7" category="list-text"><block ref="e12bd88c41c364e0b9d2962bf25b88a7" category="inline-link-rx"></block></block>
+  <block id="449390cc1a5961dd2b3d16cedf460e84" category="inline-link">NetApp 블로그: SnapDiff/SnapMirror Cloud-v3의 새로운 백업 아키텍처</block>
+  <block id="d95f112589a3dd86147b0500915b49a6" category="list-text"><block ref="d95f112589a3dd86147b0500915b49a6" category="inline-link-rx"></block></block>
+  <block id="704de765250161b4c06ce64f26a08d82" category="section-title">SnapMirror 비즈니스 연속성(SM-BC)</block>
+  <block id="974658d7ac018cb945e78365b0a760fb" category="inline-link">SnapMirror Synchronous</block>
+  <block id="742b94346e9a91a2dd3f2eb45e2bba74" category="paragraph"><block ref="ae4f4cde8889ce2d6ed872450cfc8abc" category="inline-link-rx"></block> (SM-S)는 ONTAP 9.5에 도입되었으며 기업에서 백업, 재해 복구 및 데이터 이동성을 위해 의존하는 볼륨 단위의 세분화된 스토리지 효율적인 동기식 데이터 복제를 제공합니다. SM-S는 10ms 미만의 RTT(Round Trip Time)를 제공하는 데이터 센터 또는 원거리 지역에 위치한 완전히 이중화된 ONTAP 스토리지 시스템 간에 NetApp FlexVol 볼륨의 데이터를 복제하여 복구 시점 목표를 0으로 달성할 수 있습니다.</block>
+  <block id="31eb27b0a41bf308b672b9ff3e721925" category="paragraph">ONTAP 9.8은 SAN 환경에서 SnapMirror Synchronous라는 개념을 사용하며, System Manager를 사용하여 일관성 그룹의 애플리케이션에 자동화된 페일오버 기능을 제공하고, ONTAP 중재자를 사용하여 운영 중단 시 비즈니스 연속성을 관리하고 유지합니다. 이 관계는 동기적이므로 장애 조치 시 애플리케이션이 비트를 놓치지 않습니다. SnapMirror 비즈니스 연속성의 초기 릴리즈는 SAN(iSCSI 및 FCP) 워크로드만 지원합니다.</block>
+  <block id="9af8e1832c13f01066f8fb9551d4f5c0" category="paragraph">SnapMirror 비즈니스 연속성에 대한 자세한 내용은 를 참조하십시오<block ref="c9c1698c4351f962bdb21db9220085cf" category="inline-link-rx"></block>.</block>
+  <block id="1749d12df3df2319d3eee218a277ff83" category="section-title">MetroCluster</block>
+  <block id="452a541cc7e0c4541856789b0099e212" category="paragraph"><block ref="452a541cc7e0c4541856789b0099e212" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f257512335e46f638ab63d60a7cdf98" category="paragraph">ONTAP 9.8은 MetroCluster에 대해 다음과 같은 향상된 기능을 제공합니다.</block>
+  <block id="3140d6259747a780f705a8fe089ddce8" category="list-text">* 새로운 엔트리 레벨 및 미드레인지 플랫폼 지원 * NetApp AFF A250, FAS8300, FAS 8700 하이브리드 및 A400. A220, FAS2750 및 FAS500f를 새로 설치하면 VLAN을 100-4096 미만으로 지정할 수 있습니다.</block>
+  <block id="33af7566299346d615493e051f52d0de" category="list-text">* MC-FC에서 MC-IP로 무중단 전환 * 4노드 클러스터만 해당, 2노드 MCC에는 다운타임이 필요함. 향후 기술 업데이트를 통해 MC IP로 간편하게 이동할 수 있습니다.</block>
+  <block id="a3bd89a8c71675c809a072d31d6302d9" category="list-text">* 미러링되지 않은 애그리게이트는 이제 MC IP에 대해 지원됩니다. * 더 높은 애플리케이션 세분화를 위해 원하는 애그리게이트만 페일오버 사이트에 복제합니다.</block>
+  <block id="6b9468f9d78c8c90a655c1ec054cd138" category="list-text">추가 100G 포트 라이센스가 있는 BES-53248 스위치의 Cisco 9336C-FX2 스위치 및 A400, FAS 8300, FAS 8700을 지원합니다.</block>
+  <block id="b3d347a96e31f263c7992aa8cf48dfba" category="paragraph">MetroCluster에 대한 자세한 내용은 다음 리소스를 참조하십시오.</block>
+  <block id="a8b40d526c650b15e6116e5649ba89a0" category="list-text"><block ref="a8b40d526c650b15e6116e5649ba89a0" category="inline-link-rx"></block></block>
+  <block id="fd76c24b42a60814801aea7af2ab316f" category="list-text"><block ref="fd76c24b42a60814801aea7af2ab316f" category="inline-link-rx"></block></block>
+  <block id="c1febbd27614347356426b013d6de3ad" category="list-text"><block ref="c1febbd27614347356426b013d6de3ad" category="inline-link-rx"></block></block>
+  <block id="ec222ea421451d6837b25e66b225a354" category="inline-link-macro">다음: VMware 가상화</block>
+  <block id="fa171a758ea782b574d4536f3930057d" category="paragraph"><block ref="fa171a758ea782b574d4536f3930057d" category="inline-link-macro-rx"></block></block>
+  <block id="de3745fcb05140ad0bb3e7389bac298a" category="list-text">TR-4515: ONTAP AFF 모든 SAN 어레이 시스템</block>
+  <block id="5f6c7b66730777f9d5cc040c9008804b" category="inline-link"><block ref="5f6c7b66730777f9d5cc040c9008804b" category="inline-link-rx"></block></block>
+  <block id="3a669c2c64a73e8944dd0b62760542b8" category="paragraph"><block ref="3a669c2c64a73e8944dd0b62760542b8" category="inline-link-rx"></block></block>
+  <block id="c62a1ebd89969166bcea805fae6f2dca" category="list-text">TR-4526: NetApp SnapLock를 사용하는 규정 준수 WORM 스토리지</block>
+  <block id="68a5b9695a2d4a95c03c220abc11dae0" category="inline-link"><block ref="68a5b9695a2d4a95c03c220abc11dae0" category="inline-link-rx"></block></block>
+  <block id="bbdba979b4a42a588b130b2f8d813c15" category="paragraph"><block ref="bbdba979b4a42a588b130b2f8d813c15" category="inline-link-rx"></block></block>
+  <block id="35be54d72d495f88b67d7487f217d460" category="list-text">TR-4684: NVMe/FC를 사용하여 최신 SAN 구현 및 구성</block>
+  <block id="4f29a992f6641bcc5f36d8c3a701b96d" category="inline-link"><block ref="4f29a992f6641bcc5f36d8c3a701b96d" category="inline-link-rx"></block></block>
+  <block id="d4c5d167066f1e72e6b6b1c98b66c55e" category="paragraph"><block ref="d4c5d167066f1e72e6b6b1c98b66c55e" category="inline-link-rx"></block></block>
+  <block id="69f6754f98b080f6ec8c418cbb75f7a6" category="list-text">TR-4814:S3 in ONTAP 모범 사례</block>
+  <block id="57656e67f8e95a739410310dfea5cff5" category="inline-link"><block ref="57656e67f8e95a739410310dfea5cff5" category="inline-link-rx"></block></block>
+  <block id="9c7c00a4655a87484f67dd92816b6d1d" category="paragraph"><block ref="9c7c00a4655a87484f67dd92816b6d1d" category="inline-link-rx"></block></block>
+  <block id="d94090d112ca04c7dfa38204326a3587" category="list-text">Tech OnTap 팟캐스트 에피소드 288: ONTAP 시스템 관리자 9.9.1</block>
+  <block id="7379413ab01738b3d48f132dec591c80" category="inline-link"><block ref="7379413ab01738b3d48f132dec591c80" category="inline-link-rx"></block></block>
+  <block id="e10e59ff9a39fe83b615d336f0436894" category="paragraph"><block ref="e10e59ff9a39fe83b615d336f0436894" category="inline-link-rx"></block></block>
+  <block id="7b4245db3752a93e7bc205dbeb7eacb2" category="summary">이 페이지에서는 클라이언트와 최종 사용자가 데이터 액세스를 위해 ONTAP 스토리지 시스템과 상호 작용할 수 있는 데이터 프로토콜을 제공합니다.</block>
+  <block id="8d5ebef80a05591650f454a9fe902118" category="doc">데이터 프로토콜</block>
+  <block id="2ce934b6b00f7a3fff62e20fc7e73272" category="paragraph">데이터 프로토콜은 클라이언트 및 최종 사용자가 NetApp ONTAP 스토리지 시스템과 상호 작용하여 데이터 액세스를 지원하는 방법을 나타냅니다. NetApp ONTAP는 다음과 같이 동일한 스토리지 플랫폼에서 데이터 액세스를 위해 공식 지원되는 여러 인터페이스를 제공합니다.</block>
+  <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="list-text">NAS</block>
+  <block id="62a0282d39568be094470486eaf70c4f" category="list-text">산</block>
+  <block id="e2ab7c65b21ed8cc1c3b642b5e36429e" category="list-text">S3</block>
+  <block id="938ae2cf64ea688b529a649875b563cf" category="paragraph">ONTAP 9.8은 ONTAP 데이터 프로토콜에 대한 다양한 개선 기능을 제공합니다.</block>
+  <block id="6ba07695b5fb9cb31db2f85e246fdd44" category="section-title">NAS 프로토콜의 향상된 기능</block>
+  <block id="24024f1fe0c9234b68f09750ea56d17f" category="paragraph">NAS(Network Attached Storage) 프로토콜은 NFS 및 SMB/CIFS와 같은 파일 기반 전송 방법을 참조합니다. NAS 프로토콜 지원을 위한 ONTAP 9.8에는 NetApp FlexGroup 및 FlexCache 볼륨과 같은 NAS에 특히 적용되는 기능이 다음과 같이 개선되었습니다.</block>
+  <block id="53d0d9899e7499ea899cf9907c444edb" category="section-title">NFS의 향상된 기능</block>
+  <block id="1d48bb11d3c1d5d9847e75c624fb1d62" category="paragraph">ONTAP 9.8은 다음과 같은 NFS 개선 기능을 제공합니다.</block>
+  <block id="fa7a070650156ec63c69224be48bea30" category="list-text">* NFSv4.2. * 는 기본 NFSv4.2 프로토콜 지원을 제공하며 레이블링과 같은 NFSv4.2 기능은 포함하지 않습니다. NFSv4.2는 NFSv4.1이 활성화된 경우에 활성화됩니다.</block>
+  <block id="ecb6d3ab9c6e3b8c0e4dccb0426a9dd3" category="list-text">* Qtree QoS(Quality of Service). * 스토리지 관리자가 ONTAP에서 qtree에 QoS 최대값 및 최소값을 적용할 수 있는 방법을 제공합니다. 현재 REST API 및 명령줄에서만 사용 가능하며 적응형 QoS 지원은 포함되지 않으며 NFS 전용입니다.</block>
+  <block id="c2344d9bfe3f8fc1d9c1682001347c8d" category="section-title">SMB/CIFS의 향상된 기능</block>
+  <block id="8eab9879bbfa931d5617dd42b99b0d91" category="paragraph">ONTAP 9.8은 다음과 같은 SMB/CIFS 개선 기능을 제공합니다.</block>
+  <block id="ee6f21637e4c9cf6960010ad517b475d" category="list-text">* SMB3 - 암호화된 DC 연결. * SMB DC 연결을 위한 유선으로 암호화.</block>
+  <block id="c84a7558936386075ec4443a42f7c8ec" category="inline-link">1153207</block>
+  <block id="b5a13c946f131f32d9d33c47742ab1cb" category="list-text">* 소유자 설정(-map-sid-to-uid-on-set-owner)에서 UID에 SID를 매핑합니다. * 이 옵션은 파일 및 폴더에 대한 소유권을 설정할 때 ONTAP가 Windows SID를 UNIX UID에 매핑하는지 여부를 제어합니다. Active Directory 서버의 로드가 증가한 고객의 데이터 마이그레이션 환경을 개선하기 위해 이 옵션이 추가되었습니다. 기본값은 true입니다. (버그 수정<block ref="7256f456f45c40d15384e8b37c069740" category="inline-link-rx"></block>참조)</block>
+  <block id="e1e64672094057370c798d765ba38ad5" category="inline-link">버그 820848</block>
+  <block id="fa278c0f14461c10ce31270fba0f4cf0" category="list-text">* NFSv4_ACL이 상속될 때 Modebits 설정(-is-inherit-modebits-with-nfsv4acl-enabled) *. NFSv4 ACL이 기본 "owner@", "group@" 및 "everyone@" ACL을 제거한 디렉토리에서 SMB 파일이 생성될 때 멀티 프로토콜 NAS 상호 작용을 지원합니다. 그렇지 않으면 해당 ACL이 상속 플래그 집합을 가지고 있지 않습니다. 기본값은 false입니다. (수정 대상<block ref="33ad2b0f244f0fab09b3017ba202f8cb" category="inline-link-rx"></block>참조)</block>
+  <block id="8284a5c04de289c4e5980cd88bec973b" category="section-title">FlexCache 볼륨의 향상된 기능</block>
+  <block id="d1d5dafc45c04e7055a685f57db5bf2a" category="paragraph">NetApp FlexCache 볼륨은 NetApp FlexGroup 볼륨으로 구성된 스파스 가상 캐시입니다. 이러한 캐시는 원래 볼륨을 가리키며, 클라이언트에서 요청할 때 데이터를 캐시에 채워 클라우드나 에지 또는 데이터 센터에서 ONTAP을 실행하는 어디서나 빠르고 지역화된 액세스를 제공하여 진정한 글로벌 네임스페이스를 제공합니다.</block>
+  <block id="02d3716df1ad76d55387201d981c9d32" category="paragraph"><block ref="02d3716df1ad76d55387201d981c9d32" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d0ad1957ce9751a1f6c4658c285da264" category="paragraph">FlexCache 볼륨에 대한 자세한 내용은 을 참조하십시오<block ref="076477ecf83c2a174b415736cacf2cbb" category="inline-link-rx"></block>.</block>
+  <block id="455ed1cbdd66c4aad67b470e402e9c71" category="paragraph">ONTAP 9.8은 다음과 같은 FlexCache 볼륨 개선 기능을 제공합니다.</block>
+  <block id="c1f698caab4ea1ffe5f457737c62661c" category="list-text">* SMB/CIFS 지원 * NetApp FlexCache는 이제 NFSv3 및 SMB 클라이언트에 대한 캐시 액세스와 멀티 프로토콜 NAS 데이터 액세스를 지원합니다. FlexCache는 읽기 집약적인 워크로드를 위해 여러 사이트에 분산된 지역화된 파일 잠금에 사용할 수 있습니다.</block>
+  <block id="38bebec2ebf0b5f53b12c1d39ed3adba" category="list-text">FlexCache 팬아웃 비율 증가 * ONTAP 9.8은 100:1의 팬아웃 비율을 제공합니다. 이전에는 비율이 10:1이었습니다.</block>
+  <block id="6ae9fa4926e960bdc2c84a9b1e4089c3" category="list-text">SnapMirror 보조 원본이 있는 * FlexCache 볼륨. * 이제 FlexCache 볼륨을 SnapMirror 보조 볼륨에 연결할 수 있습니다. 이 볼륨을 사용하면 운영 스토리지 시스템에서 읽기 작업을 오프로드할 수 있을 뿐만 아니라 지리적으로 분산된 원본 볼륨을 제공할 수 있습니다.</block>
+  <block id="b4654185ead5f41183c09c57ec028ae7" category="list-text">* 블록 수준 캐시 무효화 * 캐시에서 변경된 데이터를 제거했을 때 전체 파일의 유효성을 검사하는 대신 변경된 블록만 제거됩니다. 따라서 용량 및 WAN 트래픽 로드가 절감됩니다.</block>
+  <block id="1f151ebd321b65abba881741a831a8be" category="list-text">* 미리 채워지는 캐시 * 자주 액세스될 것으로 알고 있는 볼륨의 디렉토리가 있는 경우, 이제 캐시를 해당 디렉토리의 컨텐츠로 미리 채워 초기 클라이언트 액세스의 지연 시간을 없앨 수 있습니다.</block>
+  <block id="2b3254788d7cc3986b81dc329e429d33" category="section-title">FlexGroup 볼륨의 향상된 기능</block>
+  <block id="327f0903ce3969f74b60afb9a93421a2" category="paragraph"><block ref="327f0903ce3969f74b60afb9a93421a2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4985a8c77a3bdce3afcd993e74a2b27" category="paragraph">ONTAP 9.8은 다음과 같은 FlexGroup 볼륨 개선 기능을 제공합니다.</block>
+  <block id="e9d999101d610c00afd029313a511d0a" category="list-text">* 1,023개의 스냅샷 지원 * 이제 NetApp FlexGroup 볼륨은 볼륨당 최대 1,023개의 스냅샷 복사본을 생성할 수 있습니다. 추가 Snapshot 복사본을 사용하면 FlexGroup 볼륨이 아카이브 대상으로서 더 많은 기능을 사용할 수 있고, 더 많은 수의 스냅샷을 자주 보유할 수 있으며, 이제 스냅샷 복사본 ID가 255개를 초과하는 FlexVol 변환을 지원할 수 있습니다.</block>
+  <block id="4286bdc455e42efda8cbcf90aa2a0e9b" category="list-text">NDMP 향상 * FlexGroup 9.7에는 ONTAP 볼륨에 대한 NDMP 지원이 추가되었지만 다음 기능 옵션이 누락되었습니다.</block>
+  <block id="12e4e80c85e500edf31b2be21d429285" category="list-text">ONTAP 9.8은 NDMP를 추가로 지원합니다</block>
+  <block id="4f34e973c167c2296f66c7986cb558f8" category="list-text">제외</block>
+  <block id="1dd4143d47e86f2d7449ec6f2b7a4a5d" category="list-text">재시작 가능한 백업 확장(RBE)</block>
+  <block id="c84d591b64c03eba23535bdae50d9610" category="list-text">multi_subtree_names를 선택합니다</block>
+  <block id="4a02475d909bd7464565a63664e4dc8b" category="list-text">성능 향상</block>
+  <block id="a6c7543dfa050a56e392a7dd1324e61a" category="paragraph">FlexGroup 볼륨 및 NDMP에 대한 자세한 내용은 를 참조하십시오<block ref="d3c9fb1f0e682f51443e0d041a0d593e" category="inline-link-rx"></block>.</block>
+  <block id="552b637a319f6d9909211c640e6c31b7" category="list-text">* FlexGroup에서는 7MTT 볼륨 지원을 변환합니다. * ONTAP 9.8 이전에는 7-Mode에서 FlexGroup 볼륨으로 전환된 FlexVol를 변환할 수 없었습니다. ONTAP 9.8은 이러한 제약을 완화해 줍니다.</block>
+  <block id="47f418d69c63302ac9982145204cf118" category="list-text">* 사전 리사이징. * 사전 리사이징은 FlexGroup 구성원 볼륨에서 여유 공간 버퍼를 유지 관리하여 일관된 성능 및 용량 배포를 장려하는 용량 관리 기능입니다.</block>
+  <block id="86592811858f36e0d2ca3441a4294257" category="list-text">* 파일 클론 생성. * 이제 VAAI 복사 오프로드 지원을 통해 VMware vSphere를 사용하여 FlexGroup 볼륨의 파일을 복제할 수 있습니다. 그러나 REST API 또는 CLI를 사용한 파일 복제는 현재 지원되지 않습니다.</block>
+  <block id="97c083c1ec596fe0c37f25fd78f2c4da" category="list-text">* VMware 데이터 저장소 지원 * ONTAP 9.8은 이제 FlexGroup 볼륨을 확장 가능한 VMware 데이터 저장소로 공식 지원합니다. 이는 다음을 의미합니다.</block>
+  <block id="09f5e66f7a5816c68fee09569d4847a4" category="list-text">Virtual Storage Console 지원</block>
+  <block id="46a6cf7676550524a9fadb895f1c21a2" category="list-text">NetApp SnapCenter 백업 지원</block>
+  <block id="2c8baf1a96103df2531d21cd360d0a07" category="section-title">비동기 삭제</block>
+  <block id="fb1345b3bfe7b62f0692cd7456b26d9a" category="paragraph">비동기식 삭제를 사용하면 스토리지 관리자가 CLI에서 디렉토리를 삭제하여 네트워크 지연 시간을 건너뛸 수 있습니다.</block>
+  <block id="41fa5cdcbc83f0b42255f378e35b6552" category="paragraph">NFS 또는 SMB를 통해 많은 파일이 포함된 디렉토리를 삭제하려고 시도한 적이 있다면 이는 매우 힘든 일이 될 수 있습니다. 각 작업은 사용 중인 NAS 프로토콜을 통해 네트워크를 통해 이동해야 하며, 그런 다음 ONTAP는 이러한 요청을 처리하고 응답해야 합니다. 사용 가능한 네트워크 대역폭, 클라이언트 사양 또는 스토리지 시스템에 따라 이 프로세스에 시간이 오래 걸릴 수 있습니다. 비동기 삭제는 상당한 시간을 절약하고 클라이언트가 더 빠르게 작업할 수 있도록 합니다.</block>
+  <block id="24b0a8fd0cb22c94f89508432c25376c" category="inline-link">TR-4751: NetApp FlexGroup 볼륨 모범 사례</block>
+  <block id="86d3f38aa36f990006cc246e1038b47e" category="paragraph">비동기식 삭제에 대한 자세한 내용은 을 참조하십시오<block ref="9e081dbdea624065103d3f814d658a51" category="inline-link-rx"></block>.</block>
+  <block id="b4077bd87ec4e992e2f43377b98ad996" category="section-title">SAN의 향상된 기능</block>
+  <block id="2ef7f6997f5c381d6ea9a8f1b98ea214" category="paragraph">SAN(Storage Area Network) 프로토콜은 FCP, iSCSI 및 파이버 채널을 통한 NVMe와 같은 블록 기반 데이터 전송 방법을 참조합니다. SAN 프로토콜 지원을 위해 ONTAP 9.8에 다음과 같은 개선 사항이 추가되었습니다.</block>
+  <block id="08000f73dcb4e96db6e1c3d459ec3a17" category="section-title">All-SAN 어레이(ASA)</block>
+  <block id="b7b46ce5d1a547db89c0bc615ff272a5" category="inline-link">ASA</block>
+  <block id="bdc3f9b0236b3833345320a05d446f7b" category="paragraph">ONTAP 9.7에는 이라는 새로운 전용 SAN 플랫폼이 도입되었습니다<block ref="ae8a947d75e8d758b28ac539f9f2aeb9" category="inline-link-rx"></block>SAN 연결에 Active-Active 접근 방식을 제공하여 SAN 환경에서 페일오버 시간을 크게 줄이는 동시에 Tier-1 SAN 구축을 간소화한다는 목표를 가지고 있습니다.</block>
+  <block id="91341952eb4d85a106a7151a09e4b35b" category="inline-link">All-SAN 어레이 설명서 리소스입니다</block>
+  <block id="8f02ab5a9beec7a32d1ae90c89218782" category="paragraph">ASA에 대한 자세한 내용은 에서 확인할 수 있습니다<block ref="bea038af710a49dcacc22a0a34fbba31" category="inline-link-rx"></block>.</block>
+  <block id="eb158141d7261a0720aea7db8d4c10b5" category="paragraph">ONTAP 9.8은 ASA에 다음과 같은 향상된 기능을 제공합니다.</block>
+  <block id="d314d0ed62777447640cdda0a36c0bd9" category="list-text">* 더 큰 LUN 및 FlexVol 볼륨 크기 * 이제 ASA의 LUN을 128TB로 프로비저닝할 수 있습니다. FlexVol 볼륨은 300TB가 될 수 있습니다.</block>
+  <block id="02a5798e9fd8e73d2c246481cc57cb18" category="list-text">* IP를 통한 MetroCluster 지원. * ASA는 이제 IP 네트워크를 통한 사이트 페일오버에 사용할 수 있습니다.</block>
+  <block id="7ed96461e4ce540aad503209b1a20ff8" category="list-text">* SnapMirror 비즈니스 연속성(SM-BC) 지원. * ASA는 SnapMirror 비즈니스 연속성에 사용할 수 있습니다. Xref</block>
+  <block id="dc351b2abbd920b35cff990b6582b9d7" category="inline-link">상호 운용성 매트릭스</block>
+  <block id="be74048bdc6c07521b1d9104477fd674" category="list-text">* 호스트 에코시스템 확장. * HP-UX, Solaris 및 AIX 지원. 를 참조하십시오<block ref="77ce033dde503961e66ef4a70da4187a" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="4aa79ff83043a84d6150b763b9923f51" category="list-text">* A800 및 A250 플랫폼 지원 *</block>
+  <block id="aa763f4820056dcaa10f9455bb548821" category="list-text">* System Manager에서 간소화된 프로비저닝. *</block>
+  <block id="836cbb32fba49c5537ed5fea2d2f74a2" category="section-title">영구 포트</block>
+  <block id="2ea08603579b62946f894beb90d28827" category="paragraph">ASA는 영구 포트라는 향상된 기능을 추가하여 장애 조치 시간을 개선합니다. ONTAP의 영구 포트는 ASA에 연결하는 SAN 호스트에 대해 훨씬 더 높은 복원력과 지속적인 데이터 액세스를 제공합니다. ASA의 각 노드는 섀도우 파이버 채널 LIF를 유지합니다. 이 기능은 ONTAP 9.8이 ASA의 SAN 장애 조치 시간을 훨씬 단축한 방식에 있어 매우 중요합니다. 이러한 LIF는 파트너 LIF와 동일한 ID를 유지하지만 대기 모드로 유지됩니다. 페일오버가 있고 FC LIF가 파트너 노드로 마이그레이션해야 하는 경우 ID를 변경하는 대신(호스트에서 변경 사항을 협상하는 동안 페일오버 시간을 늘릴 수 있음) 섀도 LIF가 새로운 경로가 됩니다. 호스트는 동일한 ID의 동일한 경로에서 추가 구성 없이 링크 다운 알림 없이 동일한 경로로 입출력을 계속합니다.</block>
+  <block id="b915bda06b0f8cae50a670b915993bd7" category="paragraph">다음 그림에서는 영구 포트의 페일오버 예를 보여 줍니다.</block>
+  <block id="acdafc88606e5d9dfab2fc52c02b7177" category="paragraph"><block ref="acdafc88606e5d9dfab2fc52c02b7177" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="26bcb9f1cb6f391f4b2c18e676bb458d" category="section-title">NVMe/FC</block>
+  <block id="396d68b2509d6991d0d5ec4d6b449048" category="paragraph">NVMe는 기존 FCP 및 iSCSI를 통한 블록 워크로드의 지연 시간 및 성능을 개선하는 데 도움이 되는 새로운 SAN 프로토콜입니다.</block>
+  <block id="62c0367253812fce2a5351fc0d4d4e73" category="inline-link">NVMe over Fabrics를 구현할 때는 패브릭이 매우 중요합니다</block>
+  <block id="4254fade971e163f399ccf98c71e7987" category="paragraph">이 블로그에서 다루는 내용은 다음과 같습니다.<block ref="c488a71c31854abf123fa4d720fc1042" category="inline-link-rx"></block>.</block>
+  <block id="e9a7cfcb52ea149a563d3399ad36a974" category="paragraph">NetApp은 ONTAP 9.4에서 NVMe over Fibre Channel에 대한 지원을 도입했으며 각 릴리즈에 향상된 기능을 추가했습니다. ONTAP 9.8에는 다음이 추가됩니다.</block>
+  <block id="08f28daedf210813841fea24a6df9b0b" category="list-text">FCP 및 iSCSI를 사용하는 동일한 SVM에서 * NVMe/FC. * 이제 동일한 SVM에서 다른 SAN 프로토콜과 동일한 NVMe/FC를 사용하여 SAN 환경 관리를 간소화할 수 있습니다.</block>
+  <block id="42232ad864f1b4c443fa7860a434ce26" category="list-text">* Gen 7 SAN 스위치 패브릭 지원. * 이 기능은 최신 Gen 7 SAN 스위치를 추가로 지원합니다.</block>
+  <block id="18c17719af6c3fc142958b39fb41e282" category="section-title">S3의 향상된 기능</block>
+  <block id="1f340a52e43f9a3eeb8b8f2b5f6b4477" category="paragraph">S3 프로토콜을 사용하는 오브젝트 스토리지는 ONTAP 프로토콜 제품군에 최근에 추가된 기능입니다. ONTAP 9.7에서 공용 미리 보기로 추가된 S3는 이제 ONTAP 9.8에서 완벽하게 지원되는 프로토콜입니다.</block>
+  <block id="4ca362666a17cdd53b7ea6acbd4b202a" category="paragraph">S3에 대한 지원에는 다음이 포함됩니다.</block>
+  <block id="d637e5c69c5bd0d3932d2fe7a13b8ee5" category="list-text">S3 as a NetApp FabricPool target자세한 내용은 다음 리소스를 참조하십시오.</block>
+  <block id="2683d093ee73504d81f0a81895ae03a4" category="inline-link-macro">다음은 스토리지 효율성 입니다</block>
+  <block id="894993270da66c4f1f40a52bc9a89e53" category="paragraph"><block ref="894993270da66c4f1f40a52bc9a89e53" category="inline-link-macro-rx"></block></block>
+  <block id="7eb11865313a79b30293e6f823bc7459" category="sidebar">NetApp ONTAP 9.9.1 기능 개요</block>
+  <block id="bebab3b123211d2c00c685855ec9b053" category="sidebar">NetApp ONTAP 9.8 기능 개요</block>
+</blocks>

@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: ontap991fo_data_protection_enhancements.html 
+keywords: replication, failover, disaster recovery, dr, synchronous, backup, archive 
+summary: 이 문서의 컨텍스트에서 데이터 보호는 데이터의 오프 사이트 복제 및 자동화된 사이트 인프라 페일오버에 대한 개념을 모두 나타냅니다. 이 섹션에서는 ONTAP 9.9.1의 최신 데이터 보호 개선 사항에 대해 다룹니다. 
+---
+= 데이터 보호 기능이 향상되었습니다
+
+
+이 문서의 컨텍스트에서 데이터 보호는 데이터의 오프 사이트 복제 및 자동화된 사이트 인프라 페일오버에 대한 개념을 모두 나타냅니다. 이 섹션에서는 ONTAP 9.9.1의 최신 데이터 보호 개선 사항에 대해 다룹니다.
+
+
+
+== SnapMirror 비즈니스 연속성을 통해 SAN을 위한 투명한 애플리케이션 페일오버
+
+NetApp SnapMirror는 다음과 같은 다양한 사용 사례에 활용할 수 있는 업계 최고의 복제 기술입니다.
+
+* 운영 중단 중 신속한 사이트 페일오버를 위한 재해 복구, 그리고 운영 상태로 빠르게 재동기화
+* 원격 사이트에 있는 데이터의 최대 보조 복제본을 위한 동기식 복제
+* 백업 및 아카이브 사용 사례(소스보다 더 많은 스냅샷 복사본 대상)
+
+
+https://docs.netapp.com/us-en/ontap/smbc/["ONTAP에서의 SnapMirror 비즈니스 연속성"^] SnapMirror가 제공하는 기능을 확장하고 동기식 SnapMirror 관계의 빠르고 쉬운 자동 페일오버를 제공하여 애플리케이션 레벨의 세분화된 데이터 보호를 지원합니다.
+
+SnapMirror 비즈니스 연속성은 중재자를 사용하여 사이트 간에 쿼럼을 유지하고 사이트 장애 발생 시 브레인 분할 시나리오를 방지합니다. 새로운 ONTAP 중재자 소프트웨어 버전(1.2)을 사용할 수 있으며 최대 10개의 ONTAP 시스템을 지원하고 장애 후 120초 이내에 사이트 간 애플리케이션 전환을 자동화합니다.
+
+image:ontap991fo_image11.png["오류: 그래픽 이미지가 없습니다"]
+
+
+
+== IP를 통한 MetroCluster
+
+NetApp MC(MetroCluster) 소프트웨어는 어레이 기반 클러스터링을 동기식 복제와 결합하여 최소의 비용으로 데이터 손실 없이 지속적인 가용성을 제공하는 솔루션입니다. 어레이 기반 클러스터에는 호스트 기반 클러스터링이 가지는 일반적인 종속성과 복잡성이 없으므로 관리가 더욱 간편합니다.
+
+image:ontap991fo_image12.png["오류: 그래픽 이미지가 없습니다"]
+
+MetroCluster는 모든 미션 크리티컬 데이터를 트랜잭션별로 즉시 복제하므로 애플리케이션과 데이터에 중단 없이 액세스할 수 있도록 지원합니다. 표준 데이터 복제 솔루션과 달리 MetroCluster는 호스트 환경에서 원활하게 작동하여 지속적인 데이터 가용성을 제공하고, 복잡한 페일오버 스크립트를 생성하고 유지할 필요가 없습니다.
+
+MetroCluster를 사용하면 다음 작업을 수행할 수 있습니다.
+
+* 투명한 전환을 통해 하드웨어, 네트워크, 사이트 장애로부터 보호
+* 계획되거나 계획되지 않은 다운타임과 변경 관리 제거
+* 운영을 중단하지 않고 하드웨어와 소프트웨어 업그레이드
+* 복잡한 스크립팅, 애플리케이션 또는 운영 체제 종속성 없이 구축
+* VMware, Microsoft, Oracle, SAP 또는 기타 중요한 애플리케이션의 지속적인 가용성 실현
+
+
+전통적으로 NetApp MetroCluster는 파이버 채널 백엔드로 구현되었지만, 최신 버전의 ONTAP는 백엔드에 IP 네트워크 사용을 지원합니다. 이를 통해 사이트 페일오버 인프라의 비용과 복잡성이 감소될 뿐만 아니라 MetroCluster 범위가 약 700km(또는 300mi)까지 확장됩니다.
+
+ONTAP 9.9.1은 MetroCluster에 다음과 같은 향상된 기능을 제공합니다.
+
+* HA 쌍당 1,600개의 볼륨 카운트가 증가되었습니다
+* 공유 계층 - 3 네트워크
++
+** 더 이상 전용 계층 2 네트워크에 의존하지 않습니다
+** ONTAP가 라우터에 직접 연결되어 있어야 합니다
+** 동적 라우팅 지원 없음
+
+
+* 사이트당 노드 수 증가(사이트당 4개, 클러스터당 8개)
+
+
+
+
+=== MetroCluster와 SnapMirror 비즈니스 연속성을 선택해야 하는 경우
+
+MetroCluster 및 SnapMirror 무중단 업무 운영은 동일한 기능 세트(기존 IP 네트워크 활용, 자동 페일오버, 동기식 복제 기능)를 공유하므로 "각 기능을 언제 사용해야 하는지"라는 질문이 더욱 적합합니다.
+
+정답은 다음 질문에 따라 달라집니다.
+
+* 귀사의 서비스 수준 목표는 무엇입니까?
+* 페일오버의 세부 사항을 어떻게 지정하시겠습니까?
+
+
+MetroCluster는 HA 쌍 및 물리적 애그리게이트를 위한 자동화된 인프라 페일오버를 제공하고 SAN 및 NAS 워크로드를 지원하며, SnapMirror 비즈니스 연속성은 SAN 워크로드에만 애플리케이션 레벨의 세분성을 제공합니다.
+
+MetroCluster over IP에 대한 자세한 내용은 를 참조하십시오 https://www.netapp.com/pdf.html?item=/media/13481-tr4689pdf.pdf["MetroCluster IP 솔루션 아키텍처 및 설계"^].
+
+SnapMirror 비즈니스 연속성에 대한 자세한 내용은 를 참조하십시오 https://docs.netapp.com/us-en/ontap/smbc/["ONTAP에서의 SnapMirror 비즈니스 연속성"^].
+
+
+
+== FlexGroup 볼륨 데이터 보호
+
+FlexGroup 볼륨은 NetApp ONTAP 스케일아웃 NAS 솔루션으로, 단일 네임스페이스에서 최대 20PB 및 4,000억 개 파일을 제공하는 동시에 대량 수집 워크로드의 로드 밸런싱된 병렬 처리를 통해 용량, 성능 및 단순성을 자동으로 제공합니다.
+
+image:ontap991fo_image13.png["오류: 그래픽 이미지가 없습니다"]
+
+FlexGroup 볼륨에 대한 자세한 내용은 을 참조하십시오 https://www.netapp.com/us/media/tr-4571.pdf["TR-4571: NetApp FlexGroup 볼륨 모범 사례"^].
+
+ONTAP 9.9.1에서 FlexGroup 볼륨은 다양한 데이터 보호 구성을 지원합니다.
+
+
+
+=== 계단식 및 팬아웃 SnapMirror
+
+스토리지 관리자는 SnapMirror 캐스케이딩 방식을 사용하여 여러 사이트에 직렬로 복제할 수 있습니다. 예를 들어 사이트 A를 사이트 B(사내 또는 클라우드)로 복제하고 사이트 B를 사용하여 동일한 볼륨을 사이트 C(사내 또는 클라우드)로 복제할 수 있습니다.
+
+image:ontap991fo_image14.png["오류: 그래픽 이미지가 없습니다"]
+
+SnapMirror 팬아웃은 소스 볼륨에서 여러 타겟 볼륨으로 복제할 수 있습니다. 따라서 사이트 A에서 소스 FlexGroup을 사이트 B와 C(사내 또는 클라우드)로 복제할 수 있습니다. 따라서 데이터 보호 구성의 유연성과 복원력이 향상됩니다.
+
+image:ontap991fo_image15.png["오류: 그래픽 이미지가 없습니다"]
+
+
+
+=== 스토리지 가상 시스템 재해 복구(SVM-DR)
+
+SVM-DR은 ONTAP 기능으로 데이터 볼륨뿐만 아니라 원격 사이트에 CIFS 공유, NFS 엑스포트, 데이터 LIF, NFS 파일 핸들 등의 SVM 구성 세부 정보를 복제하여 DR 사이트로 페일오버 시 재마운트하지 않도록 지원합니다.
+
+image:ontap991fo_image16.png["오류: 그래픽 이미지가 없습니다"]
+
+ONTAP 9.9.1에서는 FlexGroup 볼륨에 SVM-DR을 지원하며 다음과 같은 제한이 있습니다.
+
+* FabricPool 지원 없음
+* FlexClone이 없습니다
+* SnapMirror 팬아웃 없음
+* 기준선을 다시 설정하지 않고 FlexVol 변환 없음
+
+
+
+
+== SnapLock의 향상된 기능
+
+https://www.netapp.com/data-protection/ontap-security/snaplock-compliance/["NetApp SnapLock를 참조하십시오"^] NetApp의 WORM 규정 준수 복제 솔루션입니다. HIPAA, SEC 17a-4(f) 규칙, FINRA, CFTC 등의 규정 지침을 준수해야 하는 워크로드와 독일 국어 국가(DACH)에 대한 국가별 요구 사항을 충족하기 위해 통합 데이터 보호 기능을 제공합니다.
+
+SnapLock는 데이터 무결성과 보존 기능을 제공하여 전자 기록의 변경을 막고 빠르게 액세스할 수 있도록 지원합니다. SnapLock 보존 기능은 엄격한 기록 보존 요구 사항을 충족하고 법적 보류, 이벤트 기반 보존 및 볼륨 추가 모드를 비롯한 확장된 보존 요구 사항을 충족하는 것으로 인증되었습니다.
+
+ONTAP 9.9.1에서는 NetApp SnapLock에 다음과 같은 개선 사항이 있습니다.
+
+* https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-concepts%2FGUID-8A8108CF-499A-46FC-917F-A40FAD68C8D6.html["스토리지 효율성"^] WORM 볼륨 지원 데이터 컴팩션, 볼륨 간/애그리게이트 레벨의 중복제거(AFF만 해당), 지속적인 세그먼트 정리, 온도에 민감한 스토리지 효율성 지원
+* LUN의 스냅샷 복사본이 포함된 SnapLock 볼륨의 랜섬웨어 보호.SnapLock에 대한 자세한 내용은 을 참조하십시오 https://www.netapp.com/pdf.html?item=/media/6158-tr4526pdf.pdf["NetApp SnapLock를 사용하여 WORM 스토리지 규정 준수"^].
+
+
+SnapLock에 대한 자세한 내용은 를 참조하십시오 https://www.netapp.com/pdf.html?item=/media/6158-tr4526pdf.pdf["NetApp SnapLock를 사용하여 WORM 스토리지 규정 준수"^].
