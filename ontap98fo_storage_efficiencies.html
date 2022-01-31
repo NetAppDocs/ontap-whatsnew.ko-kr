@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>스토리지 효율성</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="스토리지 효율성" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/ontap-whatsnew/ontap98fo_storage_efficiencies.html" />
+	<meta property="og:description" content="이 페이지에서는 ONTAP 9.8 스토리지 효율성, 특히 압축, NetApp FabricPool 기술과 관련된 효율성에 대해 설명합니다." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/ontap-whatsnew/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/>
+  
+  <meta name="description" content="이 페이지에서는 ONTAP 9.8 스토리지 효율성, 특히 압축, NetApp FabricPool 기술과 관련된 효율성에 대해 설명합니다.">
+  <meta name="keywords" content=" FabricPool, Compression, FlexClone, Snapshot, compaction, deduplication,">
+  
+  
+
+  <!-- Icons -->
+  <link rel="icon" href="/ko-kr/ontap-whatsnew/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed -->
+  
+
+  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/ontap-whatsnew/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/ko-kr/ontap-whatsnew/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/ontap-whatsnew/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/ontap-whatsnew/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/ko-kr/ontap-whatsnew/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/ko-kr/ontap-whatsnew/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/ko-kr/ontap-whatsnew/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/ko-kr/ontap-whatsnew/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/ko-kr/ontap-whatsnew/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/ko-kr/ontap-whatsnew/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/ko-kr/ontap-whatsnew/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/ontap-whatsnew/css/tabbed-blocks.css" type="text/css">
+  <link rel="stylesheet" href='/ko-kr/ontap-whatsnew/css/product-family.css' type="text/css">
+  
+
+  
+  <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/na-feature.css' type='text/css'>
+  
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+  <!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
+  
+    <script src='/ko-kr/ontap-whatsnew/js/na-search.js'></script>
+  
+
+  
+  <script src='/ko-kr/ontap-whatsnew/js/na-pagenav.js'></script>
+  
+
+  <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/ko-kr/ontap-whatsnew/js/na-utility.js'></script>
+  <script src='/ko-kr/ontap-whatsnew/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/ko-kr/ontap-whatsnew/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/ko-kr/ontap-whatsnew/js/toc.js'></script>
+  <script src='/ko-kr/ontap-whatsnew/js/customscripts.js'></script>
+
+  <script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/ko-kr/ontap-whatsnew/js/version-dropdown.js'></script>
+  <script src='/ko-kr/ontap-whatsnew/js/product-family.js'></script>
+  <script src='/ko-kr/ontap-whatsnew/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/ontap-whatsnew/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/ontap-whatsnew/js/jszip.min.js'></script>
+  <script src='/ko-kr/ontap-whatsnew/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">제품 및 솔루션</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">지원 및 교육</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">커뮤니티</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">블로그</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">고객 성공 사례</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">연락처</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">연락처</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ko-kr/ontap-whatsnew/search.html"
+          data-type="widget" 
+          data-placeholder="설명서 검색" 
+          data-no-results-found="{query}에 대한 결과를 찾을 수 없음" 
+          data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
+          data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
+          data-results-found="{hitCount}개의 결과를 찾음"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">한국어</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/ontap-whatsnew/ontap98fo_storage_efficiencies.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/ontap-whatsnew/ontap98fo_storage_efficiencies.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/ontap-whatsnew/ontap98fo_storage_efficiencies.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/ontap-whatsnew/ontap98fo_storage_efficiencies.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/ko-kr/ontap-whatsnew/images/pdf.png" width="16" height="16"/>사용 가능한 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/ko-kr/ontap-whatsnew/pdfs/fullsite-sidebar/TR_4894__NetApp_ONTAP_9_9_1_기능_개요.pdf" >
+          <img src="/ko-kr/ontap-whatsnew/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/ontap-whatsnew/pdfs/sidebar/NetApp_ONTAP_9_9_1_기능_개요.pdf" 
+            
+          >
+            <img src="/ko-kr/ontap-whatsnew/images/pdf.png" width="16" height="16"/>
+            NetApp ONTAP 9.9.1 기능 개요
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/ontap-whatsnew/pdfs/sidebar/NetApp_ONTAP_9_8_기능_개요.pdf" 
+            
+          >
+            <img src="/ko-kr/ontap-whatsnew/images/pdf.png" width="16" height="16"/>
+            NetApp ONTAP 9.8 기능 개요
+          </a>
+          
+
+
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ko-kr/ontap-whatsnew/pdfs/pages/ontap98fo_storage_efficiencies.pdf" >
+    <img src="/ko-kr/ontap-whatsnew/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/ko-kr/ontap-whatsnew/images/pdf-zip.png" width="16" height="16"/>
+      <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class="subfolders "><a href="/ko-kr/ontap-whatsnew/index.html">
+        <div class="na-navbar-padding"> NetApp ONTAP 9.9.1 기능 개요</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap991fo_system_manager_enhancements.html">
+        System Manager의 향상된 기능
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap991fo_san_enhancements.html">
+        SAN의 향상된 기능
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap991fo_data_protection_enhancements.html">
+        데이터 보호 기능이 향상되었습니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap991fo_other_major_additions.html">
+        기타 주요 추가 사항
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap991fo_technical_resources.html">
+        기술 리소스
+      </a></li></ul></li><li class="subfolders "><a href="/ko-kr/ontap-whatsnew/ontap98fo_netapp_ontap.html">
+        <div class="na-navbar-padding"> NetApp ONTAP 9.8 기능 개요</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap98fo_simplicity_enhancements.html">
+        간편성 향상
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap98fo_data_protocols.html">
+        데이터 프로토콜
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap98fo_storage_efficiencies.html">
+        스토리지 효율성
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap98fo_data_protection.html">
+        데이터 보호
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap98fo_vmware_virtualization.html">
+        VMware 가상화
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/ontap-whatsnew/ontap98fo_technical_resources.html">
+        기술 리소스
+      </a></li></ul></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container -->
+    <article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://www.netapp.com">홈</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">설명서</a>
+        </li>
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/ko-kr/ontap-whatsnew/">ONTAP&nbsp;What's&nbsp;New</a>
+        </li>
+        <li class="n-breadcrumb__list-item">
+          스토리지 효율성
+        </li>
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">스토리지 효율성</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-01-31 13:43:15 +0000">01/31/2022</time>
+    
+  
+
+<span>기여자
+</span>
+
+
+</p>
+
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>스토리지 효율성에는 스토리지 시스템의 데이터가 사용하는 물리적 용량의 양을 줄이는 기능이 포함됩니다. ONTAP의 경우 다음과 같은 항목이 포함됩니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>데이터 압축</p>
+</li>
+<li>
+<p>데이터 컴팩션</p>
+</li>
+<li>
+<p>데이터 중복제거</p>
+</li>
+<li>
+<p>NetApp FabricPool를 참조하십시오</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>이러한 정의는 다음과 같이 확장되기도 합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>NetApp FlexClone 기술</p>
+</li>
+<li>
+<p>NetApp Snapshot 복사본</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>스토리지 효율성은 구입해야 하는 물리적 하드웨어의 양을 줄여 스토리지 비용을 낮게 유지하는 데 매우 중요합니다. ONTAP는 시스템 성능에 미치는 영향을 최소화하면서 시스템 인라인(AFF 시스템) 또는 후처리(모든 시스템)에서 데이터 축소를 수행할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>ONTAP 9.8에는 스토리지 효율성을 위해 여러 가지 향상된 기능이 있습니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="fabricpool">FabricPool</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FabricPool는 파일 시스템에서 냉각된 블록을 가져와 4MB 오브젝트로 번들로 묶어 클라우드 또는 S3 버킷으로 제공하는 NetApp 데이터 계층화 기술입니다. 콜드 데이터는 스토리지 시스템에서 전체 용량의 최대 80%를 사용할 수 있으므로 성능 계층을 유지하는 대신 저렴한 스토리지 솔루션으로 이동하는 것이 좋습니다.</p>
+</div>
+<div class="paragraph">
+<p>이 모든 작업은 설정할 수 있는 계층화 정책을 통해 ONTAP에서 자동으로 수행되며, 비활성 데이터 보고 기능을 통해 현재 스토리지 시스템에서 사용 중인 콜드 데이터의 양을 확인할 수 있습니다. 이를 통해 FabricPool이 실제로 비용을 절감하는지 평가할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/ontap98fo_image22.png" alt="오류: 그래픽 이미지가 없습니다"></span></p>
+</div>
+<div class="paragraph">
+<p>클라이언트가 클라우드로 계층화된 파일에 액세스할 때 전체 파일이 아닌 요청된 블록만 성능 계층으로 다시 가져와 액세스합니다.</p>
+</div>
+<div class="paragraph">
+<p>FabricPool에 대한 자세한 내용은 를 참조하십시오 <a href="https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf">"TR-4598: FabricPool 모범 사례"</a> 및.</p>
+</div>
+<div class="paragraph">
+<p>ONTAP 9.8은 다음과 같은 FabricPool 기능을 지원합니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* HDD 애그리게이트에서 계층화 * ONTAP 9.8 이전에는 ONTAP에서 클라우드로 FabricPool 계층화는 SSD 애그리게이트에서만 가능했습니다. ONTAP 9.8을 사용하면 이제 HDD 애그리게이트에서 FabricPool를 사용하여 계층화할 수 있습니다.</p>
+</li>
+<li>
+<p>ONTAP S3로 계층화 * 이제 ONTAP S3를 사용할 수 있게 되었으므로 이제 FabricPool를 사용하여 ONTAP 시스템에서 ONTAP S3 버킷으로 계층화할 수 있습니다. 따라서 오래된 용량 스토리지를 FabricPool 계층으로 사용하여 용도를 변경할 수 있습니다. 그리고 동일한 클러스터에 계층화하면 클라우드 네트워크 연결을 탐색하는 것보다 검색 시간이 더 빨라집니다.</p>
+</li>
+<li>
+<p>* 냉각 기간 증가. * ONTAP 9.8 이전에는 최대 63일의 냉각 기간 후 데이터가 냉각으로 표시됩니다. ONTAP 9.8을 사용하면 최대 183일까지 구성할 수 있습니다. 재무 보고서와 같이 분기별로 액세스하는 데이터와 같이 산발적으로 액세스할 수 있는 데이터에 유용합니다.</p>
+</li>
+<li>
+<p>* 오브젝트 태그 지정. * 오브젝트 태그를 기반으로 데이터를 관리하는 정보 수명 주기 정책을 제공하는 S3 공급자로 계층화할 경우, ONTAP 9.8은 FabricPool를 사용하여 계층별로 오브젝트를 태그하여 정책에 통합할 수 있습니다.</p>
+</li>
+<li>
+<p>* 클라우드 검색. * 일부 경우 모든 계층화된 데이터를 클라우드에서 다시 가져와야 할 수 있습니다. 이제 모든 데이터에 액세스할 필요 없이 ONTAP 9.8에서 클라우드에서 데이터를 검색하는 작업을 실행할 수 있습니다.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="압축">압축</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>ONTAP 9.8에는 성능을 개선하고 압축 가능한 데이터 세트의 데이터 축소율을 개선하는 데 도움이 되는 몇 가지 데이터 압축 변경 사항이 도입되었습니다.</p>
+</div>
+<div class="paragraph">
+<p>압축의 주요 변경 사항은 데이터를 콜드 및 핫 분류로 구분하는 것이었습니다. 콜드 데이터는 오랫동안 액세스되지 않은 데이터이며 핫 데이터는 자주 액세스되는 데이터입니다. 즉, 핫 데이터를 더 적게 압축하고 콜드 데이터를 더 적극적으로 압축하려고 합니다.</p>
+</div>
+<div class="paragraph">
+<p>ONTAP 9.8에서는 8K 압축 그룹을 사용하여 핫 데이터가 인라인으로 압축됩니다. 또한 데이터 중복제거는 압축 전에 수행되어 데이터 세트의 효율성이 더욱 향상됩니다.</p>
+</div>
+<div class="paragraph">
+<p>그런 다음 백그라운드 에서 보다 공격적인 32K 압축 그룹을 사용하여 콜드 데이터가 다시 압축됩니다. 이러한 변화를 통해 핫 데이터의 성능이 향상되고 모든 데이터의 데이터 축소율이 향상됩니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="ontap98fo_data_protection.html">"다음: 데이터 보호"</a></p>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-whatsnew/issues/new?body=Page%3A%20[스토리지 효율성](https://docs.netapp.com/ko-kr/ontap-whatsnew/ontap98fo_storage_efficiencies.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-whatsnew/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-whatsnew/blob/main/ontap98fo_storage_efficiencies.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-whatsnew/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-whatsnew/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">이 페이지의 내용</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <div style="clear: both"></div><!-- Main needs to have height -->
+</div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/ontap-whatsnew/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">의견을 공유해 주십시오</a>
+  <a href="https://docs.netapp.com/ko-kr/announcements/" class="n-footer__copyright">공지 사항</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div>
+
+      <!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/ontap-whatsnew/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/ontap-whatsnew/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/ontap-whatsnew/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/ontap-whatsnew/js/www-ntap.js'></script>
+    <script src='/ko-kr/ontap-whatsnew/js/tabbed-blocks.js'></script>
+  </body>
+
+  
+</html>
