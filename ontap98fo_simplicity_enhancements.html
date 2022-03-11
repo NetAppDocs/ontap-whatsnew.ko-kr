@@ -16,20 +16,11 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/>
-  
-  <meta name="description" content="이 페이지에서는 ONTAP System Manager 업데이트, ONTAP 업그레이드, 기술 업데이트 개선, REST API 개선 등을 포함하여 단순성을 개선하는 ONTAP 9.8의 향상된 기능에 대해 설명합니다.">
-  <meta name="keywords" content=" System Manager, Health, Alerts, Capacity Views, Network Visualization, Performance Views, File System Analytics, FSA, Active NFS Clients, upgrade">
-  
-  
-
-  <!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="이 페이지에서는 ONTAP System Manager 업데이트, ONTAP 업그레이드, 기술 업데이트 개선, REST API 개선 등을 포함하여 단순성을 개선하는 ONTAP 9.8의 향상된 기능에 대해 설명합니다.">
+  <meta name="keywords" content=" System Manager, Health, Alerts, Capacity Views, Network Visualization, Performance Views, File System Analytics, FSA, Active NFS Clients, upgrade"><!-- Icons -->
   <link rel="icon" href="/ko-kr/ontap-whatsnew/images/favicon.ico" type="image/x-icon">
 
-  <!-- RSS Feed -->
-  
-
-  <!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
 
   <!-- Elastic Search -->
   <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
@@ -59,27 +50,11 @@
   
   <link rel="stylesheet" href="/ko-kr/ontap-whatsnew/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/ko-kr/ontap-whatsnew/css/tabbed-blocks.css" type="text/css">
-  <link rel="stylesheet" href='/ko-kr/ontap-whatsnew/css/product-family.css' type="text/css">
-  
-
-  
-  <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/na-feature.css' type='text/css'>
-  
-
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-  <!-- Used to import Promise for IE. Required for SearchKit -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script>
-  
-    <script src='/ko-kr/ontap-whatsnew/js/na-search.js'></script>
-  
 
-  
-  <script src='/ko-kr/ontap-whatsnew/js/na-pagenav.js'></script>
-  
-
-  <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/prism.css' type='text/css'>
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/ontap-whatsnew/js/na-search.js'></script><script src='/ko-kr/ontap-whatsnew/js/na-pagenav.js'></script><link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/prism.css' type='text/css'>
   <link rel='stylesheet' href='/ko-kr/ontap-whatsnew/css/prism-netapp.css' type='text/css'>
 
 
@@ -97,9 +72,7 @@
   <script src='/ko-kr/ontap-whatsnew/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/ko-kr/ontap-whatsnew/js/toc.js'></script>
-  <script src='/ko-kr/ontap-whatsnew/js/customscripts.js'></script>
-
-  <script>
+  <script src='/ko-kr/ontap-whatsnew/js/customscripts.js'></script><script>
       $(document).ready(function() {
           
           var collapseOnInit = true;
@@ -158,7 +131,6 @@
   }
   </script>
   <script src='/ko-kr/ontap-whatsnew/js/version-dropdown.js'></script>
-  <script src='/ko-kr/ontap-whatsnew/js/product-family.js'></script>
   <script src='/ko-kr/ontap-whatsnew/js/FileSaver.min.js'></script>
   <script src='/ko-kr/ontap-whatsnew/js/jszip-utils.min.js'></script>
   <script src='/ko-kr/ontap-whatsnew/js/jszip.min.js'></script>
@@ -171,6 +143,25 @@
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
         <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-whatsnew/issues/new?body=Page%3A%20[간편성 향상](https://docs.netapp.com/ko-kr/ontap-whatsnew/ontap98fo_simplicity_enhancements.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-whatsnew/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/ontap-whatsnew/blob/main/ontap98fo_simplicity_enhancements.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-whatsnew/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-whatsnew/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">이 페이지의 내용</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
   <!-- Start top_hat -->
   <div class="n-top-hat">
     <div class="n-container">
@@ -500,26 +491,22 @@
   
 
   <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
-    <!-- Begin of page container -->
-    <article class="page-content">
+    <!-- Begin of page container --><article class="page-content">
       <div class="ie-utility">
   <div class="ie-menu">
     <div class="n-breadcrumb">
       <ul class="n-breadcrumb__list">
         <li class="n-breadcrumb__list-item">
-          <a href="https://www.netapp.com">홈</a>
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          <a href="https://docs.netapp.com">설명서</a>
-        </li>
+        
+
         
 
         <li class="n-breadcrumb__list-item">
           <a href="/ko-kr/ontap-whatsnew/">ONTAP&nbsp;What's&nbsp;New</a>
         </li>
-        <li class="n-breadcrumb__list-item">
-          간편성 향상
-        </li>
+
       </ul>
     </div>
     <div style="clear: both"></div><!-- Main needs to have height -->
@@ -548,16 +535,23 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-31 13:43:15 +0000">01/31/2022</time>
+    <time datetime="2022-03-11 14:35:32 +0000">03/11/2022</time>
     
   
 
 <span>기여자
+  <a target="_blank" href="https://github.com/netapp-ahibbard">
+    <img  class="avatar avatar-small"
+          alt="netapp-ahibbard"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/85892662?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
 </span>
 
 
 </p>
-
 
 <div id="preamble">
 <div class="sectionbody">
@@ -931,7 +925,10 @@
 <p>이러한 간소화된 업그레이드 프로세스를 통해 간편하게 헤드 업그레이드를 수행할 수 있습니다. 새 하드웨어 노드가 배송되면 최신 ONTAP 릴리즈가 설치된 것입니다. 이전 버전에서는 기존 클러스터에서 이전 ONTAP 릴리즈를 실행 중인 경우 기존 노드를 새 노드와 동일한 ONTAP 버전으로 업그레이드하거나 새 노드를 이전 ONTAP 릴리즈로 다운그레이드해야 했습니다. 또한 더 복잡한 작업으로, 더 새로운 하드웨어를 다운그레이드할 수 없는 경우 기존 클러스터를 업그레이드하기 위한 유지 관리 창을 가져야만 했습니다.</p>
 </div>
 <div class="paragraph">
-<p>ONTAP 9.8의 2년 수정 기간을 사용하면 해당 범위 내에 ONTAP 버전이 있는 클러스터에 새 노드를 추가할 수 있으며, 이전 노드는 중단 없는 애그리게이트 재배치 업그레이드 프로세스를 사용하여 백그라운드에서 새 ONTAP 릴리즈로 자동 업그레이드할 수 있습니다.</p>
+<p>ONTAP 9.8의 2년 혼합 버전 창에서는 이제 새로운 ONTAP 버전을 실행하는 새 노드를 클러스터에 추가하여 9.8을 실행하는 노드에서 상위 ONTAP 버전으로 볼륨을 이동하여 컨트롤러 업데이트를 수행할 수 있습니다. 또한 무중단 애그리게이트 재배치 업그레이드 프로세스에서는 ONTAP 9.8(예: 8000 시리즈 시스템)을 실행해야 하는 시스템의 컨트롤러를 최신 ONTAP 릴리즈에 도입된 모델로 업그레이드할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>ONTAP 클러스터가 혼합 버전 상태에서 작동하는 시간을 제한하는 것이 좋습니다.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/ontap98fo_image17.png" alt="오류: 그래픽 이미지가 없습니다"></span></p>
@@ -968,27 +965,7 @@
     <!-- Page Container -->
   </div>
 
-  
-  <!-- Start Page Toolbar -->
-  <div class="page-nav-toolbar">
-    <div id="version-dropdown"></div>
-    <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-whatsnew/issues/new?body=Page%3A%20[간편성 향상](https://docs.netapp.com/ko-kr/ontap-whatsnew/ontap98fo_simplicity_enhancements.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-whatsnew/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/ontap-whatsnew/blob/main/ontap98fo_simplicity_enhancements.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/ontap-whatsnew/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
-      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/ontap-whatsnew/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
-    </div>
-    <div class="page-nav-container">
-      <nav class="page-nav-fixed">
-        <div class="page-nav-title">이 페이지의 내용</div>
-        <div class="page-nav-links">
-          <ul class="page-nav-inner" id="page-menu"></ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-  
-  <div style="clear: both"></div><!-- Main needs to have height -->
-</div>
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
 
         </main>
 
@@ -1090,9 +1067,7 @@
 </div>
 </footer>
 
-      </div>
-
-      <!-- Elasticsearch JS -->
+      </div><!-- Elasticsearch JS -->
       <script type="text/javascript" src='/ko-kr/ontap-whatsnew/js/bundle.js'></script>
 
       <!-- Syntax Highlighting -->
@@ -1107,7 +1082,4 @@
     </script>
     <script src='/ko-kr/ontap-whatsnew/js/www-ntap.js'></script>
     <script src='/ko-kr/ontap-whatsnew/js/tabbed-blocks.js'></script>
-  </body>
-
-  
-</html>
+  </body></html>
