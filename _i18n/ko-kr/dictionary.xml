@@ -434,7 +434,6 @@
   <block id="2abfff2974f589f7a217325f304e0ec5" category="cell">ONTAP 9.8</block>
   <block id="547cbd3109db3ef525c301563f0d65f1" category="cell">ONTAP 9.n+1, ONTAP 9.n+2</block>
   <block id="bf901878215dddabdc936ea948793ecb" category="paragraph">이러한 간소화된 업그레이드 프로세스를 통해 간편하게 헤드 업그레이드를 수행할 수 있습니다. 새 하드웨어 노드가 배송되면 최신 ONTAP 릴리즈가 설치된 것입니다. 이전 버전에서는 기존 클러스터에서 이전 ONTAP 릴리즈를 실행 중인 경우 기존 노드를 새 노드와 동일한 ONTAP 버전으로 업그레이드하거나 새 노드를 이전 ONTAP 릴리즈로 다운그레이드해야 했습니다. 또한 더 복잡한 작업으로, 더 새로운 하드웨어를 다운그레이드할 수 없는 경우 기존 클러스터를 업그레이드하기 위한 유지 관리 창을 가져야만 했습니다.</block>
-  <block id="dcaf81f56b0daa7582eca70fdde4e77f" category="paragraph">ONTAP 9.8의 2년 수정 기간을 사용하면 해당 범위 내에 ONTAP 버전이 있는 클러스터에 새 노드를 추가할 수 있으며, 이전 노드는 중단 없는 애그리게이트 재배치 업그레이드 프로세스를 사용하여 백그라운드에서 새 ONTAP 릴리즈로 자동 업그레이드할 수 있습니다.</block>
   <block id="d62296e71d81556e35f498bde3d79287" category="paragraph"><block ref="d62296e71d81556e35f498bde3d79287" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e3eefd878fd09006803de4818d676916" category="paragraph">이 프로세스는 클러스터 업그레이드에도 적용되며, 클러스터 내에서 전체 HA 쌍을 스와핑할 수 있습니다. ONTAP 9.8 2년 수정 기간 및 무중단 볼륨 이동을 통해 이 작업이 가능합니다.</block>
   <block id="98d0faccb32c3ee69ee9e16707900653" category="paragraph">기본 단계는 다음과 같습니다.</block>
@@ -600,4 +599,6 @@
   <block id="894993270da66c4f1f40a52bc9a89e53" category="paragraph"><block ref="894993270da66c4f1f40a52bc9a89e53" category="inline-link-macro-rx"></block></block>
   <block id="7eb11865313a79b30293e6f823bc7459" category="sidebar">NetApp ONTAP 9.9.1 기능 개요</block>
   <block id="bebab3b123211d2c00c685855ec9b053" category="sidebar">NetApp ONTAP 9.8 기능 개요</block>
+  <block id="2f8e938c8b82fff608b2a7cc62ef5bbc" category="paragraph">ONTAP 9.8의 2년 혼합 버전 창에서는 이제 새로운 ONTAP 버전을 실행하는 새 노드를 클러스터에 추가하여 9.8을 실행하는 노드에서 상위 ONTAP 버전으로 볼륨을 이동하여 컨트롤러 업데이트를 수행할 수 있습니다. 또한 무중단 애그리게이트 재배치 업그레이드 프로세스에서는 ONTAP 9.8(예: 8000 시리즈 시스템)을 실행해야 하는 시스템의 컨트롤러를 최신 ONTAP 릴리즈에 도입된 모델로 업그레이드할 수 있습니다.</block>
+  <block id="66c739b0fe981bce9986a4fc69525ce7" category="paragraph">ONTAP 클러스터가 혼합 버전 상태에서 작동하는 시간을 제한하는 것이 좋습니다.</block>
 </blocks>
