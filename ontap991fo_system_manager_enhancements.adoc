@@ -6,6 +6,7 @@ summary: ONTAP 9.9.1에서는 고객 피드백을 수집하고 GUI에 대한 일
 ---
 = System Manager의 향상된 기능
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

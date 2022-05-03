@@ -6,6 +6,7 @@ summary: 이 페이지에서는 ONTAP System Manager 업데이트, ONTAP 업그�
 ---
 = 간편성 향상
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

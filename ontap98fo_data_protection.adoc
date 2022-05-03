@@ -6,6 +6,7 @@ summary: 이 페이지에서는 데이터의 오프 사이트 복제뿐 아니�
 ---
 = 데이터 보호
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: ONTAP 9.9.1은 SAN과 관련된 몇 가지 중요한 개선 기능을 �
 ---
 = SAN의 향상된 기능
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

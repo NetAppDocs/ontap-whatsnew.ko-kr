@@ -6,6 +6,7 @@ summary: System Manager의 향상된 기능, SAN 개선 기능 및 데이터 보
 ---
 = 기타 주요 추가 사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

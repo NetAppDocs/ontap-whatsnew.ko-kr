@@ -6,6 +6,7 @@ summary: 이 페이지에서는 ONTAP 9.8 스토리지 효율성, 특히 압축,
 ---
 = 스토리지 효율성
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -42,7 +43,7 @@ image:ontap98fo_image22.png["오류: 그래픽 이미지가 없습니다"]
 
 클라이언트가 클라우드로 계층화된 파일에 액세스할 때 전체 파일이 아닌 요청된 블록만 성능 계층으로 다시 가져와 액세스합니다.
 
-FabricPool에 대한 자세한 내용은 를 참조하십시오 https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598: FabricPool 모범 사례"] 및.
+FabricPool에 대한 자세한 내용은 를 참조하십시오 https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598: FabricPool 모범 사례"] 및 https://soundcloud.com/techontap_podcast/episode-268-netapp-fabricpool-and-s3-in-ontap-98["TR-4598: FabricPool 모범 사례 및 Tech OnTap 팟캐스트 에피소드 268: NetApp FabricPool 및 S3 in ONTAP 9.8"^].
 
 ONTAP 9.8은 다음과 같은 FabricPool 기능을 지원합니다.
 

@@ -6,6 +6,7 @@ summary: 이 페이지에서는 클라이언트와 최종 사용자가 데이터
 ---
 = 데이터 프로토콜
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
