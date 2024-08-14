@@ -33,6 +33,4 @@ NetApp ONTAP은 동일한 플랫폼에서 다음과 같은 기능을 모두 지�
 
 NetApp ONTAP에 대한 자세한 내용은 를 참조하십시오 https://www.netapp.com/pdf.html?item=/media/7413-ds-3231.pdf["ONTAP 9 데이터 관리 소프트웨어 데이터 시트"^] 및 https://docs.netapp.com/ontap-9/index.jsp["제품 설명서"^].
 
-이 내용을 확인해 보십시오 link:https://tv.netapp.com/detail/video/6211778986001["비디오"] NetApp Insight 2020에서 NetApp ONTAP의 주목할 만한 발전을 더 폭넓게 볼 수 있습니다.
-
 link:ontap98fo_simplicity_enhancements.html["다음으로 단순성 향상"]
